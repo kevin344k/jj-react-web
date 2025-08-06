@@ -1,0 +1,7 @@
+@import "tailwindcss";
+
+@theme{
+    --color-fm-turquesa: #3ef2d0;
+    --color-fm-turquesa_strong: #19e6c0;
+--color-fm-turquesa_very_strong: #23a78e;
+}
