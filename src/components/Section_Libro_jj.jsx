@@ -1,8 +1,8 @@
 import React from "react";
-import wasapIcon from "../assets/imagenes/wasap-fill-green.svg";
-import amazonIcon from "../assets/imagenes/amazon.svg";
-import libroImg from "../assets/libros/portadas/libro_jj.jpeg";
-import newProductImg from "../assets/imagenes/nuevo-producto.png";
+import wasapIcon from "/imagenes/icon-color/whatsap.svg";
+import amazonIcon from "/imagenes/amazon.svg";
+import libroImg from "/libros/portadas/libro_jj.jpeg";
+import newProductImg from "/imagenes/new.png";
 
 export default function Section_Libro_jj() {
   return (

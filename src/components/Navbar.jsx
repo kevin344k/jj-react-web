@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import jjface from "../assets/imagenes/jjcara.webp";
-import crossClose from "../assets/imagenes/cross-close.svg";
-import menuIcon from "../assets/imagenes/menu-svgrepo-com.svg";
+import jjface from "/imagenes/jjcara.webp";
+import crossClose from "/imagenes/cross-close.svg";
+
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
