@@ -1,4 +1,8 @@
 import React,{useState} from 'react'
+import icon_wasap from "/imagenes/whatsapp.svg"
+import icon_amazon from "/imagenes/amazon.svg"
+import icon_dowload from "/imagenes/arrow-download.svg"
+import icon_eye from "/imagenes/eye-ico.svg"
 
 export default function CardBook({book,idx}) {
 
@@ -20,7 +24,7 @@ export default function CardBook({book,idx}) {
                     className="bg-fm-turquesa text-black px-4 py-2 flex items-center gap-2 rounded-md shadow"
                   >
                     Comprar
-                    <img src="/imagenes/whatsapp.svg" alt="whatsapp" className="w-5 h-5" />
+                    <img src={icon_wasap} alt="whatsapp" className="w-5 h-5" />
                   </a>
                 )}
                 {book.amazonLink && (
@@ -28,7 +32,7 @@ export default function CardBook({book,idx}) {
                     href={book.amazonLink}
                     className="bg-white py-2 px-4 rounded-md"
                   >
-                    <img src="/imagenes/amazon.svg" alt="amazon" className="w-24" />
+                    <img src={icon_amazon} alt="amazon" className="w-24" />
                   </a>
                 )}
                 {book.pdf && (
@@ -41,7 +45,7 @@ export default function CardBook({book,idx}) {
                     >
                
                       Leer
-                             <img src="/imagenes/eye-ico.svg" alt="leer" className="w-5" />
+                             <img src={icon_eye} alt="leer" className="w-5" />
                     </a>
                     <a
                       href={book.pdf}
@@ -49,7 +53,7 @@ export default function CardBook({book,idx}) {
                       className="bg-fm-turquesa text-black w-[50%] py-2 flex items-center justify-center gap-2 rounded-md"
                     >
                        Descargar
-                      <img src="/imagenes/arrow-download.svg" alt="descargar" className="w-4" />
+                      <img src={icon_dowload} alt="descargar" className="w-4" />
                      
                     </a>
                   </>
