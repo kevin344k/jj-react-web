@@ -98,7 +98,7 @@ export default function SectionMentoria() {
         <div className="w-24 h-1 bg-white mx-auto mt-3"></div>
       </div>
 
-        <ul className="mentoria-items grid grid-cols-1 sm:grid-cols-2 gap-4 list-none text-lg">
+        <ul className="mentoria-items grid grid-cols-1 sm:grid-cols-2 gap-2 list-none text-lg lg:max-w-[800px] lg:mx-auto">
           {mentorshipItems.map((item, i) => (
             <li key={i} className="flex items-center text-white gap-2">
               <span className="">🔥</span> {item}
@@ -110,14 +110,14 @@ export default function SectionMentoria() {
       <div className="div-mis-redes max-w-5xl mx-auto px-4 py-10">
         <div className="linea border-t border-gray-300 my-8"></div>
 
-        <ul className="button-group flex flex-col w-full gap-6 justify-center">
+        <ul className=" grid grid-cols-1 justify-center md:grid-cols-2 md:items-center  w-full m-auto md: gap-6 lg:max-w-[800px]">
           {socialLinks.map(({ href, img, label }, i) => (
-            <li key={i} className="text-center ">
+            <li key={i} className="text-center w-[250px] mx-auto md:mx-auto">
               <a
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="botones_redes flex  text-center justify-center items-center gap-2 bg-white border border-neutral-200 px-3 py-3  rounded hover:bg-fm-turquesa_strong active:bg-fm-turquesa_strong active:text-neutral-900 active:scale-95 trasition-all ease-in-out duration-100 "
+                className=" flex  text-center justify-center items-center gap-2 bg-white border border-neutral-200 px-3 py-3  rounded hover:bg-fm-turquesa_strong active:bg-fm-turquesa_strong active:text-neutral-900 active:scale-95 trasition-all ease-in-out duration-100 "
               >
                 <img src={img} alt={label} className="w-6 h-6 object-contain" />
                 <span className="font-medium">{label}</span>
@@ -131,7 +131,7 @@ export default function SectionMentoria() {
             Lunes a Viernes | 20:00 | UTC -05:00
           </p>
 
-          <ul className="redes-live-icons flex justify-center gap-8">
+          <ul className="redes-live-icons flex justify-center gap-8 ">
             {liveLinks.map(({ href, img, alt }, i) => (
               <li key={i} className="">
                 <a href={href} target="_blank" rel="noopener noreferrer">

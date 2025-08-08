@@ -1,4 +1,5 @@
-import React, { useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import CardBook from "./CardBook";
 
 const books = [
   {
@@ -45,82 +46,94 @@ const books = [
   }
 ];
 
+const CARD_WIDTH = 230; // Ajusta según tu card + gap
+  const handlePrev = () => scrollToIndex(currentIndex - 1);
+  const handleNext = () => scrollToIndex(currentIndex + 1);
 const SectionLibros = () => {
   const sliderRef = useRef(null);
+  const [scrollProgress, setScrollProgress] = useState(0);
+  const [currentIndex, setCurrentIndex] = useState(0);
 
-  const scroll = (direction) => {
-    const { current } = sliderRef;
-    if (current) {
-      const scrollAmount = 300;
-      current.scrollBy({ left: direction === "left" ? -scrollAmount : scrollAmount, behavior: "smooth" });
-    }
+  useEffect(() => {
+    const container = sliderRef.current;
+    if (!container) return;
+
+    const handleScroll = () => {
+      const scrollLeft = container.scrollLeft;
+      const maxScrollLeft = container.scrollWidth - container.clientWidth;
+
+      // Calcula el progreso real en %
+      const progress = maxScrollLeft > 0 ? (scrollLeft / maxScrollLeft) * 100 : 0;
+      setScrollProgress(progress);
+
+      // También actualizamos currentIndex para botones
+      const index = Math.round(scrollLeft / CARD_WIDTH);
+      setCurrentIndex(index);
+    };
+
+    container.addEventListener("scroll", handleScroll);
+    handleScroll(); // para estado inicial
+
+    return () => container.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  const scrollToIndex = (index) => {
+    const container = sliderRef.current;
+    if (!container) return;
+
+    const maxIndex = books.length - 1;
+    const newIndex = Math.min(Math.max(index, 0), maxIndex);
+
+    container.scrollTo({
+      left: newIndex * CARD_WIDTH,
+      behavior: "smooth",
+    });
+
+    setCurrentIndex(newIndex);
   };
 
+  const handlePrev = () => scrollToIndex(currentIndex - 1);
+  const handleNext = () => scrollToIndex(currentIndex + 1);
+
   return (
-    <section id="sect-books" className="py-12 px-4">
+    <section id="sect-books" className="py-12 relative">
       <div className="mb-6">
         <h2 className="text-2xl font-semibold text-center">Libros</h2>
         <div className="w-16 h-1 bg-fm-turquesa mx-auto mt-2 rounded-full" />
       </div>
 
-      <div className="relative">
-    
+      {/* Botones absolute para escritorio */}
+      <button
+        onClick={handlePrev}
+        aria-label="Anterior"
+        className="hidden lg:flex absolute  top-1/2 left-4 -translate-y-1/2 z-10 w-15 h-20 bg-gradient-to-r from-[#22dfc1] to-transparentns  text-white text-5xl  shadow hover:bg-[#1bb8a9] justify-center items-center active:scale-95 cursor-pointer"
+      >
+        &#8249;
+      </button>
 
-        {/* Book Cards */}
-        <div ref={sliderRef} className="flex overflow-x-auto gap-4 px-10 py-4 scroll-smooth hide-scrollbar">
-          {books.map((book, idx) => (
-            <div key={idx} className="relative group w-60 flex-shrink-0 shadow-md rounded-xl">
-              <img
-                src={book.img}
-                alt={book.title}
-                loading="lazy"
-                className="w-full h-80 object-cover rounded-xl shadow-md"
-              />
-              <div className="absolute inset-0 bg-black bg-opacity-60 opacity-0 group-hover:opacity-100 transition flex flex-col justify-center items-center gap-3 rounded-xl">
-                {book.whatsappLink && (
-                  <a
-                    href={book.whatsappLink}
-                    className="bg-white text-black px-4 py-2 flex items-center gap-2 rounded-md shadow"
-                  >
-                    Comprar
-                    <img src="/imagenes/wasap-fill-green.svg" alt="whatsapp" className="w-5 h-5" />
-                  </a>
-                )}
-                {book.amazonLink && (
-                  <a
-                    href={book.amazonLink}
-                    className="bg-white p-2 rounded-md"
-                  >
-                    <img src="/imagenes/amazon.svg" alt="amazon" className="w-24" />
-                  </a>
-                )}
-                {book.pdf && (
-                  <>
-                    <a
-                      href={book.pdf}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="bg-white text-black px-4 py-2 flex items-center gap-2 rounded-md"
-                    >
-                      <img src="/imagenes/eye-ico.svg" alt="leer" className="w-5" />
-                      Leer
-                    </a>
-                    <a
-                      href={book.pdf}
-                      download={book.downloadName || ""}
-                      className="bg-white text-black px-4 py-2 flex items-center gap-2 rounded-md"
-                    >
-                      <img src="/imagenes/arrow-download.svg" alt="descargar" className="w-4" />
-                      Descargar
-                    </a>
-                  </>
-                )}
-              </div>
-            </div>
-          ))}
-        </div>
+      <button
+        onClick={handleNext}
+        aria-label="Siguiente"
+        className="hidden lg:flex absolute top-1/2 right-4 -translate-y-1/2 z-10 w-15 h-20 bg-gradient-to-l from-[#22dfc1] to-transparentns text-5xl text-white shadow hover:bg-[#1bb8a9] justify-center items-center cursor-pointer"
+      >
+        &#8250;
+      </button>
 
- 
+      <div
+        ref={sliderRef}
+        className="flex w-full overflow-x-auto scrollbar-hide snap-x snap-mandatory gap-4 px-5 py-4 scroll-smooth hide-scrollbar"
+      >
+        {books.map((book, idx) => (
+          <CardBook book={book} key={idx} />
+        ))}
+      </div>
+
+      {/* Barra de progreso */}
+      <div className="relative mt-2 h-1 bg-gray-300 rounded-full mx-6 overflow-x-hidden lg:hidden xl:hidden">
+        <div
+          className="h-1 bg-[#40E0D0] rounded-full transition-all duration-200"
+          style={{ width: `${scrollProgress}%` }}
+        />
       </div>
     </section>
   );

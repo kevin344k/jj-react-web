@@ -10,6 +10,9 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@leenguyen/react-flip-clock-countdown": "^1.7.1",
+    "@mempool/mempool.js": "^3.0.0",
+    "@number-flow/react": "^0.5.10",
     "@tailwindcss/vite": "^4.1.11",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",

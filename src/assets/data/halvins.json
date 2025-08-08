@@ -1,0 +1,172 @@
+[
+  {
+    "numero": 1,
+    "Year": 2008,
+    "Rewards": 50
+  },
+  {
+    "numero": 2,
+    "Year": 2012,
+    "Rewards": 25
+  },
+  {
+    "numero": 3,
+    "Year": 2016,
+    "Rewards": 12.5
+  },
+  {
+    "numero": 4,
+    "Year": 2020,
+    "Rewards": 6.25
+  },
+  {
+    "numero": 5,
+    "Year": 2024,
+    "Rewards": 3.125
+  },
+  {
+    "numero": 6,
+    "Year": 2028,
+    "Rewards": 1.5625
+  },
+  {
+    "numero": 7,
+    "Year": 2032,
+    "Rewards": 0.78125
+  },
+  {
+    "numero": 8,
+    "Year": 2036,
+    "Rewards": 0.390625
+  },
+  {
+    "numero": 9,
+    "Year": 2040,
+    "Rewards": 0.1953125
+  },
+  {
+    "numero": 10,
+    "Year": 2044,
+    "Rewards": 0.09765625
+  },
+  {
+    "numero": 11,
+    "Year": 2048,
+    "Rewards": 0.048828125
+  },
+  {
+    "numero": 12,
+    "Year": 2052,
+    "Rewards": 0.0244140625
+  },
+  {
+    "numero": 13,
+    "Year": 2056,
+    "Rewards": 0.01220703125
+  },
+  {
+    "numero": 14,
+    "Year": 2060,
+    "Rewards": 0.006103515625
+  },
+  {
+    "numero": 15,
+    "Year": 2064,
+    "Rewards": 0.0030517578125
+  },
+  {
+    "numero": 16,
+    "Year": 2068,
+    "Rewards": 0.00152587890625
+  },
+  {
+    "numero": 17,
+    "Year": 2072,
+    "Rewards": 0.000762939453125
+  },
+  {
+    "numero": 18,
+    "Year": 2076,
+    "Rewards": 0.0003814697265625
+  },
+  {
+    "numero": 19,
+    "Year": 2080,
+    "Rewards": 0.00019073486328125
+  },
+  {
+    "numero": 20,
+    "Year": 2084,
+    "Rewards": 9.5367431640625e-5
+  },
+  {
+    "numero": 21,
+    "Year": 2088,
+    "Rewards": 4.76837158203125e-5
+  },
+  {
+    "numero": 22,
+    "Year": 2092,
+    "Rewards": 2.384185791015625e-5
+  },
+  {
+    "numero": 23,
+    "Year": 2096,
+    "Rewards": 1.1920928955078125e-5
+  },
+  {
+    "numero": 24,
+    "Year": 2100,
+    "Rewards": 5.9604644775390625e-6
+  },
+  {
+    "numero": 25,
+    "Year": 2104,
+    "Rewards": 2.9802322387695312e-6
+  },
+  {
+    "numero": 26,
+    "Year": 2108,
+    "Rewards": 1.4901161193847656e-6
+  },
+  {
+    "numero": 27,
+    "Year": 2112,
+    "Rewards": 7.450580596923828e-7
+  },
+  {
+    "numero": 28,
+    "Year": 2116,
+    "Rewards": 3.725290298461914e-7
+  },
+  {
+    "numero": 29,
+    "Year": 2120,
+    "Rewards": 1.862645149230957e-7
+  },
+  {
+    "numero": 30,
+    "Year": 2124,
+    "Rewards": 9.313225746154785e-8
+  },
+  {
+    "numero": 31,
+    "Year": 2128,
+    "Rewards": 4.6566128730773926e-8
+  },
+  {
+    "numero": 32,
+    "Year": 2132,
+    "Rewards": 2.3283064365386963e-8
+  },
+  {
+    "numero": 33,
+    "Year": 2136,
+    "Rewards": 1.1641532182693481e-8
+  },
+  {
+    "numero": 34,
+    "Year": 2140,
+    "Rewards": 5.820766091346741e-9
+  }
+]

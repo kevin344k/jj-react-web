@@ -17,7 +17,7 @@ export default function Section_Libro_jj() {
       {/* Contenido */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-4  mx-auto">
                 {/* Imagen del libro */}
-        <div className="relative">
+        <div className="relative shrink-0">
           <img src={libroImg} alt="Libro JJ" className="w-64 rounded-lg shadow-lg" />
           <img
             className="absolute top-0 right-0 w-20 transform translate-x-8 -translate-y-8"
@@ -26,7 +26,7 @@ export default function Section_Libro_jj() {
           />
         </div>
         {/* Botones */}
-        <div className="flex flex-col items-center w-full p-8">
+        <div className="flex flex-col items-center w-full p-8 md:max-w-[350px]">
 
           <div className="flex flex-col w-full gap-4">
             {/* Botón WhatsApp */}
