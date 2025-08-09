@@ -24,51 +24,52 @@ const mentorshipItems = [
   "Manejo de Wallets Geográficas",
   "Actualización constante de contenido",
 ];
+const baseURL = import.meta.env.BASE_URL;
 
 const socialLinks = [
   {
     href: "https://link.ugly.cash/referral/balder",
-    img: "/imagenes/icon-color/uglycash.webp",
+    img: `${baseURL}imagenes/icon-color/uglycash.webp`,
     label: "UGLYCASH",
   },
   {
     href: "https://tradingdifferent.com/?ref=YELgWNnX",
-    img: "/imagenes/icon-color/download.png",
+    img: `${baseURL}imagenes/icon-color/download.png`,
     label: "Trading Different",
   },
   {
     href: "https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM",
-    img: "/imagenes/icon-color/whatsap.svg",
+    img: `${baseURL}imagenes/icon-color/whatsap.svg`,
     label: "WhatsApp",
   },
   {
     href: "https://www.whatsapp.com/channel/0029Vah3B5n60eBiIBrX8J1Z",
-    img: "/imagenes/icon-color/whatsap.svg",
+    img: `${baseURL}imagenes/icon-color/whatsap.svg`,
     label: "Canal de WhatsApp",
   },
   {
     href: "https://t.me/jjchagerben357",
-    img: "/imagenes/icon-color/telegram.svg",
+    img: `${baseURL}imagenes/icon-color/telegram.svg`,
     label: "Telegram",
   },
   {
     href: "https://www.instagram.com/jjchagerben33/",
-    img: "/imagenes/icon-color/instagram.svg",
+    img: `${baseURL}imagenes/icon-color/instagram.svg`,
     label: "Instagram",
   },
   {
     href: "https://www.facebook.com/people/JJChagerben/61557765639522/?mibextid=ZbWKwL",
-    img: "/imagenes/icon-color/facebook.svg",
+    img: `${baseURL}imagenes/icon-color/facebook.svg`,
     label: "Facebook",
   },
   {
     href: "https://x.com/JJChagerben357",
-    img: "/imagenes/icon-color/twitter_X.svg",
+    img: `${baseURL}imagenes/icon-color/twitter_X.svg`,
     label: "X",
   },
   {
     href: "https://www.bitmex.com/app/register/A7p8Lt",
-    img: "/imagenes/icon-color/bitmex.svg",
+    img: `${baseURL}imagenes/icon-color/bitmex.svg`,
     label: "Bitmex",
   },
 ];
@@ -76,15 +77,16 @@ const socialLinks = [
 const liveLinks = [
   {
     href: "https://www.twitch.tv/jjchagerben",
-    img: "/imagenes/icon-color/twitch.svg",
+    img: `${baseURL}imagenes/icon-color/twitch.svg`,
     alt: "Twitch",
   },
   {
     href: "https://www.youtube.com/@jjchagerben",
-    img: "/imagenes/icon-color/youtube.svg",
+    img: `${baseURL}imagenes/icon-color/youtube.svg`,
     alt: "YouTube",
   },
 ];
+
 
 export default function SectionMentoria() {
   return (

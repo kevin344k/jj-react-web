@@ -1,19 +1,22 @@
 import React, { useState, useRef, useEffect } from "react";
 
+const baseURL = import.meta.env.BASE_URL;
+
 const images = [
-  "/imagenes/testimonios/img1.jpeg",
-  "/imagenes/testimonios/img2.jpeg",
-  "/imagenes/testimonios/img3.jpeg",
-  "/imagenes/testimonios/img4.jpeg",
-  "/imagenes/testimonios/img5.jpeg",
-  "/imagenes/testimonios/img6.jpeg",
-  "/imagenes/testimonios/img7.jpeg",
-  "/imagenes/testimonios/img8.jpeg",
-  "/imagenes/testimonios/img9.jpeg",
-  "/imagenes/testimonios/img10.jpeg",
-  "/imagenes/testimonios/img11.jpeg",
-  "/imagenes/testimonios/img12.jpeg",
+  `${baseURL}imagenes/testimonios/img1.jpeg`,
+  `${baseURL}imagenes/testimonios/img2.jpeg`,
+  `${baseURL}imagenes/testimonios/img3.jpeg`,
+  `${baseURL}imagenes/testimonios/img4.jpeg`,
+  `${baseURL}imagenes/testimonios/img5.jpeg`,
+  `${baseURL}imagenes/testimonios/img6.jpeg`,
+  `${baseURL}imagenes/testimonios/img7.jpeg`,
+  `${baseURL}imagenes/testimonios/img8.jpeg`,
+  `${baseURL}imagenes/testimonios/img9.jpeg`,
+  `${baseURL}imagenes/testimonios/img10.jpeg`,
+  `${baseURL}imagenes/testimonios/img11.jpeg`,
+  `${baseURL}imagenes/testimonios/img12.jpeg`,
 ];
+
 
 export default function TestimonialSlider() {
   const scrollContainerRef = useRef(null);
