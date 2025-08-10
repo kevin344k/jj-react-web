@@ -57,27 +57,27 @@ export default function Navbar() {
 
         <ul className="menu-options flex flex-col mt-8 px-4 gap-8 text-center">
           <li>
-            <a className="boton-nav hover:underline" href="#sec-announce-book">
+            <a onClick={() => setIsMenuOpen(false)} className="boton-nav hover:underline" href="#sec-announce-book">
               Mi libro
             </a>
           </li>
           <li>
-            <a className="boton-nav hover:underline" href="#section-mentoria">
+            <a onClick={() => setIsMenuOpen(false)} className="boton-nav hover:underline" href="#section-mentoria">
               Qué enseño?
             </a>
           </li>
           <li>
-            <a className="boton-nav hover:underline" href="#sec-calculadora-jub">
+            <a onClick={() => setIsMenuOpen(false)} className="boton-nav hover:underline" href="#sec-calculadora-jub">
               Calculadora
             </a>
           </li>
           <li>
-            <a className="boton-nav hover:underline" href="#sect-testimonial">
+            <a  onClick={() => setIsMenuOpen(false)} className="boton-nav hover:underline" href="#sect-testimonial">
               Testimonios
             </a>
           </li>
           <li className="mt-12 ">
-            <a
+            <a 
               className="boton-mentoria bg-fm-turquesa text-black px-3 py-2 rounded hover:bg-fm-turquesa"
               href="https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
             >
