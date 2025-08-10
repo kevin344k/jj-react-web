@@ -3,8 +3,8 @@ import React from "react";
 export default function Footer() {
   return (
     <footer className="bg-[#182025] pb-4 text-center border-t ">
-<div className="py-15 px-4 lg:flex lg:items-center lg:justify-between lg:gap-8 xl:max-w-[1200px] xl:mx-auto">
-        <ul className="flex flex-col items-center justify-center md:flex-col md:justify-center gap-4 mb-6 text-sm ">
+<div className="py-15 px-4 lg:flex lg:items-center lg:justify-center  lg:gap-8 xl:max-w-[1200px] xl:mx-auto">
+        <ul className="flex flex-col items-center justify-center md:flex-col md:justify-center gap-4 mb-6 text-sm lg:items-start">
         <li>
           <a
             href="https://mempool.space/es/"

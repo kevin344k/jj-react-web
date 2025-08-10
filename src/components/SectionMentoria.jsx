@@ -1,29 +1,6 @@
 import React from "react";
 
-const mentorshipItems = [
-  "No caer en estafas",
-  "Crear wallets",
-  "Guardar bien las llaves privadas",
-  "Uso de Hardware wallet y Software wallet",
-  "Crear intercambios",
-  "Comprar Bitcoin",
-  "Comprar y Transferir Bitcoin de la forma más económica",
-  "Recuperación de saldos",
-  "La mejor forma de invertir",
-  "Protocolo Martha Julia",
-  "Grupo de WhatsApp",
-  "Canal de difusión exclusivo para alumnos",
-  "Libros",
-  "Crear portafolio",
-  "Revisar empresas y proyectos",
-  "Soporte 24/7",
-  "Launchpool (dinero gratis)",
-  "Airdrops (dinero gratis)",
-  "Crear nodo (Theta Network)",
-  "Manejo de Wallets frías",
-  "Manejo de Wallets Geográficas",
-  "Actualización constante de contenido",
-];
+
 const baseURL = import.meta.env.BASE_URL;
 
 const socialLinks = [
@@ -96,21 +73,15 @@ export default function SectionMentoria() {
 
       <div className="div-mentoria max-w-5xl mx-auto px-4 py-10 pb-0">
         <div className="text-center mb-8">
-        <p className="text-3xl font-bold text-fm-turquesa">Mentoria Premium</p>
+        <p className="text-3xl font-bold text-fm-turquesa">Redes Sociales</p>
         <div className="w-24 h-1 bg-white mx-auto mt-3"></div>
       </div>
 
-        <ul className="mentoria-items grid grid-cols-1 sm:grid-cols-2 gap-2 list-none text-lg lg:max-w-[800px] lg:mx-auto">
-          {mentorshipItems.map((item, i) => (
-            <li key={i} className="flex items-center text-white gap-2">
-              <span className="">🔥</span> {item}
-            </li>
-          ))}
-        </ul>
+
       </div>
 
       <div className="div-mis-redes max-w-5xl mx-auto px-4 py-10">
-        <div className="linea border-t border-gray-300 my-8"></div>
+    
 
         <ul className=" grid grid-cols-1 justify-center md:grid-cols-2 md:items-center  w-full m-auto md: gap-6 lg:max-w-[800px]">
           {socialLinks.map(({ href, img, label }, i) => (

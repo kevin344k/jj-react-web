@@ -82,6 +82,8 @@ export default function Section_calcualdora() {
     if (priceBTC) {
       const num = parseFloat(valSinComas);
       if (!isNaN(num)) {
+        console.log(num);
+
         setInputBTC((num / priceBTC).toFixed(8));
         findHalvin(num);
       } else {
@@ -179,22 +181,32 @@ export default function Section_calcualdora() {
       const resultEquivBTC = num / priceBTC;
       const halving = halvins.find((h) => h.Rewards <= resultEquivBTC);
       setHalvingEncontrado(halving || null);
-
-      if (halving) {
-        const RI = halvin_now.recompensaBloqueNow;
-        const CP = halvin_now.costoProducciónBTC;
-        const NHBase = halvin_now.halvin_now_numero;
-        const PBTC =
-          (RI * CP * Math.pow(2, halving.numero - NHBase)) / halving.Rewards;
-        const inversion =
-          PBTC * (inputBTC ? parseFloat(inputBTC.replace(/,/g, "")) : 0);
-        setResult(inversion);
-      }
     } else {
       setHalvingEncontrado(null);
       setResult("");
     }
   };
+  console.log(result);
+
+  useEffect(() => {
+    if (halvingEncontrado !== null) {
+      const RI = halvin_now.recompensaBloqueNow;
+      const CP = halvin_now.costoProducciónBTC;
+      const NHBase = halvin_now.halvin_now_numero;
+      const PBTC =
+        (RI * CP * Math.pow(2, halvingEncontrado.numero - NHBase)) /
+        halvingEncontrado.Rewards;
+      const valorLimpio = parseFloat(inputDollar.replace(/,/g, ""));
+      const inversion =
+        PBTC * ((isNaN(valorLimpio) ? 0 : valorLimpio) / priceBTC);
+
+      console.log(inputDollar, inputBTC);
+
+      setResult(inversion);
+    } else{
+      setResult("")
+    }
+  }, [inputDollar, inputBTC]);
 
   return (
     <>
@@ -212,8 +224,8 @@ export default function Section_calcualdora() {
         {/* Anuncio */}
         <div className="bg-[#effefa] border border-[#22dfc1] rounded-2xl text-center p-4 leading-6 max-w-[425px] shadow-md my-8">
           <p>
-            Estos valores son especulativos de forma estática sobre un modelo
-            estático, pueden cambiar si cambian las condiciones de mercado.
+            *Estos valores son especulativos sobre un modelo estático y pueden
+            cambiar si las condiciones de mercado varían.
           </p>
         </div>
 
@@ -327,7 +339,7 @@ export default function Section_calcualdora() {
                 >
                   {halvin_now.halvin_now_numero}
                 </span>
-                <p className="font-bold pb-2">Año</p>
+                <p className="font-bold pb-2">Año de halvin</p>
                 <span
                   id="span-halvin-now-anio"
                   className="flex justify-center pb-2 text-gray-500"

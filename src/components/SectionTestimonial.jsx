@@ -60,7 +60,7 @@ export default function TestimonialSlider() {
   const progressPercent = ((currentIndex + 1) / images.length) * 100;
 
   return (
-    <section id="sect-testimonial" className="py-12 bg-gray-50 relative">
+    <section id="sect-testimonial" className="py-12 bg-gray-50 relative xl:py-30">
       <div className="text-center mb-8">
         <p className="text-3xl font-bold">Testimonios</p>
         <div className="w-24 h-1 bg-[#22dfc1] mx-auto mt-3"></div>

@@ -1,12 +1,36 @@
 import React from "react";
 import video from "../assets/Video/hero_video.mp4";
-import FlipClock from "./FlipClock"; 
+import FlipClock from "./FlipClock";
 export default function Hero() {
+  const mentorshipItems = [
+    "Reconocer y no caer en estafas",
+    "Guardar correctamente las llaves privadas",
+    "Manejo de wallets frías",
+    "Uso de hardware wallet y software wallet",
+    "Crear wallets",
+    "Comprar Bitcoin",
+    "Comprar y transferir Bitcoin de la forma más económica",
+    "Recuperación de saldos de wallets",
+    "Manejo de wallets geográficas",
+    "Revisar empresas y proyectos cripto",
+    "La mejor forma de invertir",
+    "Crear portafolio",
+    "Airdrops (dinero gratis)",
+    "Launchpool (dinero gratis)",
+    "Crear intercambios",
+    "Crear nodo (Theta Network)",
+    "Protocolo Martha Julia",
+    "Soporte 24/7",
+    "Actualización constante de contenido",
+    "Grupo de WhatsApp",
+    "Canal de difusión exclusivo para alumnos",
+    "Libros",
+  ];
   return (
-    <div className="relative h-[60vh] flex flex-col items-center gap-12 justify-center">
-      <div className=" text-center flex flex-col items-center gap-12 justify-center">
-       <FlipClock></FlipClock>
-        <p className="text-4xl font-bold p-3 text-white">
+    <div className="relative h-fit flex flex-col items-center gap-4 justify-center py-12">
+      <div className=" text-center flex flex-col items-center justify-center">
+        <FlipClock></FlipClock>
+        <p className="text-4xl font-bold p-3 py-5 text-white">
           BITCOIN ES SACARSE LA LOTERIA EN CAMARA LENTA
         </p>
         <a
@@ -15,9 +39,20 @@ export default function Hero() {
         >
           Mentoria Premium
         </a>
+         <p className="text-sm font-bold text-white mt-4 underline"> aprende a</p>
+      </div>
+      <div>
+       
+        <ul className=" grid grid-cols-2 sm:grid-cols-2 px-1 sm:px-3 gap-2 list-none text-lg lg:max-w-[800px] lg:mx-auto">
+          {mentorshipItems.map((item, i) => (
+            <li key={i} className="flex items-center text-white gap-2 text-xs sm:text-[14px] md:text-[16px] lg:text-xl">
+              <span className="">🔥</span> {item}
+            </li>
+          ))}
+        </ul>
       </div>
       <video
-        className="absolute -z-1 inset-0 object-cover w-full h-full"
+        className="absolute -z-1 inset-0 object-cover w-full h-full brightness-[0.7]"
         autoPlay
         muted
         loop

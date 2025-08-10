@@ -65,7 +65,7 @@ export default function AsideCalcEquiv({
   }
 
   return (
-    <div id="aside-calc-jub" className="flex bg-white flex-col p-2 gap-1 w-full shadow-lg rounded-md">
+    <div id="aside-calc-jub" className="flex bg-white xl:h-full flex-col p-2 gap-1 w-full shadow-lg rounded-md">
          <p className="font-bold mb-2 text-center py-4 text-xl">Equivalencia en cada halvin</p>
           <div className="header-aside w-full flex items-center justify-between font-semibold border-b pb-2 mb-2 md:px-3">
             <p>Año</p>
