@@ -34,7 +34,7 @@ export default function Section_Libro_jj() {
               href="https://wa.me/593996737500?text=Hola%2C%20quiero%20comprar%20tu%20libro%20%22Invierte%20en%20Bitcoin%20o%20esclavitud%22."
               className="flex items-center justify-center gap-2 bg-white text-fm-turquesa_very_strong font-bold px-5 py-4 rounded-lg shadow transition w-full"
             >
-              <span>Comprar</span>
+              <span>Comprar en Ecuador</span>
               <img src={wasapIcon} alt="WhatsApp" className="w-7" />
             </a>
 
