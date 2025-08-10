@@ -3,9 +3,10 @@ import react from '@vitejs/plugin-react'
 import tailwindcss from '@tailwindcss/vite'
 
 // https://vite.dev/config/
+// base: '/jj-react-web/',
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/jj-react-web/',
+  base: '/',
   optimizeDeps: {
     include: ['@leenguyen/react-flip-clock-countdown'],
   },

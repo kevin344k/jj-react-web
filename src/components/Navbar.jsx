@@ -22,6 +22,18 @@ export default function Navbar() {
   }, []);
 
 
+useEffect(() => {
+  if (isMenuOpen) {
+    document.body.style.overflow = 'hidden';  // Bloquea scroll
+  } else {
+    document.body.style.overflow = 'auto';    // Permite scroll
+  }
+
+  // Opcional: limpiar al desmontar
+  return () => {
+    document.body.style.overflow = 'auto';
+  };
+}, [isMenuOpen]);
 
 
 
@@ -63,7 +75,7 @@ export default function Navbar() {
           </li>
           <li>
             <a onClick={() => setIsMenuOpen(false)} className="boton-nav hover:underline" href="#section-mentoria">
-              Qué enseño?
+              Redes
             </a>
           </li>
           <li>

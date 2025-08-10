@@ -90,7 +90,7 @@ export default function SectionMentoria() {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" flex  text-center justify-center items-center gap-2 bg-white border border-neutral-200 px-3 py-3  rounded hover:bg-fm-turquesa_strong active:bg-fm-turquesa_strong active:text-neutral-900 active:scale-95 trasition-all ease-in-out duration-100 "
+                className=" flex  text-center justify-center items-center gap-2 bg-white px-3 py-3  rounded hover:bg-fm-turquesa_strong active:bg-fm-turquesa_strong active:text-neutral-900 active:scale-95 trasition-all ease-in-out duration-100 "
               >
                 <img src={img} alt={label} className="w-6 h-6 object-contain" />
                 <span className="font-medium">{label}</span>

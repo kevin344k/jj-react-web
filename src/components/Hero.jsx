@@ -39,7 +39,7 @@ export default function Hero() {
         >
           Mentoria Premium
         </a>
-         <p className="text-sm font-bold text-white mt-4 underline"> aprende a</p>
+         <p className="text-sm font-bold text-white mt-4 underline"> Aprende a</p>
       </div>
       <div>
        

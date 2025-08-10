@@ -26,7 +26,7 @@ export default function Section_Libro_jj() {
           />
         </div>
         {/* Botones */}
-        <div className="flex flex-col items-center w-full p-8 md:max-w-[350px]">
+        <div className="flex flex-col items-center w-full p-8 sm:max-w-[350px]  md:max-w-[350px]">
 
           <div className="flex flex-col w-full gap-4">
             {/* Botón WhatsApp */}
