@@ -47,7 +47,7 @@ useEffect(() => {
           JJChagerben
         </p></div>
         <a
-          href="https://wa.me/593982631730?text=*Hola%20👋,*%0A_necesito%20más%20información_%20sobre%20el%20seminario%20*“Mi%20Primer%20Bitcoin”*%20en%20*Manta*%20"
+          href="https://wa.me/593998177135?text=*Hola%20👋,*%0A_necesito%20más%20información_%20sobre%20el%20seminario%20*“Mi%20Primer%20Bitcoin”*%20en%20*Manta*%20"
           className={ ` bg-fm-turquesa text-neutral-900 font-bold text-center  w-[150px] md:w-full md:p-2  py-1 shadow-lg active:scale-95 text-sm rounded-md  hover:bg-fm-turquesa transition ${shake ? "shake" : ""}`} 
         >
           Seminario: Mi primer ₿itcoin, Manta

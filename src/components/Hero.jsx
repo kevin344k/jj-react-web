@@ -3,7 +3,7 @@ import video from "../assets/Video/hero_video.mp4";
 import FlipClock from "./FlipClock";
 export default function Hero() {
   const mentorshipItems = [
-    "Reconocer y no caer en estafas",
+    "No caer en estafas",
     "Guardar correctamente las llaves privadas",
     "Manejo de wallets frías",
     "Uso de hardware wallet y software wallet",
@@ -34,18 +34,18 @@ export default function Hero() {
           BITCOIN ES SACARSE LA LOTERIA EN CAMARA LENTA
         </p>
         <a
-          className=" bg-fm-turquesa text-neutral-900 px-8 py-3 font-bold rounded-full hover:bg-fm-turquesa"
+          className=" bg-fm-turquesa text-neutral-900 px-12 py-4 text-lg md:text-xl font-bold rounded-full hover:bg-fm-turquesa"
           href="https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
         >
           Mentoria Premium
         </a>
-         <p className="text-sm font-bold text-white mt-4 underline"> Aprende a</p>
+        
       </div>
       <div>
        
         <ul className=" grid grid-cols-2 sm:grid-cols-2 px-1 sm:px-3 gap-2 list-none text-lg lg:max-w-[800px] lg:mx-auto">
           {mentorshipItems.map((item, i) => (
-            <li key={i} className="flex items-center text-white gap-2 text-xs sm:text-[14px] md:text-[16px] lg:text-xl">
+            <li key={i} className="flex items-center text-white gap-2 font-bold text-xs sm:text-[14px] md:text-[16px] lg:text-xl">
               <span className="">🔥</span> {item}
             </li>
           ))}
