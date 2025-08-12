@@ -45,14 +45,14 @@ export default function Hero() {
        
         <ul className=" grid grid-cols-2 sm:grid-cols-2 px-1 sm:px-3 gap-2 list-none text-lg lg:max-w-[800px] lg:mx-auto">
           {mentorshipItems.map((item, i) => (
-            <li key={i} className="flex items-center text-white gap-2 font-bold text-xs sm:text-[14px] md:text-[16px] lg:text-xl">
+            <li key={i} className="flex items-center text-white text-border gap-2 font-bold text-xs sm:text-[14px] md:text-[16px] lg:text-xl">
               <span className="">🔥</span> {item}
             </li>
           ))}
         </ul>
       </div>
       <video
-        className="absolute -z-1 inset-0 object-cover w-full h-full brightness-[0.7]"
+        className="absolute -z-1 inset-0 object-cover w-full h-full brightness-[0.8]"
         autoPlay
         muted
         loop
