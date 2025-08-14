@@ -34,7 +34,7 @@ export default function Hero() {
           BITCOIN ES SACARSE LA LOTERIA EN CAMARA LENTA
         </p>
         <a
-          className=" bg-fm-turquesa text-neutral-900 px-12 py-4 text-lg md:text-xl font-bold rounded-full hover:bg-fm-turquesa"
+          className=" bg-fm-turquesa text-neutral-900 px-12 py-4 text-lg md:text-xl font-bold rounded-full hover:bg-fm-turquesa xl:text-3xl"
           href="https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
         >
           Mentoria Premium
