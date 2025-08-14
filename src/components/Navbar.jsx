@@ -51,7 +51,8 @@ export default function Navbar() {
           </div>
           <div className="flex gap-3">
             <a
-              href="https://wa.me/593998177135?text=*Hola%20👋,*%0A_necesito%20más%20información_%20sobre%20el%20seminario%20*“Mi%20Primer%20Bitcoin”*%20en%20*Manta*%20"
+              href="https://wa.me/593998177135?text=Hola,%20estoy%20interesado%20en%20el%20seminario%20Manta"
+
               className={` bg-fm-turquesa text-neutral-900 font-bold text-center  min-w-[100px] md:w-full md:p-2 lg:w-[200px] py-1 shadow-lg active:scale-95 text-sm rounded-md  hover:bg-fm-turquesa transition ${
                 shake ? "shake" : ""
               }`}
@@ -60,7 +61,8 @@ export default function Navbar() {
               Seminario: Mi primer ₿itcoin, Manta
             </a>
             <a
-              href="https://wa.me/593998177135?text=*Hola%20👋,*%0A_necesito%20más%20información_%20sobre%20el%20seminario%20*“Mi%20Primer%20Bitcoin”*%20en%20*Guayaquil*%20"
+              href=    "https://wa.me/593998177135?text=Hola,%20estoy%20interesado%20en%20el%20seminario%20Guayaquil"
+
               className={` bg-fm-turquesa text-neutral-900 font-bold text-center  min-w-[100px] md:w-full md:p-2 lg:w-[200px]  py-1 shadow-lg active:scale-95 text-sm rounded-md  hover:bg-fm-turquesa transition ${
                 shake ? "shake" : ""
               }`}
