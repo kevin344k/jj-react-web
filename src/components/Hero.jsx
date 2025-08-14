@@ -27,10 +27,10 @@ export default function Hero() {
     "Libros",
   ];
   return (
-    <div className="relative h-fit flex flex-col items-center gap-4 justify-center py-12">
-      <div className=" text-center flex flex-col items-center justify-center">
+    <div className="relative h-fit flex flex-col items-center gap-4 justify-center py-12 xl:py-10">
+      <div className=" text-center flex flex-col items-center justify-center xl:max-w-[1250px] xl:py-12">
         <FlipClock></FlipClock>
-        <p className="text-4xl font-bold p-3 py-5 text-white">
+        <p className="text-4xl font-bold p-3 py-5 text-white lg:text-6xl lg:py-12">
           BITCOIN ES SACARSE LA LOTERIA EN CAMARA LENTA
         </p>
         <a
