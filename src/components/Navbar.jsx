@@ -1,11 +1,12 @@
 import React, { useState, useEffect } from "react";
 import jjface from "/imagenes/jjcara.webp";
 import crossClose from "/imagenes/cross-close.svg";
+import wasap from "/imagenes/icon-color/whatsap.svg";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [shake, setShake] = useState(false);
-
+  const [isOpen, setIsOpen] = useState(false);
   useEffect(() => {
     // Activa el shake cada 5 segundos
     const interval = setInterval(() => {
@@ -51,9 +52,9 @@ export default function Navbar() {
           </div>
           <div className="flex gap-3">
             <a
-              href="https://wa.me/593998177135?text=Hola,%20estoy%20interesado%20en%20el%20seminario%20Manta"
-
-              className={` bg-fm-turquesa text-neutral-900 font-bold text-center  min-w-[100px] md:w-full md:p-2 lg:w-[200px] py-1 shadow-lg active:scale-95 text-sm rounded-md  hover:bg-fm-turquesa transition ${
+              
+        onClick={() => setIsOpen(true)}
+              className={` bg-fm-turquesa text-neutral-900 hover:cursor-pointer font-bold text-center  min-w-[100px] md:w-full md:p-2 lg:w-[200px] py-1 shadow-lg active:scale-95 text-sm rounded-md  hover:bg-fm-turquesa transition ${
                 shake ? "shake" : ""
               }`}
             >
@@ -176,6 +177,36 @@ export default function Navbar() {
           </li>
         </ul>
       </div>
+       {/* Overlay + Modal */}
+      {isOpen && (
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
+          onClick={() => setIsOpen(false)}
+        >
+          {/* Contenedor del modal */}
+          <div
+            className="bg-white rounded-2xl shadow-lg p-6 w-96 animate-fadeIn"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <h2 className="text-xl font-bold mb-4">
+              Hoaraios Disponibles
+            </h2>
+
+<div>
+
+<div className="flex gap-2 items-center border-b border-neutral-400 pb-5"><p>14:00 PM </p><span className="text-green-500">Disponible</span><a className="flex justify-center items-center gap-3 w-fit rounded-md shadow-lg px-3 py-2 bg-fm-turquesa" href="">Reservar <img className="w-5 h-5" src={wasap} alt="" /></a></div>
+</div>
+<div className="pt-5 border-b border-neutral-400 pb-5">10:00 PM <span className="text-red-500">Agotado</span> </div> 
+
+            <button
+              onClick={() => setIsOpen(false)}
+              className="mt-6 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 w-full"
+            >
+              Cerrar
+            </button>
+          </div>
+        </div>
+      )}
     </nav>
   );
 }
