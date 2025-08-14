@@ -201,7 +201,7 @@ export default function Navbar() {
                 <span className="text-green-500">Disponible</span>
                 <a
                   className="flex justify-center items-center gap-3 w-fit rounded-md shadow-lg px-3 py-2 bg-fm-turquesa"
-                  href=""
+                   href="https://wa.me/593998177135?text=Hola,%20estoy%20interesado%20en%20el%20seminario%Manta%02:00%PM"
                 >
                   Reservar <img className="w-5 h-5" src={wasap} alt="" />
                 </a>
