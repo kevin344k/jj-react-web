@@ -36,10 +36,10 @@ export default function Navbar() {
 
   return (
     <nav id="navBar" className=" bg-[#182025] ">
-      <div className="flex items-center justify-between p-2 gap-3 md:px-4 xl:max-w-[1250px] lg:mx-auto">
+      <div className="flex items-center justify-between p-2 gap-3 md:px-4 xl:max-w-[1250px] lg:px-2 lg:mx-auto">
         {/* Logo */}
         <div className="logo flex items-center gap-3">
-          <div className="flex items-center justify-center md:px-6">
+          <div className="flex items-center justify-center md:px-6 lg:px-2">
             {" "}
             <img
               className="jjface w-12 rounded-full shadow-lg h-12 shrink-0"
@@ -53,7 +53,7 @@ export default function Navbar() {
           <div className="flex gap-3">
             <a
               onClick={() => setIsOpen(true)}
-              className={` bg-fm-turquesa text-neutral-900 hover:cursor-pointer font-bold text-center  min-w-[100px] md:w-full md:p-2 lg:w-[200px] py-1 shadow-lg active:scale-95 text-sm rounded-md  hover:bg-fm-turquesa transition ${
+              className={` bg-fm-turquesa text-neutral-900 hover:cursor-pointer font-bold text-center  min-w-[100px] md:w-[200px] md:p-2 lg:w-[200px] py-1 shadow-lg active:scale-95 text-xs md:text-sm rounded-md  hover:bg-fm-turquesa transition ${
                 shake ? "shake" : ""
               }`}
             >
@@ -62,7 +62,7 @@ export default function Navbar() {
             <a
              href="https://wa.me/593998177135?text=Estoy%20interesado%20en%20el%20Seminario%20Mi%20primer%20Bitcoin%20Guayaquil"
 
-              className={` bg-fm-turquesa text-neutral-900 font-bold text-center  min-w-[100px] md:w-full md:p-2 lg:w-[200px]  py-1 shadow-lg active:scale-95 text-sm rounded-md  hover:bg-fm-turquesa transition ${
+              className={` bg-fm-turquesa text-neutral-900 font-bold text-center  min-w-[100px] md:w-[200px] md:p-2 lg:w-[200px]  py-1 shadow-lg active:scale-95 text-xs md:text-sm rounded-md  hover:bg-fm-turquesa transition ${
                 shake ? "shake" : ""
               }`}
             >
