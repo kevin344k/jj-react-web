@@ -52,7 +52,7 @@ export default function Hero() {
         </ul>
       </div>
       <video
-        className="absolute -z-1 inset-0 object-cover w-full h-full brightness-[0.8]"
+        className="absolute -z-1 inset-0 object-cover w-full h-full brightness-[0.5]"
         autoPlay
         muted
         loop
