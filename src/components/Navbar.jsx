@@ -37,7 +37,7 @@ export default function Navbar() {
     <nav id="navBar" className=" bg-[#182025] ">
       <div className="flex items-center justify-between p-2 gap-3 md:px-4 xl:max-w-[1250px] lg:mx-auto">
         {/* Logo */}
-        <div className="logo flex items-center gap-5">
+        <div className="logo flex items-center gap-3">
           <div className="flex items-center justify-center md:px-6">
             {" "}
             <img
@@ -52,7 +52,7 @@ export default function Navbar() {
           <div className="flex gap-3">
             <a
               href="https://wa.me/593998177135?text=*Hola%20👋,*%0A_necesito%20más%20información_%20sobre%20el%20seminario%20*“Mi%20Primer%20Bitcoin”*%20en%20*Manta*%20"
-              className={` bg-fm-turquesa text-neutral-900 font-bold text-center  min-w-[100px] md:w-full md:p-2  py-1 shadow-lg active:scale-95 text-sm rounded-md  hover:bg-fm-turquesa transition ${
+              className={` bg-fm-turquesa text-neutral-900 font-bold text-center  min-w-[100px] md:w-full md:p-2 lg:w-[200px] py-1 shadow-lg active:scale-95 text-sm rounded-md  hover:bg-fm-turquesa transition ${
                 shake ? "shake" : ""
               }`}
             >
@@ -61,7 +61,7 @@ export default function Navbar() {
             </a>
             <a
               href="https://wa.me/593998177135?text=*Hola%20👋,*%0A_necesito%20más%20información_%20sobre%20el%20seminario%20*“Mi%20Primer%20Bitcoin”*%20en%20*Guayaquil*%20"
-              className={` bg-fm-turquesa text-neutral-900 font-bold text-center  min-w-[100px] md:w-full md:p-2  py-1 shadow-lg active:scale-95 text-sm rounded-md  hover:bg-fm-turquesa transition ${
+              className={` bg-fm-turquesa text-neutral-900 font-bold text-center  min-w-[100px] md:w-full md:p-2 lg:w-[200px]  py-1 shadow-lg active:scale-95 text-sm rounded-md  hover:bg-fm-turquesa transition ${
                 shake ? "shake" : ""
               }`}
             >
