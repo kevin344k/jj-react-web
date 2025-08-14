@@ -60,7 +60,8 @@ export default function Navbar() {
               Seminario: Mi primer ₿itcoin, Manta
             </a>
             <a
-              href="https://wa.me/593998177135?text=Hola,%20estoy%20interesado%20en%20el%20seminario%20Guayaquil"
+             href="https://wa.me/593998177135?text=Estoy%20interesado%20en%20el%20Seminario%20Mi%20primer%20Bitcoin%20Guayaquil"
+
               className={` bg-fm-turquesa text-neutral-900 font-bold text-center  min-w-[100px] md:w-full md:p-2 lg:w-[200px]  py-1 shadow-lg active:scale-95 text-sm rounded-md  hover:bg-fm-turquesa transition ${
                 shake ? "shake" : ""
               }`}
@@ -201,8 +202,8 @@ export default function Navbar() {
                 <span className="text-green-500">Disponible</span>
                 <a
                   className="flex justify-center items-center gap-3 w-fit rounded-md shadow-lg px-3 py-2 bg-fm-turquesa"
-                   href="https://wa.me/593998177135?text=Hola,%20estoy%20interesado%20en%20el%20seminario%20Manta%20a%20las%2002:00%20PM
-"
+href="https://wa.me/593998177135?text=Estoy%20interesado%20en%20el%20Seminario%20Mi%20primer%20Bitcoin%20Manta%20a%20las%2002:00%20PM"
+
                 >
                   Reservar <img className="w-5 h-5" src={wasap} alt="" />
                 </a>
