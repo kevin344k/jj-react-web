@@ -51,17 +51,17 @@ export default function Navbar() {
             </p>
           </div>
           <div className="flex gap-3 xl:gap-8">
-            <a
+        {   /* <a
               onClick={() => setIsOpen(true)}
               className={` bg-fm-turquesa text-neutral-900 hover:cursor-pointer font-bold text-center  min-w-[100px] md:w-[200px] md:p-2 lg:w-[200px] py-1 shadow-lg active:scale-95 text-xs md:text-sm rounded-md  hover:bg-fm-turquesa transition xl:text-lg  xl:w-[250px] ${
                 shake ? "shake" : ""
               }`}
             >
               Seminario: Mi primer ₿itcoin, Manta
-            </a>
+            </a>*/}
             <a
               href="https://wa.me/593998177135?text=Estoy%20interesado%20en%20el%20Seminario%20Mi%20primer%20Bitcoin%20Guayaquil"
-              className={` bg-fm-turquesa text-neutral-900 font-bold text-center  min-w-[100px] md:w-[200px] md:p-2 lg:w-[200px]  py-1 shadow-lg active:scale-95 text-xs md:text-sm rounded-md  hover:bg-fm-turquesa transition xl:text-lg  xl:w-[250px] ${
+              className={` bg-fm-turquesa text-neutral-900 font-bold text-center  min-w-[100px] w-[150px] md:w-[200px] md:p-2 lg:w-[200px]  py-1 shadow-lg active:scale-95 text-xs md:text-sm rounded-md  hover:bg-fm-turquesa transition xl:text-lg  xl:w-[250px] ${
                 shake ? "shake" : ""
               }`}
             >
