@@ -36,9 +36,9 @@ export default function Navbar() {
 
   return (
     <nav id="navBar" className=" bg-[#182025] ">
-      <div className="flex items-center justify-between p-2 gap-3 md:px-4 xl:max-w-[1450px] lg:px-2 lg:mx-auto">
+      <div className="flex items-center justify-between p-1 gap-3 md:px-4 xl:max-w-[1450px] lg:px-2 lg:mx-auto">
         {/* Logo */}
-        <div className="logo flex items-center gap-3">
+        <div className="logo flex items-center  md:gap-3">
           <div className="flex items-center justify-center px-0 md:px-6 lg:px-2">
             {" "}
             <img
@@ -50,7 +50,7 @@ export default function Navbar() {
               JJChagerben
             </p>
           </div>
-          <div className="flex gap-2 xl:gap-8">
+          <div className="flex gap-2 xl:gap-8 ">
         {   /* <a
               onClick={() => setIsOpen(true)}
               className={` bg-fm-turquesa text-neutral-900 hover:cursor-pointer font-bold text-center  min-w-[100px] md:w-[200px] md:p-2 lg:w-[200px] py-1 shadow-lg active:scale-95 text-xs md:text-sm rounded-md  hover:bg-fm-turquesa transition xl:text-lg  xl:w-[250px] ${
