@@ -39,7 +39,7 @@ export default function Navbar() {
       <div className="flex items-center justify-between p-2 gap-3 md:px-4 xl:max-w-[1450px] lg:px-2 lg:mx-auto">
         {/* Logo */}
         <div className="logo flex items-center gap-3">
-          <div className="flex items-center justify-center md:px-6 lg:px-2">
+          <div className="flex items-center justify-center px-0 md:px-6 lg:px-2">
             {" "}
             <img
               className="jjface hidden md:flex w-12 rounded-full shadow-lg h-12 shrink-0"
@@ -50,7 +50,7 @@ export default function Navbar() {
               JJChagerben
             </p>
           </div>
-          <div className="flex gap-3 xl:gap-8">
+          <div className="flex gap-2 xl:gap-8">
         {   /* <a
               onClick={() => setIsOpen(true)}
               className={` bg-fm-turquesa text-neutral-900 hover:cursor-pointer font-bold text-center  min-w-[100px] md:w-[200px] md:p-2 lg:w-[200px] py-1 shadow-lg active:scale-95 text-xs md:text-sm rounded-md  hover:bg-fm-turquesa transition xl:text-lg  xl:w-[250px] ${
@@ -69,7 +69,7 @@ export default function Navbar() {
             </a>
                  <a
              href="https://wa.me/593998177135?text=Estoy%20interesado%20en%20el%20Seminario%20Empresarial%20de%20Mi%20primer%20Bitcoin%20para%20mis%20empleados"
-              className={` bg-fm-turquesa text-neutral-900 font-bold text-center px-1 min-w-[100px] w-[150px] md:w-[200px] md:p-2 lg:w-[200px]  py-1 shadow-lg active:scale-95 text-xs md:text-sm rounded-md  hover:bg-fm-turquesa transition xl:text-lg  xl:w-[250px] ${
+              className={` bg-fm-turquesa text-neutral-900 font-bold text-center px-0.5 min-w-[100px] w-[150px] md:w-[200px] md:p-2 lg:w-[200px]  py-1 shadow-lg active:scale-95 text-xs md:text-sm rounded-md  hover:bg-fm-turquesa transition xl:text-lg  xl:w-[250px] ${
                 shake ? "shake" : ""
               }`}
             >
