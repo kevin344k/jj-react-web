@@ -67,6 +67,14 @@ export default function Navbar() {
             >
               Seminario: Mi primer ₿itcoin, Guayaquil
             </a>
+                 <a
+             href="https://wa.me/593998177135?text=Estoy%20interesado%20en%20el%20Seminario%20Empresarial%20de%20Mi%20primer%20Bitcoin%20para%20mis%20empleados"
+              className={` bg-fm-turquesa text-neutral-900 font-bold text-center px-1 min-w-[100px] w-[150px] md:w-[200px] md:p-2 lg:w-[200px]  py-1 shadow-lg active:scale-95 text-xs md:text-sm rounded-md  hover:bg-fm-turquesa transition xl:text-lg  xl:w-[250px] ${
+                shake ? "shake" : ""
+              }`}
+            >
+              Seminario Empresarial: Mi primer ₿itcoin
+            </a>
           </div>
         </div>
 
