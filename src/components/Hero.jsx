@@ -33,12 +33,21 @@ export default function Hero() {
         <p className="text-4xl font-bold p-3 py-5 text-white lg:text-6xl lg:py-12">
           BITCOIN ES SACARSE LA LOTERIA EN CAMARA LENTA
         </p>
-        <a
+ <div className="flex flex-col  gap-2 sm:gap-8 items-center justify-center">
+         <a
           className=" bg-fm-turquesa text-neutral-900 px-12 py-4 text-lg md:text-xl font-bold rounded-full hover:bg-fm-turquesa xl:text-3xl"
           href="https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
         >
           Mentoria Premium
         </a>
+             <a
+          className="border border-fm-turquesa bg-[#182025] text-white w-[253px] py-2 px-2 mt-2   text-md  font-bold rounded-full md:mt-0  xl:w-fit xl:mt-0 xl:py-4 xl:px-5 xl:text-2xl"
+          href="https://api.whatsapp.com/send?phone=593996737500&text=Estoy%20interesado%20por%20el%20Seminario%20VIP:%20Mi%20primer%20Bitcoin."
+
+        >
+          Seminario VIP: Mi primer Bitcoin
+        </a>
+ </div>
         
       </div>
       <div>
