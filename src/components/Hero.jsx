@@ -45,7 +45,7 @@ export default function Hero() {
           href="https://api.whatsapp.com/send?phone=593996737500&text=Estoy%20interesado%20por%20el%20Seminario%20VIP:%20Mi%20primer%20Bitcoin."
 
         >
-          Seminario VIP: Mi primer Bitcoin
+          Mentoria VIP: Presencial
         </a>
  </div>
         
