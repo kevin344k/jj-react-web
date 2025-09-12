@@ -42,7 +42,8 @@ export default function Hero() {
         </a>
              <a
           className="border border-fm-turquesa bg-[#182025] text-white w-[253px] py-2 px-2 mt-2   text-md  font-bold rounded-full md:mt-0  xl:w-fit xl:mt-0 xl:py-4 xl:px-5 xl:text-2xl"
-          href="https://api.whatsapp.com/send?phone=593996737500&text=Estoy%20interesado%20por%20el%20Seminario%20VIP:%20Mi%20primer%20Bitcoin."
+         href="https://api.whatsapp.com/send?phone=593996737500&text=Hola,%20estoy%20interesado%20en%20la%20Mentoria%20VIP%20%22Mi%20primer%20Bitcoin%22:%20Presencial"
+
 
         >
           Mentoria VIP: Presencial
