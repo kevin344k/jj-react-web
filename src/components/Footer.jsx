@@ -57,7 +57,7 @@ export default function Footer() {
           ¿Eres nuevo en el mundo de las criptomonedas?
         </p>
         <a
-          href="https://api.whatsapp.com/send?phone=593998177135&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
+          href="https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-fm-turquesa text-neutral-900 font-bold  px-4 py-2 rounded-full hover:bg-green-600 transition"
