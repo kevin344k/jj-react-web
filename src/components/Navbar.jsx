@@ -42,7 +42,7 @@ export default function Navbar() {
           <div className="flex items-center justify-center px-0 md:px-6 lg:px-2">
             {" "}
             <img
-              className="jjface hidden md:flex w-12 rounded-full shadow-lg h-12 shrink-0"
+              className="jjface  md:flex w-12 rounded-full shadow-lg h-12 shrink-0"
               src={jjface}
               alt="JJ Face"
             />
