@@ -58,7 +58,7 @@ export default function Navbar() {
               }`}
             >
               Seminario: Mi primer ₿itcoin, Manta
-            </a>*/}
+            </a>
             <a
               href="https://wa.me/593998177135?text=Estoy%20interesado%20en%20el%20Seminario%20Mi%20primer%20Bitcoin%20Guayaquil"
               className={` bg-fm-turquesa text-neutral-900 font-bold text-center  min-w-[100px] w-[150px] md:w-[200px] md:p-2 lg:w-[200px]  py-1 shadow-lg active:scale-95 text-xs md:text-sm rounded-md  hover:bg-fm-turquesa transition xl:text-lg  xl:w-[250px] ${
@@ -75,6 +75,7 @@ export default function Navbar() {
             >
               Seminario Empresarial: Mi primer ₿itcoin
             </a>
+*/}
           </div>
         </div>
 
