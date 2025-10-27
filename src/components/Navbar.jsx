@@ -1,12 +1,16 @@
 import React, { useState, useEffect } from "react";
 import jjface from "/imagenes/jjcara.webp";
+import logoVito from "/imagenes/logo-vitotv.png";
 import crossClose from "/imagenes/cross-close.svg";
 import wasap from "/imagenes/icon-color/whatsap.svg";
+import arrow_down from "/imagenes/arrow-down.svg";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [shake, setShake] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+  const [submenuOpen, setSubmenuOpen] = useState(false);
   useEffect(() => {
     // Activa el shake cada 5 segundos
     const interval = setInterval(() => {
@@ -36,9 +40,9 @@ export default function Navbar() {
 
   return (
     <nav id="navBar" className=" bg-[#182025] ">
-      <div className="flex items-center justify-between p-1 gap-3 md:px-4 xl:max-w-[1450px] lg:px-2 lg:mx-auto">
+      <div className="flex px-2 items-center justify-between p-1 gap-3 md:px-4 xl:max-w-[1450px] lg:px-2 lg:mx-auto">
         {/* Logo */}
-        <div className="logo flex items-center  md:gap-3">
+        <div className="logo  flex items-center  md:gap-3">
           <div className="flex items-center justify-center px-0 md:px-6 lg:px-2">
             {" "}
             <img
@@ -50,8 +54,19 @@ export default function Navbar() {
               JJChagerben
             </p>
           </div>
+          <a
+            className={`ml-4 flex gap-2 px-1 py-0.5 items-center border rounded-md border-red-500 ${
+              shake ? "shake" : ""
+            }`}
+            href="https://vitotvo.com/en-vivo/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <p className="text-white">Ahora en</p>
+            <img className="size-10" src={logoVito}></img>
+          </a>
           <div className="flex gap-2 xl:gap-8 ">
-        {   /* <a
+            {/* <a
               onClick={() => setIsOpen(true)}
               className={` bg-fm-turquesa text-neutral-900 hover:cursor-pointer font-bold text-center  min-w-[100px] md:w-[200px] md:p-2 lg:w-[200px] py-1 shadow-lg active:scale-95 text-xs md:text-sm rounded-md  hover:bg-fm-turquesa transition xl:text-lg  xl:w-[250px] ${
                 shake ? "shake" : ""
@@ -81,7 +96,7 @@ export default function Navbar() {
 
         {/* Sidebar */}
         <div
-          className={`sidebar fixed top-0 right-0 w-64 h-full z-20 bg-gray-900 text-white transform transition-transform ${
+          className={`sidebar fixed top-0 right-0 w-64 h-full h-scroll z-20 pb-12 bg-gray-900 overflow-scroll  text-white transform transition-transform ${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
@@ -93,6 +108,9 @@ export default function Navbar() {
           />
 
           <ul className="menu-options flex flex-col mt-8 px-4 gap-8 text-center">
+            <li className="p-2 hover:bg-gray-700 cursor-pointer">
+              <Link to="/">Inicio</Link>
+            </li>
             <li>
               <a
                 onClick={() => setIsMenuOpen(false)}
@@ -129,6 +147,30 @@ export default function Navbar() {
                 Testimonios
               </a>
             </li>
+            <li onClick={() => setSubmenuOpen(!submenuOpen)}>
+              <a className="boton-nav hover:underline flex justify-center items-center gap-1 cursor-pointer">
+                Mas
+                <img
+                  src={arrow_down}
+                  alt="flecha"
+                  className={`size-6 transition-transform duration-300 ${
+                    submenuOpen ? "" : "rotate-180"
+                  }`}
+                />
+              </a>
+            </li>
+
+            {/* Opciones desplegables */}
+            {submenuOpen && (
+              <ul className="border border-[#3ef2d0] py-4 rounded-md">
+                <li className="p-2 hover:bg-gray-700 cursor-pointer">
+                  <Link to="/debates">Debates</Link>
+                </li>
+                <li className="p-2 hover:bg-gray-700 cursor-pointer">
+                  <Link to="/compras">Compras</Link>
+                </li>
+              </ul>
+            )}
             <li className="mt-12 ">
               <a
                 className="boton-mentoria bg-fm-turquesa text-black px-3 py-2 rounded hover:bg-fm-turquesa"
@@ -140,7 +182,7 @@ export default function Navbar() {
           </ul>
         </div>
 
-        {/* Botón de menú */}
+        {/* Botón de menú desktop*/}
         <button
           onClick={() => setIsMenuOpen(true)}
           aria-label="Abrir menú"
@@ -151,16 +193,23 @@ export default function Navbar() {
           <span className="block h-0.5 bg-neutral-300 rounded"></span>
         </button>
         <ul className="hidden lg:flex xl:flex items-center justify-center px-4 gap-8 text-center">
+               <li className="relative group cursor-pointer">
+              <Link  className="boton-nav text-neutral-400 group-hover:text-[#3ef2d0] transition-colors" to="/">Inicio</Link>
+                   {/* Barra animada */}
+                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#3ef2d0] transition-all group-hover:w-full"></span>
+            </li>
           {["Mi libro", "Qué enseño?", "Calculadora", "Testimonios"].map(
             (text, i) => (
               <li key={i} className="relative group cursor-pointer">
                 <a
                   href={`#${
                     [
+                      
                       "sec-announce-book",
                       "section-mentoria",
                       "sec-calculadora-jub",
                       "sect-testimonial",
+                      
                     ][i]
                   }`}
                   className="boton-nav text-neutral-400 group-hover:text-[#3ef2d0] transition-colors"
@@ -172,6 +221,33 @@ export default function Navbar() {
               </li>
             )
           )}
+                      <li className="relative group cursor-pointer" onClick={() => setSubmenuOpen(!submenuOpen)}>
+              <a className="boton-nav flex gap-2 text-neutral-400 group-hover:text-[#3ef2d0] transition-colors">
+                Mas
+                <img
+                  src={arrow_down}
+                  alt="flecha"
+                  className={`size-6 transition-transform duration-300 ${
+                    submenuOpen ? "" : "rotate-180"
+                  }`}
+                />
+                  {/* Barra animada */}
+                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#3ef2d0] transition-all group-hover:w-full"></span>
+              </a>
+                          {/* Opciones desplegables */}
+            {submenuOpen && (
+              <ul className="absolute z-50 -right-8 top-15 p-3 border  text-neutral-400 bg-[#182025] py-4 rounded-md">
+                <li className="p-2 hover:bg-gray-700 cursor-pointer">
+                  <Link to="/debates">Debates</Link>
+                </li>
+                <li className="p-2 hover:bg-gray-700 cursor-pointer">
+                  <Link to="/compras">Compras</Link>
+                </li>
+              </ul>
+            )}
+            </li>
+
+
 
           <li className="hidden">
             <a

@@ -3,7 +3,11 @@ import React from "react";
 
 const baseURL = import.meta.env.BASE_URL;
 
-const socialLinks = [
+const socialLinks = [  {
+    href: "https://vitotvo.com/en-vivo/",
+    img: `${baseURL}imagenes/logo-vitotv.png`,
+    label: "En  vivo - VITO TVO",
+  },
   {
     href: "https://link.ugly.cash/referral/balder",
     img: `${baseURL}imagenes/icon-color/uglycash.webp`,

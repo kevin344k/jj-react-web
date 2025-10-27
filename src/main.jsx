@@ -1,10 +1,15 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
-import App from './App.jsx'
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client'; // ✅ usa esta
+import { BrowserRouter } from "react-router-dom"; // ✅ Importar BrowserRouter
 
-createRoot(document.getElementById('root')).render(
+import './index.css';
+import App from './App.jsx';
+
+const root = createRoot(document.getElementById('root'));
+root.render(
   <StrictMode>
-    <App />
-  </StrictMode>,
-)
+     <BrowserRouter> {/* ✅ Envolvemos toda la app */}
+      <App />
+    </BrowserRouter>
+  </StrictMode>
+);
