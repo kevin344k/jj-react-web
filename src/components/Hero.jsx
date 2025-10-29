@@ -48,12 +48,12 @@ export default function Hero() {
           >
             Mentoria VIP: Presencial
           </a>
-          <button
+       {/*   <button
             className="border  bg-[#F7931A] text-white w-[253px] py-2 px-2 mt-2   text-md  font-bold rounded-full md:mt-0  xl:w-fit xl:mt-0 xl:py-4 xl:px-5 xl:text-2xl"
             onClick={() => setIsOpen(true)}
           >
             Cajeros Bitcoin
-          </button>
+          </button>*/}
         </div>
       </div>
       <div>
