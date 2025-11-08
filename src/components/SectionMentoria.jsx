@@ -16,7 +16,7 @@ const socialLinks = [  {
   {
     href: "https://tradingdifferent.com/?ref=YELgWNnX",
     img: `${baseURL}imagenes/icon-color/download.png`,
-    label: "Trading Different",
+    label: "Pools de Liquidez",
   },
   {
     href: "https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM",
