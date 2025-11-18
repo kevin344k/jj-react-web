@@ -54,7 +54,7 @@ export default function Navbar() {
               JJChagerben
             </p>
           </div>
-          <a
+        {/*  <a
             className={`ml-4 flex gap-2 px-1 py-0.5 items-center border rounded-md border-red-500 ${
               shake ? "shake" : ""
             }`}
@@ -64,7 +64,7 @@ export default function Navbar() {
           >
             <p className="text-white">Ahora en</p>
             <img className="size-10" src={logoVito}></img>
-          </a>
+          </a>*/}
           <div className="flex gap-2 xl:gap-8 ">
             {/* <a
               onClick={() => setIsOpen(true)}
