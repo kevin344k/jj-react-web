@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import jjface from "/imagenes/jjcara.webp";
-import logoVito from "/imagenes/logo-vitotv.png";
+import logoVito from "/imagenes/world-tour-marzo.png";
 import crossClose from "/imagenes/cross-close.svg";
 import wasap from "/imagenes/icon-color/whatsap.svg";
 import arrow_down from "/imagenes/arrow-down.svg";
@@ -54,17 +54,16 @@ export default function Navbar() {
               JJChagerben
             </p>
           </div>
-        {/*  <a
-            className={`ml-4 flex gap-2 px-1 py-0.5 items-center border rounded-md border-red-500 ${
+          <button
+            className={`ml-4 flex gap-2 px-3 py-1 items-center  rounded-full bg-[#01FBF7] hover:bg-[#7E4DFE] transition ease-in-out duration-200 hover:text-white ${
               shake ? "shake" : ""
             }`}
-            href="https://vitotvo.com/en-vivo/"
-            target="_blank"
-            rel="noopener noreferrer"
+            onClick={() => setIsOpen(true)}
           >
-            <p className="text-white">Ahora en</p>
-            <img className="size-10" src={logoVito}></img>
-          </a>*/}
+            <p className="text-neutral-800 font-bold hover:text-white">
+              Inconfiscable World Tour
+            </p>
+          </button>
           <div className="flex gap-2 xl:gap-8 ">
             {/* <a
               onClick={() => setIsOpen(true)}
@@ -193,23 +192,26 @@ export default function Navbar() {
           <span className="block h-0.5 bg-neutral-300 rounded"></span>
         </button>
         <ul className="hidden lg:flex xl:flex items-center justify-center px-4 gap-8 text-center">
-               <li className="relative group cursor-pointer">
-              <Link  className="boton-nav text-neutral-400 group-hover:text-[#3ef2d0] transition-colors" to="/">Inicio</Link>
-                   {/* Barra animada */}
-                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#3ef2d0] transition-all group-hover:w-full"></span>
-            </li>
+          <li className="relative group cursor-pointer">
+            <Link
+              className="boton-nav text-neutral-400 group-hover:text-[#3ef2d0] transition-colors"
+              to="/"
+            >
+              Inicio
+            </Link>
+            {/* Barra animada */}
+            <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#3ef2d0] transition-all group-hover:w-full"></span>
+          </li>
           {["Mi libro", "Qué enseño?", "Calculadora", "Testimonios"].map(
             (text, i) => (
               <li key={i} className="relative group cursor-pointer">
                 <a
                   href={`#${
                     [
-                      
                       "sec-announce-book",
                       "section-mentoria",
                       "sec-calculadora-jub",
                       "sect-testimonial",
-                      
                     ][i]
                   }`}
                   className="boton-nav text-neutral-400 group-hover:text-[#3ef2d0] transition-colors"
@@ -221,20 +223,23 @@ export default function Navbar() {
               </li>
             )
           )}
-                      <li className="relative group cursor-pointer" onClick={() => setSubmenuOpen(!submenuOpen)}>
-              <a className="boton-nav flex gap-2 text-neutral-400 group-hover:text-[#3ef2d0] transition-colors">
-                Mas
-                <img
-                  src={arrow_down}
-                  alt="flecha"
-                  className={`size-6 transition-transform duration-300 ${
-                    submenuOpen ? "" : "rotate-180"
-                  }`}
-                />
-                  {/* Barra animada */}
-                <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#3ef2d0] transition-all group-hover:w-full"></span>
-              </a>
-                          {/* Opciones desplegables */}
+          <li
+            className="relative group cursor-pointer"
+            onClick={() => setSubmenuOpen(!submenuOpen)}
+          >
+            <a className="boton-nav flex gap-2 text-neutral-400 group-hover:text-[#3ef2d0] transition-colors">
+              Mas
+              <img
+                src={arrow_down}
+                alt="flecha"
+                className={`size-6 transition-transform duration-300 ${
+                  submenuOpen ? "" : "rotate-180"
+                }`}
+              />
+              {/* Barra animada */}
+              <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#3ef2d0] transition-all group-hover:w-full"></span>
+            </a>
+            {/* Opciones desplegables */}
             {submenuOpen && (
               <ul className="absolute z-50 -right-8 top-15 p-3 border  text-neutral-400 bg-[#182025] py-4 rounded-md">
                 <li className="p-2 hover:bg-gray-700 cursor-pointer">
@@ -245,9 +250,7 @@ export default function Navbar() {
                 </li>
               </ul>
             )}
-            </li>
-
-
+          </li>
 
           <li className="hidden">
             <a
@@ -267,25 +270,35 @@ export default function Navbar() {
         >
           {/* Contenedor del modal */}
           <div
-            className="bg-white rounded-2xl shadow-lg p-6 w-[95%] md:w-96 animate-fadeIn "
+            className="relative bg-white rounded-2xl shadow-lg p-3 w-[95%] md:w-96 animate-fadeIn "
             onClick={(e) => e.stopPropagation()}
           >
-            <p className="text-neutral-600 pb-4">
+            <p className="text-neutral-600 pb-4 font-bold text-center">
               {" "}
-              Seminario "Mi primer ₿itcoin", Manta 13 de Septiembre
+              TOUR 2026
             </p>
-            <h2 className="text-xl font-bold mb-4">Horarios Disponibles</h2>
+            <div className=" w-full ">
+              <img
+                className="w-full rounded-t-2xl"
+                src={logoVito}
+                alt="Logo VitoTV"
+              />
+            </div>
 
-            <div>
+            <div className="flex flex-col items-center">
               <div className="pt-5 border-b border-t border-neutral-400 pb-5 flex gap-2">
-                10:00 AM <span className="text-red-500">Agotado</span>{" "}
+                <p className="text-center">
+                  🔥 ¡Ecuador, prepárate! Llega Crypto Tour Inconfiscable, el
+                  congreso que te abrirá las puertas al nuevo mundo financiero.
+                  Aquí aprenderás sobre Bitcoin, criptoeconomía, libertad
+                  financiera y protección de patrimonio de la mano de expertos
+                  internacionales.
+                </p>
               </div>
               <div className="flex gap-2 items-center border-b border-neutral-400 py-5">
-                <p>02:00 PM </p>
-                <span className="text-green-500">Disponible</span>
                 <a
                   className="flex justify-center items-center gap-3 w-fit rounded-md shadow-lg px-3 py-2 bg-fm-turquesa"
-                  href="https://wa.me/593998177135?text=Estoy%20interesado%20en%20el%20Seminario%20Mi%20primer%20Bitcoin%20Manta%20a%20las%2002:00%20PM"
+                  href="https://wa.me/593998811754?text=QUIERO%20RESERVAR%20MI%20ENTRADA%20AL%20INCONFISCABLE%20WORLD%20TOUR"
                 >
                   Reservar <img className="w-5 h-5" src={wasap} alt="" />
                 </a>
@@ -294,9 +307,23 @@ export default function Navbar() {
 
             <button
               onClick={() => setIsOpen(false)}
-              className="mt-6 px-4 py-2 bg-red-500 text-white rounded-lg hover:bg-red-600 w-full"
+              className="absolute top-2 right-2 p-1 hover:bg-red-100 rounded-full transition"
+              aria-label="Cerrar"
             >
-              Cerrar
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="red"
+                fill="none"
+                className="w-8 h-8 hover:stroke-neutral-600"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 6l12 12M6 18L18 6"
+                />
+              </svg>
             </button>
           </div>
         </div>
