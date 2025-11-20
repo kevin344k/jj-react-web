@@ -6,10 +6,12 @@ import SectionMentoria from './SectionMentoria'
 import SectionTestimonial from './SectionTestimonial'
 import SectionAnnounceJob from './SectionAnnounceJob'
 import SectionLibros from './SectionLibros'
+import SectionCardsMentoria from './SectionCardsMentoria'
 export default function Main() {
   return (
     <div>
       <Hero></Hero>
+      <SectionCardsMentoria></SectionCardsMentoria>
       <Section_Libro_jj></Section_Libro_jj>
       <Section_calcualdora></Section_calcualdora>
       <SectionMentoria></SectionMentoria>
