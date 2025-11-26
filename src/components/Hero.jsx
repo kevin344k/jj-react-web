@@ -4,30 +4,7 @@ import img_cajero from "/imagenes/cajeros.jpeg";
 import FlipClock from "./FlipClock";
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
-  const mentorshipItems = [
-    "No caer en estafas",
-    "Guardar correctamente las llaves privadas",
-    "Manejo de wallets frías",
-    "Uso de hardware wallet y software wallet",
-    "Crear wallets",
-    "Comprar Bitcoin",
-    "Comprar y transferir Bitcoin de la forma más económica",
-    "Recuperación de saldos de wallets",
-    "Manejo de wallets geográficas",
-    "Revisar empresas y proyectos cripto",
-    "La mejor forma de invertir",
-    "Crear portafolio",
-    "Airdrops (dinero gratis)",
-    "Launchpool (dinero gratis)",
-    "Crear intercambios",
-    "Crear nodo (Theta Network)",
-    "Protocolo Martha Julia",
-    "Soporte 24/7",
-    "Actualización constante de contenido",
-    "Grupo de WhatsApp",
-    "Canal de difusión exclusivo para alumnos",
-    "Libros",
-  ];
+
   return (
     <div className="relative h-fit flex flex-col items-center gap-4 justify-center py-12 xl:py-10">
       <div className=" text-center flex flex-col items-center justify-center xl:max-w-[1250px] xl:py-6">
@@ -56,18 +33,7 @@ export default function Hero() {
           </button>*/}
         </div>
       </div>
-      <div>
-        <ul className=" grid grid-cols-2 sm:grid-cols-2 px-1 sm:px-3 gap-2 list-none text-lg lg:max-w-[800px] lg:mx-auto">
-          {mentorshipItems.map((item, i) => (
-            <li
-              key={i}
-              className="flex items-center text-white text-border gap-2 font-bold text-xs sm:text-[14px] md:text-[16px] lg:text-xl"
-            >
-              <span className="">🔥</span> {item}
-            </li>
-          ))}
-        </ul>
-      </div>
+  
       <video
         className="absolute -z-1 inset-0 object-cover w-full h-full brightness-[0.5]"
         autoPlay

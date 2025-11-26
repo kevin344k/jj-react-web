@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import jjface from "/imagenes/jjcara.webp";
-import logoVito from "/imagenes/world-tour-marzo.png";
+import tour_marzo from "/imagenes/cripto-tour.jpg";
 import crossClose from "/imagenes/cross-close.svg";
-import wasap from "/imagenes/icon-color/whatsap.svg";
+
 import arrow_down from "/imagenes/arrow-down.svg";
 import { Link } from "react-router-dom";
 
@@ -37,6 +37,10 @@ export default function Navbar() {
       document.body.style.overflow = "auto";
     };
   }, [isMenuOpen]);
+
+  useEffect(() => {
+    setIsOpen(true)
+  },[])
 
   return (
     <nav id="navBar" className=" bg-[#182025] ">
@@ -265,42 +269,27 @@ export default function Navbar() {
       {/* Overlay + Modal */}
       {isOpen && (
         <div
-          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 animate-fade-in"
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 animate-fade-in "
           onClick={() => setIsOpen(false)}
         >
           {/* Contenedor del modal */}
           <div
-            className="relative bg-white rounded-2xl shadow-lg p-3 w-[95%] md:w-96 animate-fadeIn "
+            className="relative bg-white rounded-2xl shadow-lg p-3  w-[65%] md:w-96 animate-fadeIn "
             onClick={(e) => e.stopPropagation()}
           >
-            <p className="text-neutral-600 pb-4 font-bold text-center">
-              {" "}
-              TOUR 2026
-            </p>
-            <div className=" w-full ">
-              <img
-                className="w-full rounded-t-2xl"
-                src={logoVito}
-                alt="Logo VitoTV"
-              />
-            </div>
+            
+            
+              <img src={tour_marzo} alt="Crypto Tour" className="w-full mb-4 rounded-xl" />
+            
 
             <div className="flex flex-col items-center">
-              <div className="pt-5 border-b border-t border-neutral-400 pb-5 flex gap-2">
-                <p className="text-center">
-                  🔥 ¡Ecuador, prepárate! Llega Crypto Tour Inconfiscable, el
-                  congreso que te abrirá las puertas al nuevo mundo financiero.
-                  Aquí aprenderás sobre Bitcoin, criptoeconomía, libertad
-                  financiera y protección de patrimonio de la mano de expertos
-                  internacionales.
-                </p>
-              </div>
+           
               <div className="flex gap-2 items-center border-b border-neutral-400 py-5">
                 <a
-                  className="flex justify-center items-center gap-3 w-fit rounded-md shadow-lg px-3 py-2 bg-fm-turquesa"
-                  href="https://wa.me/593998811754?text=QUIERO%20RESERVAR%20MI%20ENTRADA%20AL%20INCONFISCABLE%20WORLD%20TOUR"
+                  className="flex  items-center gap-3 rounded-md shadow-lg px-3 py-2 w-full bg-fm-turquesa"
+                  href="https://fusionplusdigital.com/eventos/"
                 >
-                  Reservar <img className="w-5 h-5" src={wasap} alt="" />
+                  Reservar 
                 </a>
               </div>
             </div>
