@@ -274,7 +274,7 @@ export default function Navbar() {
         >
           {/* Contenedor del modal */}
           <div
-            className="relative bg-white rounded-2xl shadow-lg p-3  w-[65%] md:w-96 animate-fadeIn "
+            className="relative bg-white rounded-2xl shadow-lg p-3  w-[80%] md:w-96 animate-fadeIn "
             onClick={(e) => e.stopPropagation()}
           >
             
@@ -284,12 +284,12 @@ export default function Navbar() {
 
             <div className="flex flex-col items-center">
            
-              <div className="flex gap-2 items-center border-b border-neutral-400 py-5">
+              <div className="flex gap-2 items-center  py-5">
                 <a
                   className="flex  items-center gap-3 rounded-md shadow-lg px-3 py-2 w-full bg-fm-turquesa"
                   href="https://fusionplusdigital.com/eventos/"
                 >
-                  Reservar 
+                  Comprar Entradas 
                 </a>
               </div>
             </div>

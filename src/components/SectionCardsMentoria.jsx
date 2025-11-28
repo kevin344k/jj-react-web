@@ -17,7 +17,7 @@ export default function SectionCardsMentoria() {
     "Manejo de wallets geográficas",
     "Evitar estafas, fraudes y esquemas maliciosos",
     "Comprar y transferir Bitcoin de la forma más económica y eficiente",
-    "Creación de portafolio personalizado (incluye DCA y análisis de altcoins)",
+    "Creación de portafolio personalizado (incluye análisis de altcoins)",
     "Revisión profesional de proyectos y empresas cripto",
     "Participación en airdrops y launchpools",
     "Crear intercambios personales(Exchange básico y seguro)",
