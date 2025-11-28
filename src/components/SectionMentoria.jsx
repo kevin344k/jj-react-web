@@ -19,7 +19,7 @@ const socialLinks = [  {
     label: "Pools de Liquidez",
   },
   {
-    href: "https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM",
+    href: "https://api.whatsapp.com/send?phone=593998177135&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM",
     img: `${baseURL}imagenes/icon-color/whatsap.svg`,
     label: "WhatsApp",
   },
