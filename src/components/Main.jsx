@@ -11,7 +11,7 @@ export default function Main() {
   return (
     <div>
       <Hero></Hero>
-      <SectionCardsMentoria></SectionCardsMentoria>
+     
       <Section_Libro_jj></Section_Libro_jj>
       <Section_calcualdora></Section_calcualdora>
       <SectionMentoria></SectionMentoria>

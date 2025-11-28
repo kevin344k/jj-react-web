@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import video from "../assets/Video/hero_video.mp4";
 import img_cajero from "/imagenes/cajeros.jpeg";
 import FlipClock from "./FlipClock";
+import SectionCardsMentoria from "./SectionCardsMentoria";
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -12,7 +13,7 @@ export default function Hero() {
         <p className="text-4xl font-bold p-3 pb-5 text-white lg:text-6xl lg:pb-12">
           BITCOIN ES SACARSE LA LOTERIA EN CAMARA LENTA
         </p>
-        <div className="flex flex-col  gap-2 sm:gap-8 items-center justify-center">
+       {/* <div className="flex flex-col  gap-2 sm:gap-8 items-center justify-center">
           <a
             className=" bg-fm-turquesa text-neutral-900 px-12 py-4 text-lg md:text-xl font-bold rounded-full hover:bg-fm-turquesa xl:text-3xl"
             href="https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
@@ -30,8 +31,8 @@ export default function Hero() {
             onClick={() => setIsOpen(true)}
           >
             Cajeros Bitcoin
-          </button>*/}
-        </div>
+          </button>}
+        </div>*/}
       </div>
   
       <video
@@ -73,9 +74,11 @@ export default function Hero() {
             >
               Ver ubicaciones
             </a>
+           
           </div>
         </div>
       )}
+       <SectionCardsMentoria/>
     </div>
   );
 }

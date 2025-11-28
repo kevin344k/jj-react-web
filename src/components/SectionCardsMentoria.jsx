@@ -62,7 +62,7 @@ export default function SectionCardsMentoria() {
     <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto py-10 px-2 items-start ">
       {/* CARD 1 */}
       <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 min-h-[650px]">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">MENTORIA NORMAL</h3>
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">MENTORIA PREMIUM</h3>
         <p className="text-gray-600 mb-4">Ideal para comenzar y dominar todo el ecosistema cripto desde cero.</p>
 
         <ul className="text-gray-700 mb-4 space-y-2">
