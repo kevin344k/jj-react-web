@@ -81,7 +81,7 @@ export default function SectionCardsMentoria() {
           <ChevronDown className={`transition-transform duration-500 ${expandedCard1 ? "rotate-180" : ""}`} />
         </button>
 
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM" className="mt-auto bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition text-center">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=593998177135&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM" className="mt-auto bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition text-center">
           Elegir
         </a>
       </div>
@@ -120,7 +120,7 @@ export default function SectionCardsMentoria() {
           <ChevronDown className={`transition-transform duration-500 ${expandedCard2 ? "rotate-180" : ""}`} />
         </button>
 
-        <a target="_blank" href="https://api.whatsapp.com/send?phone=593996737500&text=Hola,%20estoy%20interesado%20en%20la%20Mentoria%20VIP%20%22Mi%20primer%20Bitcoin%22:%20Presencial" className=" bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition text-center">
+        <a target="_blank" href="https://api.whatsapp.com/send?phone=593998177135&text=Hola,%20estoy%20interesado%20en%20la%20Mentoria%20VIP%20%22Mi%20primer%20Bitcoin%22:%20Presencial" className=" bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition text-center">
           Elegir
         </a>
       </div>
