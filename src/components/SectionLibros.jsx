@@ -7,7 +7,7 @@ const books = [
   {
     title: "Invierte en Bitcoin o esclavitud",
     img: `${baseURL}libros/portadas/libro_jj.jpeg`,
-    whatsappLink: "https://wa.me/593996737500?text=Hola%2C%20quiero%20comprar%20tu%20libro%20%22Invierte%20en%20Bitcoin%20o%20esclavitud%22.",
+    whatsappLink: "https://wa.me/593998177135?text=Hola%2C%20quiero%20comprar%20tu%20libro%20%22Invierte%20en%20Bitcoin%20o%20esclavitud%22.",
     amazonLink: "https://www.amazon.com/dp/9942516654/ref=tmm_pap_swatch_0"
   },
   {
