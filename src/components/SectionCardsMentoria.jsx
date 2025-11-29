@@ -191,7 +191,7 @@ export default function SectionCardsMentoria() {
         <a
           target="_blank"
           href="https://api.whatsapp.com/send?phone=593939838756&text=Hola,%20estoy%20interesado%20en%20adquirir%20una%20wallet%20fria"
-          className="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition text-center"
+          className="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition mt-auto text-center"
         >
           {" "}
           Adquirir
