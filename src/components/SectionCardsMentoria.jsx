@@ -59,46 +59,8 @@ export default function SectionCardsMentoria() {
     expanded ? items : items.slice(0, 9);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3  gap-6 max-w-6xl  mx-auto py-10  items-start md:px-3">
-      {/* CARD 1 */}
-      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 min-h-[650px]">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">
-          MENTORIA PREMIUM
-        </h3>
-        <p className="text-gray-600 mb-4">
-          Ideal para comenzar y dominar todo el ecosistema cripto desde cero.
-        </p>
-
-        <ul className="text-gray-700 mb-4 space-y-2">
-          {renderItems(itemsCard1, expandedCard1).map((item, index) => (
-            <li key={index} className="flex gap-x-1">
-              <span>🔥</span> {item}
-            </li>
-          ))}
-        </ul>
-
-        <button
-          onClick={() => setExpandedCard1(!expandedCard1)}
-          className="flex items-center gap-2 self-end text-gray-600 hover:text-gray-800 transition font-medium mb-4"
-        >
-          {expandedCard1 ? "Ver menos" : "Ver más beneficios"}
-          <ChevronDown
-            className={`transition-transform duration-500 ${
-              expandedCard1 ? "rotate-180" : ""
-            }`}
-          />
-        </button>
-
-        <a
-          target="_blank"
-          href="https://api.whatsapp.com/send?phone=593998177135&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
-          className="mt-auto bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition text-center"
-        >
-          Elegir
-        </a>
-      </div>
-
-      {/* CARD 2 */}
+    <div className="grid grid-cols-1 md:grid-cols-3  gap-6 max-w-6xl  mx-auto py-10  items-start md:px-3 ">
+           {/* CARD 2 */}
       <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 min-h-[650px]">
         <h3 className="text-xl font-semibold text-gray-800 mb-2">
           MENTORIA VIP (PRESENCIAL)
@@ -148,6 +110,45 @@ export default function SectionCardsMentoria() {
           Elegir
         </a>
       </div>
+      {/* CARD 1 */}
+      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 min-h-[650px]">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+          MENTORIA PREMIUM
+        </h3>
+        <p className="text-gray-600 mb-4">
+          Ideal para comenzar y dominar todo el ecosistema cripto desde cero.
+        </p>
+
+        <ul className="text-gray-700 mb-4 space-y-2">
+          {renderItems(itemsCard1, expandedCard1).map((item, index) => (
+            <li key={index} className="flex gap-x-1">
+              <span>🔥</span> {item}
+            </li>
+          ))}
+        </ul>
+
+        <button
+          onClick={() => setExpandedCard1(!expandedCard1)}
+          className="flex items-center gap-2 self-end text-gray-600 hover:text-gray-800 transition font-medium mb-4"
+        >
+          {expandedCard1 ? "Ver menos" : "Ver más beneficios"}
+          <ChevronDown
+            className={`transition-transform duration-500 ${
+              expandedCard1 ? "rotate-180" : ""
+            }`}
+          />
+        </button>
+
+        <a
+          target="_blank"
+          href="https://api.whatsapp.com/send?phone=593998177135&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
+          className="mt-auto bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition text-center"
+        >
+          Elegir
+        </a>
+      </div>
+
+ 
 
       {/* CARD 3 - sin comportamiento de expandir */}
       <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 min-h-[650px]">

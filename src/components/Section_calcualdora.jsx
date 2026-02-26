@@ -131,7 +131,7 @@ export default function Section_calcualdora() {
                 minimumFractionDigits: 2,
                 maximumFractionDigits: 2,
               })
-            : ""
+            : "",
         );
       } else {
         setInputDollar("");
@@ -203,8 +203,8 @@ export default function Section_calcualdora() {
       console.log(inputDollar, inputBTC);
 
       setResult(inversion);
-    } else{
-      setResult("")
+    } else {
+      setResult("");
     }
   }, [inputDollar, inputBTC]);
 

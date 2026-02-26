@@ -7,13 +7,37 @@ export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative h-fit flex flex-col items-center gap-4 justify-center py-12 xl:py-10">
+    <div className="relative h-[80vh] flex flex-col items-center gap-8 justify-center py-12 xl:py-10">
       <div className=" text-center flex flex-col items-center justify-center xl:max-w-[1250px] xl:py-6">
-{ /*       <FlipClock></FlipClock>*/}
-        <p className="text-4xl font-bold p-3 pb-5 text-white lg:text-6xl lg:pb-12">
+        {/*       <FlipClock></FlipClock>*/}
+        <p className="text-4xl font-bold p-3 pb-5 text-white lg:text-6xl lg:pb-25">
           BITCOIN ES SACARSE LA LOTERIA EN CAMARA LENTA
         </p>
-       {/* <div className="flex flex-col  gap-2 sm:gap-8 items-center justify-center">
+        <div className="flex flex-col lg:flex-row gap-2 sm:gap-8 items-center justify-center lg:w-full sm:w-[50%]">
+                    <a
+ className="bg-gray-100 p-2 py-4 rounded-lg shadow flex justify-center  hover:bg-fm-turquesa w-full hover:font-semibold transition"            href="https://fusionplusdigital.com/eventos/"
+          >
+            Inconfiscable World Tour
+          </a>
+
+          <a
+ className="bg-gray-100 p-2 py-4 rounded-lg shadow flex justify-center hover:font-semibold hover:bg-fm-turquesa w-full transition"            href="https://api.whatsapp.com/send?phone=593996737500&text=Hola,%20estoy%20interesado%20en%20la%20Mentoria%20VIP%20%22Mi%20primer%20Bitcoin%22:%20Presencial"
+          >
+            Mentoria VIP: Presencial
+          </a>          
+             <a
+ className="bg-gray-100 p-2 py-4 rounded-lg shadow flex justify-center hover:font-semibold hover:bg-fm-turquesa w-full transition"            href="https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
+          >
+            Mentoria Premium
+          </a>
+
+                    <a
+ className="bg-gray-100 p-2 py-4 rounded-lg shadow flex justify-center hover:font-semibold hover:bg-fm-turquesa w-full transition"            href="#sec-announce-book"
+          >
+            Mi libro
+          </a>
+        </div>
+        {/* <div className="flex flex-col  gap-2 sm:gap-8 items-center justify-center">
           <a
             className=" bg-fm-turquesa text-neutral-900 px-12 py-4 text-lg md:text-xl font-bold rounded-full hover:bg-fm-turquesa xl:text-3xl"
             href="https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
@@ -34,7 +58,7 @@ export default function Hero() {
           </button>}
         </div>*/}
       </div>
-  
+
       <video
         className="absolute -z-1 inset-0 object-cover w-full h-full brightness-[0.5]"
         autoPlay
@@ -74,11 +98,10 @@ export default function Hero() {
             >
               Ver ubicaciones
             </a>
-           
           </div>
         </div>
       )}
-       <SectionCardsMentoria/>
+
     </div>
   );
 }
