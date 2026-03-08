@@ -212,7 +212,7 @@ export default function Section_calcualdora() {
     <>
       <section
         id="sec-calculadora-jub"
-        className={`min-w-[320px] flex flex-col justify-center items-center border-t-8 py-15 px-1 bg-neutral-100 border-[#22dfc1] ${
+        className={`min-w-[320px] flex flex-col justify-center items-center  py-15 px-1 bg-neutral-100 ${
           animate ? "animate-fade-in" : "opacity-0"
         }`}
       >

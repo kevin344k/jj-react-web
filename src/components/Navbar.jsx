@@ -56,16 +56,16 @@ export default function Navbar() {
               JJChagerben
             </p>
           </div>
-       {/*   <button
+          <button
             className={`ml-4 flex gap-2 px-3 py-1 items-center  rounded-full bg-[#01FBF7] hover:bg-[#7E4DFE] transition ease-in-out duration-200 hover:text-white ${
               shake ? "shake" : ""
             }`}
             onClick={() => setIsOpen(true)}
           >
-            <p className="text-neutral-800 font-bold hover:text-white">
+            <p className="text-neutral-800 font-bold hover:text-white hover:cursor-pointer">
               Inconfiscable World Tour
             </p>
-          </button>*/}
+          </button>
           <div className="flex gap-2 xl:gap-8 ">
             {/* <a
               onClick={() => setIsOpen(true)}

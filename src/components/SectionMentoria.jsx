@@ -4,9 +4,9 @@ import React from "react";
 const baseURL = import.meta.env.BASE_URL;
 
 const socialLinks = [  {
-    href: "https://vitotvo.com/en-vivo/",
-    img: `${baseURL}imagenes/logo-vitotv.png`,
-    label: "En  vivo - VITO TVO",
+    href: "https://accounts.bullbitcoin.com/en/registration?referral_code=jjchagerben",
+    img: `${baseURL}imagenes/logo-red-bull.png`,
+    label: "BULL BITCOIN - Comprar Bitcoin",
   },
   {
     href: "https://link.ugly.cash/referral/balder",
@@ -84,12 +84,12 @@ export default function SectionMentoria() {
 
       </div>
 
-      <div className="div-mis-redes max-w-5xl mx-auto px-4 py-10">
+      <div className="div-mis-redes max-w-5xl mx-auto px-4 py-10 ">
     
 
         <ul className=" grid grid-cols-1 justify-center md:grid-cols-2 md:items-center  w-full m-auto md: gap-6 lg:max-w-[800px]">
           {socialLinks.map(({ href, img, label }, i) => (
-            <li key={i} className="text-center w-[250px] mx-auto md:mx-auto">
+            <li key={i} className="text-center w-[250px] mx-auto md:mx-auto lg:w-[300px] ">
               <a
                 href={href}
                 target="_blank"

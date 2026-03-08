@@ -7,32 +7,29 @@ export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative h-[80vh] flex flex-col items-center gap-8 justify-center py-12 xl:py-10">
-      <div className=" text-center flex flex-col items-center justify-center xl:max-w-[1250px] xl:py-6">
-        {/*       <FlipClock></FlipClock>*/}
+    <div className="relative h-[80vh] flex flex-col items-center gap-8 justify-center py-20 xl:py-10">
+      <div className=" text-center w-full  flex flex-col items-center justify-center xl:max-w-[1250px] xl:py-6">
+               <FlipClock></FlipClock>
         <p className="text-4xl font-bold p-3 pb-5 text-white lg:text-6xl lg:pb-25">
           BITCOIN ES SACARSE LA LOTERIA EN CAMARA LENTA
         </p>
-        <div className="flex flex-col lg:flex-row gap-2 sm:gap-8 items-center justify-center lg:w-full sm:w-[50%]">
-                    <a
- className="bg-gray-100 p-2 py-4 rounded-lg shadow flex justify-center  hover:bg-fm-turquesa w-full hover:font-semibold transition"            href="https://fusionplusdigital.com/eventos/"
-          >
-            Inconfiscable World Tour
-          </a>
-
+        <div className="flex flex-col lg:flex-row gap-2 sm:gap-8 items-center justify-center lg:w-[60%] w-[80%] ">
           <a
- className="bg-gray-100 p-2 py-4 rounded-lg shadow flex justify-center hover:font-semibold hover:bg-fm-turquesa w-full transition"            href="https://api.whatsapp.com/send?phone=593996737500&text=Hola,%20estoy%20interesado%20en%20la%20Mentoria%20VIP%20%22Mi%20primer%20Bitcoin%22:%20Presencial"
+            className="p-2 font-bold font-geist py-4 rounded-xl shadow flex justify-center  hover:bg-fm-turquesa_strong bg-fm-turquesa y-100  w-full transition hover:border hover:border-neutral-600 "
+            href="https://api.whatsapp.com/send?phone=593998177135&text=Hola,%20estoy%20interesado%20en%20la%20Mentoria%20VIP%20%22Mi%20primer%20Bitcoin%22:%20Presencial"
           >
             Mentoria VIP: Presencial
-          </a>          
-             <a
- className="bg-gray-100 p-2 py-4 rounded-lg shadow flex justify-center hover:font-semibold hover:bg-fm-turquesa w-full transition"            href="https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
+          </a>
+          <a
+            className="p-2 py-4 font-semibold font-geist rounded-xl shadow flex justify-center hover:font-semibold bg-neutral-900 text-white border border-neutral-600 hover:bg-neutral-800  hover:border-fm-turquesa w-full transition"
+            href="https://api.whatsapp.com/send?phone=593998177135&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
           >
             Mentoria Premium
           </a>
 
-                    <a
- className="bg-gray-100 p-2 py-4 rounded-lg shadow flex justify-center hover:font-semibold hover:bg-fm-turquesa w-full transition"            href="#sec-announce-book"
+          <a
+className="p-2 py-4 rounded-xl shadow font-semibold font-geist flex justify-center hover:font-semibold bg-neutral-900 text-white border border-neutral-600 hover:bg-neutral-800  hover:border-fm-turquesa w-full transition"
+            href="#sec-announce-book"
           >
             Mi libro
           </a>
@@ -40,13 +37,13 @@ export default function Hero() {
         {/* <div className="flex flex-col  gap-2 sm:gap-8 items-center justify-center">
           <a
             className=" bg-fm-turquesa text-neutral-900 px-12 py-4 text-lg md:text-xl font-bold rounded-full hover:bg-fm-turquesa xl:text-3xl"
-            href="https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
+            href="https://api.whatsapp.com/send?phone=593998177135&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
           >
             Mentoria Premium
           </a>
           <a
             className="border border-fm-turquesa bg-[#182025] text-white w-[253px] py-2 px-2 mt-2   text-md  font-bold rounded-full md:mt-0  xl:w-fit xl:mt-0 xl:py-4 xl:px-5 xl:text-2xl"
-            href="https://api.whatsapp.com/send?phone=593996737500&text=Hola,%20estoy%20interesado%20en%20la%20Mentoria%20VIP%20%22Mi%20primer%20Bitcoin%22:%20Presencial"
+            href="https://api.whatsapp.com/send?phone=593998177135&text=Hola,%20estoy%20interesado%20en%20la%20Mentoria%20VIP%20%22Mi%20primer%20Bitcoin%22:%20Presencial"
           >
             Mentoria VIP: Presencial
           </a>
@@ -101,7 +98,6 @@ export default function Hero() {
           </div>
         </div>
       )}
-
     </div>
   );
 }

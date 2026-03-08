@@ -92,6 +92,8 @@ export default function FlipClock() {
         });
 
         const blocksTipHeight = await blocks.getBlocksTipHeight();
+        console.log(blocksTipHeight);
+        
 
         if (typeof blocksTipHeight !== "number" || blocksTipHeight <= 0) {
           console.error("Altura de bloque inválida:", blocksTipHeight);
@@ -107,7 +109,7 @@ export default function FlipClock() {
           return;
         }
 
-        const secondsRemaining = blocksRemaining * 10 * 60;
+        const secondsRemaining = blocksRemaining * 10 * 60; //
         const targetDate = Date.now() + secondsRemaining * 1000;
 
         setTargetTime(targetDate);

@@ -56,12 +56,12 @@ export default function SectionCardsMentoria() {
   ];
 
   const renderItems = (items, expanded) =>
-    expanded ? items : items.slice(0, 9);
+    expanded ? items : items.slice(0, 0);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3  gap-6 max-w-6xl  mx-auto py-10  items-start md:px-3 ">
+    <div className="grid grid-cols-1 md:grid-cols-3   gap-6 max-w-6xl  mx-auto py-10  items-start md:px-3 px-2 ">
            {/* CARD 2 */}
-      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 min-h-[650px]">
+      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 ">
         <h3 className="text-xl font-semibold text-gray-800 mb-2">
           MENTORIA VIP (PRESENCIAL)
         </h3>
@@ -94,7 +94,7 @@ export default function SectionCardsMentoria() {
           onClick={() => setExpandedCard2(!expandedCard2)}
           className="flex items-center gap-2 self-end text-gray-600 hover:text-gray-800 transition font-medium mb-4 mt-auto"
         >
-          {expandedCard2 ? "Ver menos" : "Ver más beneficios"}
+          {expandedCard2 ? "Ver menos" : "Ver beneficios"}
           <ChevronDown
             className={`transition-transform duration-500 ${
               expandedCard2 ? "rotate-180" : ""
@@ -105,13 +105,13 @@ export default function SectionCardsMentoria() {
         <a
           target="_blank"
           href="https://api.whatsapp.com/send?phone=593998177135&text=Hola,%20estoy%20interesado%20en%20la%20Mentoria%20VIP%20%22Mi%20primer%20Bitcoin%22:%20Presencial"
-          className=" bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition text-center"
+          className=" bg-fm-turquesa text-black py-2 px-4 rounded-lg hover:bg-fm-turquesa_strong hover:font-semibold  transition text-center"
         >
           Elegir
         </a>
       </div>
       {/* CARD 1 */}
-      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 min-h-[650px]">
+      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 ">
         <h3 className="text-xl font-semibold text-gray-800 mb-2">
           MENTORIA PREMIUM
         </h3>
@@ -131,7 +131,7 @@ export default function SectionCardsMentoria() {
           onClick={() => setExpandedCard1(!expandedCard1)}
           className="flex items-center gap-2 self-end text-gray-600 hover:text-gray-800 transition font-medium mb-4"
         >
-          {expandedCard1 ? "Ver menos" : "Ver más beneficios"}
+          {expandedCard1 ? "Ver menos" : "Ver beneficios"}
           <ChevronDown
             className={`transition-transform duration-500 ${
               expandedCard1 ? "rotate-180" : ""
@@ -142,7 +142,7 @@ export default function SectionCardsMentoria() {
         <a
           target="_blank"
           href="https://api.whatsapp.com/send?phone=593998177135&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
-          className="mt-auto bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition text-center"
+          className="mt-auto bg-fm-turquesa text-black py-2 px-4 rounded-lg hover:bg-fm-turquesa_strong hover:font-semibold  transition text-center"
         >
           Elegir
         </a>
@@ -150,7 +150,7 @@ export default function SectionCardsMentoria() {
 
  
 
-      {/* CARD 3 - sin comportamiento de expandir */}
+      {/* CARD 3 - sin comportamiento de expandir 
       <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 min-h-[650px]">
         <h3 className="text-xl font-semibold text-gray-800 mb-2">
           Inconfiscable World Tour
@@ -167,32 +167,32 @@ export default function SectionCardsMentoria() {
         </p>
         <a
           href="https://fusionplusdigital.com/eventos/"
-          className="mt-auto bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition text-center"
+          className="mt-auto bg-fm-turquesa text-black py-2 px-4 rounded-lg hover:bg-fm-turquesa_strong hover:font-semibold transition text-center"
         >
           Adquiere tus entradas
         </a>
       </div>
-
+*/}
       {/* CARD 4- sin comportamiento de expandir */}
-      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 min-h-[650px]">
+      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 ">
         <h3 className="text-xl font-semibold text-gray-800 mb-2">
           WALLET FRÍA
         </h3>
-        <img
+      <div className="flex gap-2">
+          <img
           src={wallet_jade}
           alt="Crypto Tour"
-          className="w-full mb-4 rounded-xl"
+          className="w-25 mb-4 rounded-xl"
         />
         <p className="text-gray-600 mb-4">
           Mantén tus criptomonedas seguras con las wallets frías Jade y Jade
-          Plus. Ofrecen protección avanzada, acceso inmediato y total control
-          sin conexión. Ideal para inversores inteligentes. ¡Compra hoy y
-          resguarda tu futuro financiero!
+          Plus. 
         </p>
+      </div>
         <a
           target="_blank"
           href="https://api.whatsapp.com/send?phone=593939838756&text=Hola,%20estoy%20interesado%20en%20adquirir%20una%20wallet%20fria"
-          className="bg-green-600 text-white py-2 px-4 rounded-lg hover:bg-green-700 transition mt-auto text-center"
+          className="bg-fm-turquesa text-black py-2 px-4 rounded-lg hover:bg-fm-turquesa_strong hover:font-semibold transition mt-auto text-center"
         >
           {" "}
           Adquirir
