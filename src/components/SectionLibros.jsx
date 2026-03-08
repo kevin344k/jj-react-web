@@ -93,9 +93,9 @@ const SectionLibros = () => {
   const handleNext = () => scrollToIndex(currentIndex + 1);
 
   return (
-    <section id="sect-books" className="py-12 relative xl:py-30">
+    <section id="sect-books" className="py-12 relative xl:py-30 bg-white dark:bg-fm-Very-Dark-Blue">
       <div className="mb-6">
-        <h2 className="text-2xl font-semibold text-center">Libros</h2>
+        <h2 className="text-3xl font-semibold text-center text-neutral-900 dark:text-white">Libros</h2>
         <div className="w-16 h-1 bg-fm-turquesa mx-auto mt-2 rounded-full" />
       </div>
 

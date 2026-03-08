@@ -60,9 +60,9 @@ export default function TestimonialSlider() {
   const progressPercent = ((currentIndex + 1) / images.length) * 100;
 
   return (
-    <section id="sect-testimonial" className="py-12 bg-gray-50 relative xl:py-30">
+    <section id="sect-testimonial" className="py-12 bg-gray-50 dark:bg-fm-Very-Dark-Blue relative xl:py-30">
       <div className="text-center mb-8">
-        <p className="text-3xl font-bold">Testimonios</p>
+        <p className="text-3xl font-bold text-neutral-900 dark:text-white">Testimonios</p>
         <div className="w-24 h-1 bg-[#22dfc1] mx-auto mt-3"></div>
       </div>
 
@@ -91,7 +91,7 @@ export default function TestimonialSlider() {
           {images.map((img, index) => (
             <div
               key={index}
-              className="snap-center w-[250px] h-[400px] hover:scale-105 flex-shrink-0 flex justify-center p-2 shadow-md rounded-xl bg-white transition-transform"
+              className="snap-center w-[250px] h-[400px] hover:scale-105 flex-shrink-0 flex justify-center p-2 shadow-md rounded-xl bg-white dark:bg-fm-Dark-Desaturated-Blue transition-transform"
             >
               <img
                 src={img}

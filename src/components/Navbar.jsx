@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import jjface from "/imagenes/jjcara.webp";
 import tour_marzo from "/imagenes/cripto-tour.jpg";
 import crossClose from "/imagenes/cross-close.svg";
-
+import Toggle_dark_mode from "./ToggleTheme";
 import arrow_down from "/imagenes/arrow-down.svg";
 import { Link } from "react-router-dom";
 
@@ -95,18 +95,23 @@ export default function Navbar() {
           </div>
         </div>
 
-        {/* Sidebar */}
+        {/* Sidebar for mobile versions*/}
         <div
           className={`sidebar fixed top-0 right-0 w-64 h-full h-scroll z-20 pb-12 bg-gray-900 overflow-scroll  text-white transform transition-transform ${
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <img
+          <div className="flex items-center px-2">
+                <Toggle_dark_mode/>
+               <img
             className="close-btn py-10 w-8 cursor-pointer mx-auto"
             src={crossClose}
             alt="Cerrar menú"
             onClick={() => setIsMenuOpen(false)}
           />
+        
+          </div>
+       
 
           <ul className="menu-options flex flex-col mt-8 px-4 gap-8 text-center">
             <li className="p-2 hover:bg-gray-700 cursor-pointer">
@@ -262,6 +267,7 @@ export default function Navbar() {
               Mentoria Premium
             </a>
           </li>
+          <Toggle_dark_mode></Toggle_dark_mode>
         </ul>
       </div>
       {/* Overlay + Modal */}

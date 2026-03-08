@@ -65,15 +65,15 @@ export default function AsideCalcEquiv({
   }
 
   return (
-    <div id="aside-calc-jub" className="flex bg-white xl:h-full flex-col p-2 gap-1 w-full shadow-lg rounded-md">
-         <p className="font-bold mb-2 text-center py-4 text-xl">Equivalencia en cada halvin</p>
-          <div className="header-aside w-full flex items-center justify-between font-semibold border-b pb-2 mb-2 md:px-3">
-            <p>Año</p>
-            <p>PBTC</p>
-            <p>Inversión</p>
+    <div id="aside-calc-jub" className="flex bg-white xl:h-full flex-col p-2 gap-1 w-full shadow-lg rounded-md dark:bg-fm-Dark-Desaturated-Blue">
+         <p className="font-bold mb-2 text-center py-4 text-xl dark:text-white">Equivalencia en cada halvin</p>
+          <div className="header-aside w-full flex items-center justify-between font-semibold border-b pb-2 mb-2 md:px-3 dark:border-neutral-500">
+            <p className="text-black dark:text-white">Año</p>
+            <p className="dark:text-white">PBTC</p>
+            <p className="dark:text-white">Inversión</p>
           </div>
       {equivalencias.length === 0 ? (
-        <p className="text-center">No hay equivalencias para mostrar</p>
+        <p className="text-center dark:text-white">No hay equivalencias para mostrar</p>
       ) : (
         <div className=" w-full flex flex-col p-4">
          
@@ -81,11 +81,11 @@ export default function AsideCalcEquiv({
               {equivalencias.map(({ year, PBTC, inversion }) => (
             <div
               key={year}
-              className="flex border border-fm-turquesa rounded-md  gap-4 justify-between md:px-3 p-1 border-b last:border-none"
+              className="flex border border-fm-turquesa rounded-md  gap-4 justify-between md:px-3 p-1 border-b dark:border-neutral-600"
             >
-              <p>{year}</p>
-              <p className="w-[100px] md:w-[200px]  text-right truncate">{short_amounts(PBTC)}</p>
-              <p className="w-[100px] md:w-[200px] text-right truncate">{short_amounts(inversion)}</p>
+              <p className="text-black dark:text-white ">{year}</p>
+              <p className="w-[100px] md:w-[200px]  text-right truncate dark:text-neutral-400">{short_amounts(PBTC)}</p>
+              <p className="w-[100px] md:w-[200px] text-right truncate dark:text-neutral-400">{short_amounts(inversion)}</p>
             </div>
           ))}
         </div>

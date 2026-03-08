@@ -99,3 +99,12 @@ html {
   animation: shake 0.5s ease-in-out;
 }
 
+/* Codigo para el marquee (carrousel 8infinito )*/
+
+
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+

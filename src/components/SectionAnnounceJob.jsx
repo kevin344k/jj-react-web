@@ -8,7 +8,7 @@ export default function SectionAnnounce() {
 
         <a
           href="https://api.whatsapp.com/send?phone=593961612048"
-          className="inline-block bg-fm-turquesa text-neutral-900  font-bold px-6 py-3 rounded-md hover:bg-red-700 transition"
+          className="inline-block bg-fm-turquesa text-neutral-900  font-bold px-6 py-3 rounded-md transition"
           target="_blank"
           rel="noopener noreferrer"
         >

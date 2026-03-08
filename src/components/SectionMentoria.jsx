@@ -71,7 +71,7 @@ const liveLinks = [
 
 export default function SectionMentoria() {
   return (
-    <section id="section-mentoria" className="relative z-10 py-12">
+    <section id="section-mentoria" className="relative z-10 py-12 ">
       {/* Fondo */}
       <div className="absolute inset-0 -z-1 brightness-[0.3] bg-[url('/imagenes/btg-bg-section.jpg')] bg-cover bg-center w-full"></div>
 
@@ -94,10 +94,10 @@ export default function SectionMentoria() {
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className=" flex  text-center justify-center items-center gap-2 bg-white px-3 py-3  rounded hover:bg-fm-turquesa_strong active:bg-fm-turquesa_strong active:text-neutral-900 active:scale-95 trasition-all ease-in-out duration-100 hover:scale-105"
+                className=" flex  text-center justify-center items-center gap-2 bg-white dark:bg-fm-Dark-Desaturated-Blue px-3 py-3  rounded hover:bg-fm-turquesa_strong active:bg-fm-turquesa_strong active:text-neutral-900 active:scale-95 trasition-all ease-in-out duration-100 hover:scale-105"
               >
                 <img src={img} alt={label} className="w-6 h-6 object-contain" />
-                <span className="font-medium">{label}</span>
+                <span className="font-medium text-neutral-800 dark:text-white">{label}</span>
               </a>
             </li>
           ))}

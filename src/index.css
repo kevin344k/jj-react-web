@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
 @import "tailwindcss";
-
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 .font-luckiest {
   font-family: 'Luckiest Guy', cursive;
 }
@@ -10,6 +10,28 @@
     --color-fm-turquesa: #3ef2d0;
     --color-fm-turquesa_strong: #19e6c0;
 --color-fm-turquesa_very_strong: #23a78e;
+
+
+
+/* Dark Theme
+*/
+--color-fm-Very-dark-Blue: hsl(230, 17%, 14%);
+--color-fm-Very-Dark-Blue: hsl(232, 19%, 15%);
+--color-fm-Dark-Desaturated-Blue: hsl(228, 28%, 20%);
+--color-fm-Desaturated-Blue: hsl(228, 34%, 66%);
+--color-fm-White: hsl(0, 0%, 100%);
+
+/* Light Theme*/
+
+--color-fm-White: hsl(0, 0%, 100%);
+--color-fm-Very-Pale-Blue: hsl(225, 100%, 98%);
+--color-fm-Light-Grayish-Blue : hsl(227, 47%, 96%);
+--color-fm-Dark-Grayish-Blue : hsl(228, 12%, 44%);
+--color-fm-Very-Dark-Blue: hsl(230, 17%, 14%);
+}
+
+:root, [data-theme="light"], [data-theme="dark"] {
+  transition: background-color 300ms ease, color 300ms ease, border-color 300ms ease;
 }
 
 .font-geist {

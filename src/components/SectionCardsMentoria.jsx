@@ -59,19 +59,26 @@ export default function SectionCardsMentoria() {
     expanded ? items : items.slice(0, 0);
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3   gap-6 max-w-6xl  mx-auto py-10  items-start md:px-3 px-2 ">
-           {/* CARD 2 */}
-      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 ">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">
-          MENTORIA VIP (PRESENCIAL)
+    <div className="bg-white dark:bg-fm-Dark-Desaturated-Blue py-12">
+         <div className="text-center mb-8">
+          <p className="text-3xl font-bold text-neutral-900 dark:text-white">Que enseño</p>
+          <div className="w-24 h-1 bg-fm-turquesa mx-auto mt-3"></div>
+        </div>
+      <div className="grid grid-cols-1 md:grid-cols-3   gap-6 max-w-6xl  mx-auto py-10  items-start md:px-3 px-2  ">
+     
+    
+               {/* CARD 2 */}
+      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300  dark:bg-fm-Very-dark-Blue dark:border-neutral-600">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2 dark:text-neutral-300">
+          MENTORIA VIP PRESENCIAL
         </h3>
-        <p className="text-gray-600 mb-4">
+        <p className="text-gray-600 mb-4 dark:text-neutral-400">
           La experiencia más completa, personalizada e intensiva
         </p>
 
         <ul className="mb-4 space-y-2 text-gray-700">
           {renderItems(itemsCard2, expandedCard2).map((item, index) => (
-            <li key={index} className="flex gap-x-1">
+            <li key={index} className="flex gap-x-1 dark:text-neutral-500">
               <span>⭐</span> {item}
             </li>
           ))}
@@ -79,11 +86,11 @@ export default function SectionCardsMentoria() {
           {expandedCard2 && (
             <div className="flex flex-col my-4">
               <ul className="list-disc gap-y-1 px-6 my-3">
-                <li className="font-semibold list-none flex gap-1">
+                <li className="font-semibold list-none flex gap-1 dark:text-neutral-400">
                   <span>🔹</span> REMOTO (Incluido en la VIP)
                 </li>
                 {remoteExtras.map((extra, i) => (
-                  <li key={i}>{extra}</li>
+                  <li className="dark:text-neutral-300" key={i}>{extra}</li>
                 ))}
               </ul>
             </div>
@@ -92,7 +99,7 @@ export default function SectionCardsMentoria() {
 
         <button
           onClick={() => setExpandedCard2(!expandedCard2)}
-          className="flex items-center gap-2 self-end text-gray-600 hover:text-gray-800 transition font-medium mb-4 mt-auto"
+          className="flex items-center gap-2 self-end text-gray-600 hover:text-gray-800 transition font-medium mb-4 mt-auto dark:text-neutral-300 dark:hover:text-neutral-400"
         >
           {expandedCard2 ? "Ver menos" : "Ver beneficios"}
           <ChevronDown
@@ -111,17 +118,17 @@ export default function SectionCardsMentoria() {
         </a>
       </div>
       {/* CARD 1 */}
-      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 ">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 dark:bg-fm-Very-dark-Blue dark:border-neutral-600">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2 dark:text-neutral-300">
           MENTORIA PREMIUM
         </h3>
-        <p className="text-gray-600 mb-4">
+        <p className="text-gray-600 mb-4 dark:text-neutral-400">
           Ideal para comenzar y dominar todo el ecosistema cripto desde cero.
         </p>
 
         <ul className="text-gray-700 mb-4 space-y-2">
           {renderItems(itemsCard1, expandedCard1).map((item, index) => (
-            <li key={index} className="flex gap-x-1">
+            <li key={index} className="flex gap-x-1 dark:text-neutral-500">
               <span>🔥</span> {item}
             </li>
           ))}
@@ -129,7 +136,7 @@ export default function SectionCardsMentoria() {
 
         <button
           onClick={() => setExpandedCard1(!expandedCard1)}
-          className="flex items-center gap-2 self-end text-gray-600 hover:text-gray-800 transition font-medium mb-4"
+          className="flex items-center gap-2 self-end text-gray-600 hover:text-gray-800 transition font-medium mb-4 dark:text-neutral-300 dark:hover:text-neutral-400"
         >
           {expandedCard1 ? "Ver menos" : "Ver beneficios"}
           <ChevronDown
@@ -147,9 +154,6 @@ export default function SectionCardsMentoria() {
           Elegir
         </a>
       </div>
-
- 
-
       {/* CARD 3 - sin comportamiento de expandir 
       <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 min-h-[650px]">
         <h3 className="text-xl font-semibold text-gray-800 mb-2">
@@ -174,8 +178,8 @@ export default function SectionCardsMentoria() {
       </div>
 */}
       {/* CARD 4- sin comportamiento de expandir */}
-      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 ">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">
+      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 dark:bg-fm-Very-dark-Blue dark:border-neutral-600">
+        <h3 className="text-xl font-semibold text-gray-800 mb-2 dark:text-neutral-300">
           WALLET FRÍA
         </h3>
       <div className="flex gap-2">
@@ -184,7 +188,7 @@ export default function SectionCardsMentoria() {
           alt="Crypto Tour"
           className="w-25 mb-4 rounded-xl"
         />
-        <p className="text-gray-600 mb-4">
+        <p className="text-gray-600 mb-4 dark:text-neutral-400">
           Mantén tus criptomonedas seguras con las wallets frías Jade y Jade
           Plus. 
         </p>
@@ -199,5 +203,7 @@ export default function SectionCardsMentoria() {
         </a>
       </div>
     </div>
+    </div>
+    
   );
 }

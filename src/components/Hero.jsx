@@ -2,18 +2,20 @@ import React, { useState } from "react";
 import video from "../assets/Video/hero_video.mp4";
 import img_cajero from "/imagenes/cajeros.jpeg";
 import FlipClock from "./FlipClock";
-import SectionCardsMentoria from "./SectionCardsMentoria";
+import Marquee from "./Marquee";
+
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <div className="relative h-[80vh] flex flex-col items-center gap-8 justify-center py-20 xl:py-10">
+    <div className="relative min-h-[80vh] flex flex-col items-center justify-center pt-20 pb-6 xl:pb-2 xl:py-10">
       <div className=" text-center w-full  flex flex-col items-center justify-center xl:max-w-[1250px] xl:py-6">
                <FlipClock></FlipClock>
         <p className="text-4xl font-bold p-3 pb-5 text-white lg:text-6xl lg:pb-25">
-          BITCOIN ES SACARSE LA LOTERIA EN CAMARA LENTA
+          <span className=" font-extrabold bg-gradient-to-r from-[#FF8F00] to-[#FFE500] bg-clip-text text-transparent">₿ITCOIN</span>  ES SACARSE LA LOTERIA EN CAMARA LENTA
         </p>
-        <div className="flex flex-col lg:flex-row gap-2 sm:gap-8 items-center justify-center lg:w-[60%] w-[80%] ">
+       <div className=" flex flex-col w-full items-center justify-center">
+         <div className="flex flex-col lg:flex-row gap-2 sm:gap-8 items-center justify-center lg:w-[60%] w-[80%] ">
           <a
             className="p-2 font-bold font-geist py-4 rounded-xl shadow flex justify-center  hover:bg-fm-turquesa_strong bg-fm-turquesa y-100  w-full transition hover:border hover:border-neutral-600 "
             href="https://api.whatsapp.com/send?phone=593998177135&text=Hola,%20estoy%20interesado%20en%20la%20Mentoria%20VIP%20%22Mi%20primer%20Bitcoin%22:%20Presencial"
@@ -34,6 +36,19 @@ className="p-2 py-4 rounded-xl shadow font-semibold font-geist flex justify-cent
             Mi libro
           </a>
         </div>
+        <div className="flex  pt-12 divide-x divide-neutral-400 ">
+            <div className="px-4 md:px-8 text-left"><span className="text-2xl text-white font-bold">
+             500 <span className="text-fm-turquesa">+</span> </span>
+             <p className="text-neutral-300  text-xs md:text-[16px] ">Alumnos</p></div>
+            <div className="px-4 md:px-8 text-left"><span className="font-bold text-2xl text-white">
+             7 <span className="text-fm-turquesa">+</span> </span>
+             <p className="text-neutral-300  text-xs md:text-[16px] ">Años de experiencia</p></div>
+               <div className=" px-4  md:px-8 text-left"><span className="font-bold text-2xl  text-[#ff8f00]">
+            BTC </span>
+             <p className="text-neutral-300  text-xs md:text-[16px] ">Autor best-seller</p></div>
+            
+        </div>
+       </div>
         {/* <div className="flex flex-col  gap-2 sm:gap-8 items-center justify-center">
           <a
             className=" bg-fm-turquesa text-neutral-900 px-12 py-4 text-lg md:text-xl font-bold rounded-full hover:bg-fm-turquesa xl:text-3xl"
@@ -55,6 +70,22 @@ className="p-2 py-4 rounded-xl shadow font-semibold font-geist flex justify-cent
           </button>}
         </div>*/}
       </div>
+
+    <Marquee
+          className="mt-18"
+  
+phrases={[
+  "NO TUS LLAVES PRIVADAS, NO TUS BITCOINS",
+  "VERIFICA, NO CONFÍES",
+  "NOT YOUR KEYS, NOT YOUR BITCOINS",
+  "NADIE LE GANA AL HOLDER",
+  "NO HAGAS TRADING",
+  "FIX THE MONEY, FIX THE WORLD",
+]}
+
+          duration={60}
+        />
+
 
       <video
         className="absolute -z-1 inset-0 object-cover w-full h-full brightness-[0.5]"

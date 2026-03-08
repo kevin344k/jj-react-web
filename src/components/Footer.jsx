@@ -66,7 +66,7 @@ export default function Footer() {
         </a>
       </div>
 </div>
-      <p className="text-xs text-neutral-400">Sitio web desarrollado por <a className="text-yellow-500 underline" href="https://kevin344k.github.io/portfolio_kevin_webdeveloper/">kevin344k</a></p>
+      <p className="text-xs text-neutral-400">Sitio web desarrollado por <a className="text-yellow-500 underline" href="https://portfolio-kevin-webdeveloper.vercel.app/">kevin344k</a></p>
     </footer>
   );
 }

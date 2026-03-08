@@ -10,7 +10,7 @@ export default function CardBook({book,idx}) {
   return (
       <div   key={idx} 
   
-      className="div-libro relative snap-center  w-60 h-90  flex-shrink-0 shadow-md p-2 overflow-hidden rounded-xl hover:scale-105 transition-scale ease-in-out duration-100">
+      className="div-libro relative snap-center bg-white dark:bg-fm-Dark-Desaturated-Blue w-60 h-90  flex-shrink-0 shadow-md p-2 overflow-hidden rounded-xl hover:scale-105 transition-scale ease-in-out duration-100 ">
               <img
                 src={book.img}
                 alt={book.title}

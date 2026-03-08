@@ -6,9 +6,9 @@ import newProductImg from "/imagenes/new.png";
 
 export default function Section_Libro_jj() {
   return (
-    <section id="sec-announce-book" className="py-15 bg-fm-turquesa_very_strong">
+    <section id="sec-announce-book" className="py-15 bg-fm-turquesa_very_strong ">
       {/* Título */}
-      <div className="text-center mb-8">
+      <div className="text-center mb-8 ">
         <p className="text-3xl font-bold">Adquiere mi libro</p>
         <span className="block text-xl text-neutral-100">y deja de ser un esclavo!</span>
         <div className="w-24 h-1 bg-white mx-auto mt-3"></div>
