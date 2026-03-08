@@ -78,7 +78,7 @@ export default function ToggleDarkMode() {
   return (
     <div
       onClick={switchTheme}
-      className={`w-30 rounded-full p-1 flex inset-shadow-md hover:cursor-pointer transition-all delay-200 md:w-[50px] lg:w-[80px] border border-neutral-700 
+      className={`w-15 rounded-full p-1 flex inset-shadow-md hover:cursor-pointer transition-all delay-200 md:w-[50px] lg:w-[80px] border border-neutral-700 
         ${theme === "dark" ? "justify-end bg-gray-500" : "justify-start bg-gray-500"}
       `}
     >

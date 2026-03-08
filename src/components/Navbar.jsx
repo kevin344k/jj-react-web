@@ -101,10 +101,10 @@ export default function Navbar() {
             isMenuOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
-          <div className="flex items-center px-2">
+          <div className="flex items-center px-8 justify-between gap-4">
                 <Toggle_dark_mode/>
                <img
-            className="close-btn py-10 w-8 cursor-pointer mx-auto"
+            className="close-btn py-10 w-8 cursor-pointer "
             src={crossClose}
             alt="Cerrar menú"
             onClick={() => setIsMenuOpen(false)}
