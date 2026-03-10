@@ -38,10 +38,10 @@ className="p-2 py-4 rounded-xl shadow font-semibold font-geist flex justify-cent
         </div>
         <div className="flex  pt-12 divide-x divide-neutral-400 ">
             <div className="px-4 md:px-8 text-left"><span className="text-2xl text-white font-bold">
-             500 <span className="text-fm-turquesa">+</span> </span>
+             10k <span className="text-fm-turquesa">+</span> </span>
              <p className="text-neutral-300  text-xs md:text-[16px] ">Alumnos</p></div>
             <div className="px-4 md:px-8 text-left"><span className="font-bold text-2xl text-white">
-             7 <span className="text-fm-turquesa">+</span> </span>
+             12 <span className="text-fm-turquesa">+</span> </span>
              <p className="text-neutral-300  text-xs md:text-[16px] ">Años de experiencia</p></div>
                <div className=" px-4  md:px-8 text-left"><span className="font-bold text-2xl  text-[#ff8f00]">
             BTC </span>
