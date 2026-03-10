@@ -57,12 +57,12 @@ export default function Navbar() {
             </p>
           </div>
           <button
-            className={`ml-4 flex gap-2 px-3 py-1 items-center  rounded-full bg-[#01FBF7] hover:bg-[#7E4DFE] transition ease-in-out duration-200 hover:text-white ${
+            className={`ml-4 flex gap-2 px-3 py-1 items-center lg:ml-0  rounded-full bg-[#01FBF7] hover:bg-[#7E4DFE] transition ease-in-out duration-200 hover:text-white ${
               shake ? "shake" : ""
             }`}
             onClick={() => setIsOpen(true)}
           >
-            <p className="text-neutral-800 font-bold hover:text-white hover:cursor-pointer">
+            <p className="text-neutral-800 font-bold hover:text-white hover:cursor-pointer lg:text-sm">
               Inconfiscable World Tour
             </p>
           </button>
@@ -113,7 +113,7 @@ export default function Navbar() {
           </div>
        
 
-          <ul className="menu-options flex flex-col mt-8 px-4 gap-8 text-center">
+          <ul className="menu-options flex flex-col mt-8 px-4 gap-8  text-center">
             <li className="p-2 hover:bg-gray-700 cursor-pointer">
               <Link to="/">Inicio</Link>
             </li>
@@ -198,7 +198,7 @@ export default function Navbar() {
           <span className="block h-0.5 bg-neutral-300 rounded"></span>
           <span className="block h-0.5 bg-neutral-300 rounded"></span>
         </button>
-        <ul className="hidden lg:flex xl:flex items-center justify-center px-4 gap-8 text-center">
+        <ul className="hidden lg:flex xl:flex items-center justify-center px-4 gap-8 lg:gap-3 text-center lg:px-0">
           <li className="relative group cursor-pointer">
             <Link
               className="boton-nav text-neutral-400 group-hover:text-[#3ef2d0] transition-colors"

@@ -15,7 +15,7 @@ export default function Hero() {
           <span className=" font-extrabold bg-gradient-to-r from-[#FF8F00] to-[#FFE500] bg-clip-text text-transparent">₿ITCOIN</span>  ES SACARSE LA LOTERIA EN CAMARA LENTA
         </p>
        <div className=" flex flex-col w-full items-center justify-center">
-         <div className="flex flex-col lg:flex-row gap-2 sm:gap-8 items-center justify-center lg:w-[60%] w-[80%] ">
+         <div className="flex flex-col lg:flex-row gap-2 sm:gap-8 items-center justify-center md:flex-row md:w-full md:px-6  lg:w-[75%]  w-[80%] ">
           <a
             className="p-2 font-bold font-geist py-4 rounded-xl shadow flex justify-center  hover:bg-fm-turquesa_strong bg-fm-turquesa y-100  w-full transition hover:border hover:border-neutral-600 "
             href="https://api.whatsapp.com/send?phone=593998177135&text=Hola,%20estoy%20interesado%20en%20la%20Mentoria%20VIP%20%22Mi%20primer%20Bitcoin%22:%20Presencial"
