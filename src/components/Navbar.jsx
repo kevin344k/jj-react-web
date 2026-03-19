@@ -56,16 +56,18 @@ export default function Navbar() {
               JJChagerben
             </p>
           </div>
-          <button
+          <a
             className={`ml-4 flex gap-2 px-3 py-1 items-center lg:ml-0  rounded-full bg-[#01FBF7] hover:bg-[#7E4DFE] transition ease-in-out duration-200 hover:text-white ${
               shake ? "shake" : ""
             }`}
-            onClick={() => setIsOpen(true)}
+            href="https://fusionplusdigital.com/eventos/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
             <p className="text-neutral-800 font-bold hover:text-white hover:cursor-pointer lg:text-sm">
               Inconfiscable World Tour
             </p>
-          </button>
+          </a>
           <div className="flex gap-2 xl:gap-8 ">
             {/* <a
               onClick={() => setIsOpen(true)}
