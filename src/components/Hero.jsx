@@ -15,12 +15,12 @@ export default function Hero() {
           <span className=" font-extrabold bg-gradient-to-r from-[#FF8F00] to-[#FFE500] bg-clip-text text-transparent">₿ITCOIN</span>  ES SACARSE LA LOTERIA EN CAMARA LENTA
         </p>
        <div className=" flex flex-col w-full items-center justify-center">
-         <div className="flex flex-col lg:flex-row gap-2 sm:gap-8 items-center justify-center md:flex-row md:w-full md:px-6  lg:w-[75%]  w-[80%] ">
+         <div className="flex flex-col lg:flex-row gap-2 sm:gap-8 items-center justify-center md:grid md:grid-cols-2 md:w-full md:px-6  lg:flex lg:w-[80%]  w-[80%] ">
           <a
             className="p-2 font-bold font-geist py-4 rounded-xl shadow flex justify-center  hover:bg-fm-turquesa_strong bg-fm-turquesa y-100  w-full transition hover:border hover:border-neutral-600 "
             href="https://api.whatsapp.com/send?phone=593998177135&text=Hola,%20estoy%20interesado%20en%20la%20Mentoria%20VIP%20%22Mi%20primer%20Bitcoin%22:%20Presencial"
           >
-            Mentoria VIP: Presencial
+            Mentoria VIP Presencial
           </a>
           <a
             className="p-2 py-4 font-semibold font-geist rounded-xl shadow flex justify-center hover:font-semibold bg-neutral-900 text-white border border-neutral-600 hover:bg-neutral-800  hover:border-fm-turquesa w-full transition"
@@ -34,6 +34,12 @@ className="p-2 py-4 rounded-xl shadow font-semibold font-geist flex justify-cent
             href="#sec-announce-book"
           >
             Mi libro
+          </a>
+                    <a
+className="p-2 py-4 rounded-xl shadow font-semibold font-geist flex justify-center hover:font-semibold bg-neutral-900 text-white border border-neutral-600 hover:bg-neutral-800  hover:border-fm-turquesa w-full transition"
+            href="https://api.whatsapp.com/send?phone=593939838756&text=Hola,%20estoy%20interesado%20en%20adquirir%20una%20wallet%20friahttps://api.whatsapp.com/send?phone=593939838756&text=Hola,%20estoy%20interesado%20en%20adquirir%20una%20wallet%20fria"
+          >
+            Wallet Fría
           </a>
         </div>
         <div className="flex  pt-12 divide-x divide-neutral-400 ">
