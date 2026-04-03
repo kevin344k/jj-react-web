@@ -177,6 +177,9 @@ export default function Navbar() {
                 <li className="p-2 hover:bg-gray-700 cursor-pointer">
                   <Link to="/compras">Compras</Link>
                 </li>
+                <li className="p-2 hover:bg-gray-700 cursor-pointer">
+                  <Link to="/wallets&mineros">Wallets & Mineros</Link>
+                </li>
               </ul>
             )}
             <li className="mt-12 ">
@@ -256,6 +259,9 @@ export default function Navbar() {
                 </li>
                 <li className="p-2 hover:bg-gray-700 cursor-pointer">
                   <Link to="/compras">Compras</Link>
+                </li>
+                <li className="p-2 hover:bg-gray-700 cursor-pointer">
+                  <Link to="/wallets&mineros">Wallets & Mineros</Link>
                 </li>
               </ul>
             )}

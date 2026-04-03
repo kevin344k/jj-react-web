@@ -5,7 +5,7 @@ const baseURL = import.meta.env.BASE_URL;
 
 const socialLinks = [ 
     {
-    href: "https://app.fedi.xyz/link?screen=user&id=@npub1nta4rwq6gmmhtumktuzmasn5w2cnrd6hf8c8axvrgphuwft2gmkqly6za2:m1.8fa.in",
+    href: "https://app.fedi.xyz/get-the-app",
     img: `${baseURL}imagenes/fedi.svg`,
     label: "Fedi",
   },
@@ -56,11 +56,7 @@ const socialLinks = [
     img: `${baseURL}imagenes/icon-color/twitter_X.svg`,
     label: "X",
   },
-  {
-    href: "https://www.bitmex.com/app/register/A7p8Lt",
-    img: `${baseURL}imagenes/icon-color/bitmex.svg`,
-    label: "Bitmex",
-  },
+ 
 ];
 
 const liveLinks = [

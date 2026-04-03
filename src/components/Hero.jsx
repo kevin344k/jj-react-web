@@ -36,11 +36,12 @@ className="p-2 py-4 rounded-xl shadow font-semibold font-geist flex justify-cent
             Mi libro
           </a>
                     <a
-className="p-2 py-4 rounded-xl shadow font-semibold font-geist flex justify-center hover:font-semibold bg-neutral-900 text-white border border-neutral-600 hover:bg-neutral-800  hover:border-fm-turquesa w-full transition"
-            href="https://api.whatsapp.com/send?phone=593939838756&text=Hola,%20estoy%20interesado%20en%20adquirir%20una%20wallet%20friahttps://api.whatsapp.com/send?phone=593939838756&text=Hola,%20estoy%20interesado%20en%20adquirir%20una%20wallet%20fria"
-          >
-            Wallet Fría
-          </a>
+                      className="p-2 py-4 rounded-xl shadow font-semibold font-geist flex justify-center hover:font-semibold bg-neutral-900 text-white border border-neutral-600 hover:bg-neutral-800  hover:border-fm-turquesa w-full transition"
+                      href="/wallets&mineros"
+                      as="button"
+                    >
+                      Wallet & Mineros
+                    </a>
         </div>
         <div className="flex  pt-12 divide-x divide-neutral-400 ">
             <div className="px-4 md:px-8 text-left"><span className="text-2xl text-white font-bold">

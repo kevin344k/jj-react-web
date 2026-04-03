@@ -180,26 +180,23 @@ export default function SectionCardsMentoria() {
       {/* CARD 4- sin comportamiento de expandir */}
       <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 dark:bg-fm-Very-dark-Blue dark:border-neutral-600">
         <h3 className="text-xl font-semibold text-gray-800 mb-2 dark:text-neutral-300">
-          WALLET FRÍA
+          WALLET FRIA Y MINERO
         </h3>
-      <div className="flex gap-2">
+      <div className="flex gap-2 items-center justify-around">
           <img
           src={wallet_jade}
           alt="Crypto Tour"
           className="w-25 mb-4 rounded-xl"
         />
-        <p className="text-gray-600 mb-4 dark:text-neutral-400">
-          Mantén tus criptomonedas seguras con las wallets frías Jade y Jade
-          Plus. 
-        </p>
+       <img src="https://m.media-amazon.com/images/I/61wNXnDuSyL._AC_SX466_PIbundle-99,TopRight,0,0_SH20_.jpg" alt="img-bitaxe"   className="w-15 mb-4 rounded-xl"/>
       </div>
         <a
-          target="_blank"
-          href="https://api.whatsapp.com/send?phone=593939838756&text=Hola,%20estoy%20interesado%20en%20adquirir%20una%20wallet%20fria"
+          
+          href="/wallets&mineros"
           className="bg-fm-turquesa text-black py-2 px-4 rounded-lg hover:bg-fm-turquesa_strong hover:font-semibold transition mt-auto text-center"
         >
           {" "}
-          Adquirir
+          Ver catálogo
         </a>
       </div>
     </div>
