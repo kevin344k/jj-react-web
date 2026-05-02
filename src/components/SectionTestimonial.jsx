@@ -21,6 +21,13 @@ const images = [
 export default function TestimonialSlider() {
   const scrollContainerRef = useRef(null);
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [modalImage, setModalImage] = useState(null);
+
+  const openModal = (img) => {
+    setModalImage(img);
+    setModalOpen(true);
+  };
 
   const cardWidth = 262; // 250px width + 12px margin-right
 
@@ -62,7 +69,7 @@ export default function TestimonialSlider() {
   return (
     <section id="sect-testimonial" className="py-12 bg-gray-50 dark:bg-fm-Very-Dark-Blue relative xl:py-30">
       <div className="text-center mb-8">
-        <p className="text-3xl font-bold text-neutral-900 dark:text-white">Testimonios</p>
+        <p className="text-3xl font-bold text-neutral-900 dark:text-white">Ganancias de mis alumnos</p>
         <div className="w-24 h-1 bg-[#22dfc1] mx-auto mt-3"></div>
       </div>
 
@@ -91,7 +98,8 @@ export default function TestimonialSlider() {
           {images.map((img, index) => (
             <div
               key={index}
-              className="snap-center w-[250px] h-[400px] hover:scale-105 flex-shrink-0 flex justify-center p-2 shadow-md rounded-xl bg-white dark:bg-fm-Dark-Desaturated-Blue transition-transform"
+              className="snap-center w-[250px] h-[400px] hover:scale-105 flex-shrink-0 flex justify-center p-2 shadow-md rounded-xl bg-white dark:bg-fm-Dark-Desaturated-Blue transition-transform cursor-pointer"
+              onClick={() => openModal(img)}
             >
               <img
                 src={img}
@@ -113,6 +121,45 @@ export default function TestimonialSlider() {
           style={{ width: `${progressPercent}%` }}
         />
       </div>
+
+      {/* Modal */}
+      {modalOpen && modalImage && (
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 animate-fade-in"
+          onClick={() => setModalOpen(false)}
+        >
+          <div
+            className="relative max-w-[90vw] max-h-[90vh]"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={modalImage}
+              alt="Imagen ampliada"
+              className="max-w-full max-h-[85vh] object-contain rounded-xl"
+            />
+            <button
+              onClick={() => setModalOpen(false)}
+              className="absolute top-2 right-2 p-1 bg-black/50 hover:bg-red-500 rounded-full transition cursor-pointer"
+              aria-label="Cerrar"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                strokeWidth={2}
+                stroke="white"
+                fill="none"
+                className="w-8 h-8"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M6 6l12 12M6 18L18 6"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
