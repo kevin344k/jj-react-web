@@ -1,0 +1,81 @@
+{
+  "socialLinks": [
+    {
+      "href": "https://app.fedi.xyz/get-the-app",
+      "img": "imagenes/fedi.svg",
+      "label": "Fedi"
+    },
+    {
+      "href": "https://tradingdifferent.com/?ref=YELgWNnX",
+      "img": "imagenes/icon-color/download.png",
+      "label": "Pools de Liquidez"
+    },
+    {
+      "href": "https://link.ugly.cash/referral/balder",
+      "img": "imagenes/icon-color/uglycash.webp",
+      "label": "UGLYCASH"
+    },
+    {
+      "href": "https://accounts.bullbitcoin.com/en/registration?referral_code=jjchagerben",
+      "img": "imagenes/logo-red-bull.png",
+      "label": "BULL BITCOIN - Comprar Bitcoin"
+    },
+    {
+      "href": "https://api.whatsapp.com/send?phone=593982631730&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM",
+      "img": "imagenes/icon-color/whatsap.svg",
+      "label": "WhatsApp"
+    },
+    {
+      "href": "https://www.whatsapp.com/channel/0029Vah3B5n60eBiIBrX8J1Z",
+      "img": "imagenes/icon-color/whatsap.svg",
+      "label": "Canal de WhatsApp"
+    },
+    {
+      "href": "https://t.me/jjchagerben357",
+      "img": "imagenes/icon-color/telegram.svg",
+      "label": "Telegram"
+    },
+    {
+      "href": "https://www.instagram.com/jjchagerben33/",
+      "img": "imagenes/icon-color/instagram.svg",
+      "label": "Instagram"
+    },
+    {
+      "href": "https://www.facebook.com/people/JJChagerben/61557765639522/?mibextid=ZbWKwL",
+      "img": "imagenes/icon-color/facebook.svg",
+      "label": "Facebook"
+    },
+    {
+      "href": "https://x.com/JJChagerben357",
+      "img": "imagenes/icon-color/twitter_X.svg",
+      "label": "X"
+    }
+  ],
+  "liveLinks": [
+    {
+      "href": "https://www.twitch.tv/jjchagerben",
+      "img": "imagenes/icon-color/twitch.svg",
+      "alt": "Twitch"
+    },
+    {
+      "href": "https://www.youtube.com/@jjchagerben",
+      "img": "imagenes/icon-color/youtube.svg",
+      "alt": "YouTube"
+    }
+  ],
+  "numbers": {
+    "mentoriaPrimary": "593982631730",
+    "mentoriaAlt": "593996737500",
+    "walletSales": "593939838756",
+    "joinJob": "593961612048"
+  },
+  "messages": {
+    "infoMentoriaPremium": "INFORMACION SOBRE LA MENTORIA PREMIUM",
+    "mentoriaVIPPresencial": "Hola, estoy interesado en la Mentoria VIP \"Mi primer Bitcoin\": Presencial",
+    "bookPurchase": "Hola, quiero comprar tu libro \"Invierte en Bitcoin o esclavitud\".",
+    "walletJadePlus": "Hola, quiero comprar la Blockstream Jade Plus Hardware Wallet",
+    "walletJade": "Hola, quiero comprar la Blockstream Jade Hardware Wallet",
+    "walletGamma601": "Hola, quiero comprar el Bitaxes Gamma 601 para minar Bitcoin",
+    "joinJob": "Hola, quiero trabajar contigo"
+  }
+}

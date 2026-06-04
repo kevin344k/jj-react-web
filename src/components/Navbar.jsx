@@ -5,6 +5,7 @@ import crossClose from "/imagenes/cross-close.svg";
 import Toggle_dark_mode from "./ToggleTheme";
 import arrow_down from "/imagenes/arrow-down.svg";
 import { Link } from "react-router-dom";
+import { buildWhatsAppApiLink } from "../utils/links";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -57,32 +58,39 @@ export default function Navbar() {
             </p>
           </div>
 
-          <div className="flex gap-2 xl:gap-8 ">
-            {/* <a
-              onClick={() => setIsOpen(true)}
-              className={` bg-fm-turquesa text-neutral-900 hover:cursor-pointer font-bold text-center  min-w-[100px] md:w-[200px] md:p-2 lg:w-[200px] py-1 shadow-lg active:scale-95 text-xs md:text-sm rounded-md  hover:bg-fm-turquesa transition xl:text-lg  xl:w-[250px] ${
-                shake ? "shake" : ""
-              }`}
-            >
-              Seminario: Mi primer ₿itcoin, Manta
-            </a>
+          <div className="flex gap-3 ml-3 md:ml-4 xl:gap-6 ">
+            {/* Canal WhatsApp */}
             <a
-              href="https://wa.me/593998177135?text=Estoy%20interesado%20en%20el%20Seminario%20Mi%20primer%20Bitcoin%20Guayaquil"
-              className={` bg-fm-turquesa text-neutral-900 font-bold text-center  min-w-[100px] w-[150px] md:w-[200px] md:p-2 lg:w-[200px]  py-1 shadow-lg active:scale-95 text-xs md:text-sm rounded-md  hover:bg-fm-turquesa transition xl:text-lg  xl:w-[250px] ${
+              href="https://www.whatsapp.com/channel/0029Vah3B5n60eBiIBrX8J1Z"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold text-center py-1.5 px-3 md:py-2 md:px-4 shadow-lg active:scale-95 text-sm md:text-base rounded-md transition ${
                 shake ? "shake" : ""
               }`}
             >
-              Seminario: Mi primer ₿itcoin, Guayaquil
+              Canal
+              <img
+                src="/imagenes/icon-color/whatsap.svg"
+                alt="WhatsApp"
+                className="w-5 h-5 md:w-6 md:h-6"
+              />
             </a>
-                 <a
-             href="https://wa.me/593998177135?text=Estoy%20interesado%20en%20el%20Seminario%20Empresarial%20de%20Mi%20primer%20Bitcoin%20para%20mis%20empleados"
-              className={` bg-fm-turquesa text-neutral-900 font-bold text-center px-0.5 min-w-[100px] w-[150px] md:w-[200px] md:p-2 lg:w-[200px]  py-1 shadow-lg active:scale-95 text-xs md:text-sm rounded-md  hover:bg-fm-turquesa transition xl:text-lg  xl:w-[250px] ${
+            {/* Canal Telegram */}
+            <a
+              href="https://t.me/jjchagerben357"
+              target="_blank"
+              rel="noopener noreferrer"
+              className={`flex items-center gap-2 bg-[#2AABEE] hover:bg-[#229ed9] text-white font-bold text-center py-1.5 px-3 md:py-2 md:px-4 shadow-lg active:scale-95 text-sm md:text-base rounded-md transition ${
                 shake ? "shake" : ""
               }`}
             >
-              Seminario Empresarial: Mi primer ₿itcoin
+              Canal
+              <img
+                src="/imagenes/icon-color/telegram.svg"
+                alt="Telegram"
+                className="w-5 h-5 md:w-6 md:h-6"
+              />
             </a>
-*/}
           </div>
         </div>
 
@@ -174,7 +182,7 @@ export default function Navbar() {
             <li className="mt-12 ">
               <a
                 className="boton-mentoria bg-fm-turquesa text-black px-3 py-2 rounded hover:bg-fm-turquesa"
-                href="https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
+                href={buildWhatsAppApiLink("mentoriaAlt", "infoMentoriaPremium")}
               >
                 Mentoria Premium
               </a>
@@ -259,7 +267,7 @@ export default function Navbar() {
           <li className="hidden">
             <a
               className="boton-mentoria bg-fm-turquesa text-black px-3 py-2 rounded hover:bg-fm-turquesa"
-              href="https://api.whatsapp.com/send?phone=593996737500&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
+              href={buildWhatsAppApiLink("mentoriaAlt", "infoMentoriaPremium")}
             >
               Mentoria Premium
             </a>

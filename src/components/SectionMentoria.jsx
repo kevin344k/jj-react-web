@@ -1,76 +1,19 @@
 import React from "react";
-
+import { socialLinks as rawSocialLinks, liveLinks as rawLiveLinks } from "../utils/links";
 
 const baseURL = import.meta.env.BASE_URL;
 
-const socialLinks = [ 
-    {
-    href: "https://app.fedi.xyz/get-the-app",
-    img: `${baseURL}imagenes/fedi.svg`,
-    label: "Fedi",
-  },
-    {
-    href: "https://tradingdifferent.com/?ref=YELgWNnX",
-    img: `${baseURL}imagenes/icon-color/download.png`,
-    label: "Pools de Liquidez",
-  },
-    {
-    href: "https://link.ugly.cash/referral/balder",
-    img: `${baseURL}imagenes/icon-color/uglycash.webp`,
-    label: "UGLYCASH",
-  },
-  {
-    href: "https://accounts.bullbitcoin.com/en/registration?referral_code=jjchagerben",
-    img: `${baseURL}imagenes/logo-red-bull.png`,
-    label: "BULL BITCOIN - Comprar Bitcoin",
-  },
+const socialLinks = rawSocialLinks.map(({ href, img, label }) => ({
+  href,
+  img: `${baseURL}${img}`,
+  label,
+}));
 
-
-  {
-    href: "https://api.whatsapp.com/send?phone=593998177135&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM",
-    img: `${baseURL}imagenes/icon-color/whatsap.svg`,
-    label: "WhatsApp",
-  },
-  {
-    href: "https://www.whatsapp.com/channel/0029Vah3B5n60eBiIBrX8J1Z",
-    img: `${baseURL}imagenes/icon-color/whatsap.svg`,
-    label: "Canal de WhatsApp",
-  },
-  {
-    href: "https://t.me/jjchagerben357",
-    img: `${baseURL}imagenes/icon-color/telegram.svg`,
-    label: "Telegram",
-  },
-  {
-    href: "https://www.instagram.com/jjchagerben33/",
-    img: `${baseURL}imagenes/icon-color/instagram.svg`,
-    label: "Instagram",
-  },
-  {
-    href: "https://www.facebook.com/people/JJChagerben/61557765639522/?mibextid=ZbWKwL",
-    img: `${baseURL}imagenes/icon-color/facebook.svg`,
-    label: "Facebook",
-  },
-  {
-    href: "https://x.com/JJChagerben357",
-    img: `${baseURL}imagenes/icon-color/twitter_X.svg`,
-    label: "X",
-  },
- 
-];
-
-const liveLinks = [
-  {
-    href: "https://www.twitch.tv/jjchagerben",
-    img: `${baseURL}imagenes/icon-color/twitch.svg`,
-    alt: "Twitch",
-  },
-  {
-    href: "https://www.youtube.com/@jjchagerben",
-    img: `${baseURL}imagenes/icon-color/youtube.svg`,
-    alt: "YouTube",
-  },
-];
+const liveLinks = rawLiveLinks.map(({ href, img, alt }) => ({
+  href,
+  img: `${baseURL}${img}`,
+  alt,
+}));
 
 
 export default function SectionMentoria() {

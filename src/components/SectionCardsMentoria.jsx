@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import wallet_jade from "/imagenes/jade-wallet.webp";
 import tour_marzo from "/imagenes/cripto-tour.jpg";
+import { buildWhatsAppApiLink } from "../utils/links";
 
 export default function SectionCardsMentoria() {
   const [expandedCard1, setExpandedCard1] = useState(false);
@@ -111,7 +112,7 @@ export default function SectionCardsMentoria() {
 
         <a
           target="_blank"
-          href="https://api.whatsapp.com/send?phone=593998177135&text=Hola,%20estoy%20interesado%20en%20la%20Mentoria%20VIP%20%22Mi%20primer%20Bitcoin%22:%20Presencial"
+          href={buildWhatsAppApiLink("mentoriaPrimary", "mentoriaVIPPresencial")}
           className=" bg-fm-turquesa text-black py-2 px-4 rounded-lg hover:bg-fm-turquesa_strong hover:font-semibold  transition text-center"
         >
           Elegir
@@ -148,7 +149,7 @@ export default function SectionCardsMentoria() {
 
         <a
           target="_blank"
-          href="https://api.whatsapp.com/send?phone=593998177135&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
+          href={buildWhatsAppApiLink("mentoriaPrimary", "infoMentoriaPremium")}
           className="mt-auto bg-fm-turquesa text-black py-2 px-4 rounded-lg hover:bg-fm-turquesa_strong hover:font-semibold  transition text-center"
         >
           Elegir

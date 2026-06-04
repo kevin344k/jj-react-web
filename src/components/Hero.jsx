@@ -3,6 +3,7 @@ import video from "../assets/Video/hero_video.mp4";
 import img_cajero from "/imagenes/cajeros.jpeg";
 import FlipClock from "./FlipClock";
 import Marquee from "./Marquee";
+import { buildWhatsAppApiLink } from "../utils/links";
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,32 +11,35 @@ export default function Hero() {
   return (
     <div className="relative min-h-[80vh] flex flex-col items-center justify-center pt-20 pb-6 xl:pb-2 xl:py-10">
       <div className=" text-center w-full  flex flex-col items-center justify-center xl:max-w-[1250px] xl:py-6">
-               <FlipClock></FlipClock>
-        <p className="text-4xl font-bold p-3 pb-5 text-white lg:text-6xl lg:pb-25">
+        <p className="text-white text-2xl sm:text-3xl lg:text-4xl font-extrabold px-4 pb-4 lg:pb-5">
+          Ayudo a las personas a salir de la pobreza
+        </p>
+        <FlipClock></FlipClock>
+        <p className="text-2xl sm:text-3xl font-bold p-3 pb-2 my-3 text-white lg:text-4xl lg:pb-4 lg:my-4">
           <span className=" font-extrabold bg-gradient-to-r from-[#FF8F00] to-[#FFE500] bg-clip-text text-transparent">₿ITCOIN</span>  ES SACARSE LA LOTERIA EN CAMARA LENTA
         </p>
        <div className=" flex flex-col w-full items-center justify-center">
          <div className="flex flex-col lg:flex-row gap-2 sm:gap-8 items-center justify-center md:grid md:grid-cols-2 md:w-full md:px-6  lg:flex lg:w-[80%]  w-[80%] ">
           <a
-            className="p-2 font-bold font-geist py-4 rounded-xl shadow flex justify-center hover:bg-fm-turquesa_strong bg-fm-turquesa w-full transition hover:border hover:border-neutral-600"
-            href="https://api.whatsapp.com/send?phone=593998177135&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
+            className="p-2 font-bold font-geist py-4 rounded-xl shadow flex justify-center hover:bg-fm-turquesa_strong bg-fm-turquesa w-full transition"
+            href={buildWhatsAppApiLink("mentoriaPrimary", "infoMentoriaPremium")}
           >
             Mentoria Premium
           </a>
           <a
-            className="p-2 font-bold font-geist py-4 rounded-xl shadow flex justify-center hover:bg-fm-turquesa_strong bg-fm-turquesa w-full transition hover:border hover:border-neutral-600"
-            href="https://api.whatsapp.com/send?phone=593998177135&text=Hola,%20estoy%20interesado%20en%20la%20Mentoria%20VIP%20%22Mi%20primer%20Bitcoin%22:%20Presencial"
+            className="p-2 font-bold font-geist py-4 rounded-xl shadow flex justify-center hover:bg-fm-turquesa_strong bg-fm-turquesa w-full transition"
+            href={buildWhatsAppApiLink("mentoriaPrimary", "mentoriaVIPPresencial")}
           >
             Mentoria VIP Presencial
           </a>
           <a
-            className="p-2 font-bold font-geist py-4 rounded-xl shadow flex justify-center hover:bg-fm-turquesa_strong bg-fm-turquesa w-full transition hover:border hover:border-neutral-600"
+            className="p-2 font-bold font-geist py-4 rounded-xl shadow flex justify-center hover:bg-fm-turquesa_strong bg-fm-turquesa w-full transition"
             href="#sec-announce-book"
           >
             Mi libro
           </a>
           <a
-            className="p-2 font-bold font-geist py-4 rounded-xl shadow flex justify-center hover:bg-fm-turquesa_strong bg-fm-turquesa w-full transition hover:border hover:border-neutral-600"
+            className="p-2 font-bold font-geist py-4 rounded-xl shadow flex justify-center hover:bg-fm-turquesa_strong bg-fm-turquesa w-full transition"
             href="/wallets&mineros"
           >
             Wallet & Mineros
@@ -54,26 +58,6 @@ export default function Hero() {
             
         </div>
        </div>
-        {/* <div className="flex flex-col  gap-2 sm:gap-8 items-center justify-center">
-          <a
-            className=" bg-fm-turquesa text-neutral-900 px-12 py-4 text-lg md:text-xl font-bold rounded-full hover:bg-fm-turquesa xl:text-3xl"
-            href="https://api.whatsapp.com/send?phone=593998177135&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
-          >
-            Mentoria Premium
-          </a>
-          <a
-            className="border border-fm-turquesa bg-[#182025] text-white w-[253px] py-2 px-2 mt-2   text-md  font-bold rounded-full md:mt-0  xl:w-fit xl:mt-0 xl:py-4 xl:px-5 xl:text-2xl"
-            href="https://api.whatsapp.com/send?phone=593998177135&text=Hola,%20estoy%20interesado%20en%20la%20Mentoria%20VIP%20%22Mi%20primer%20Bitcoin%22:%20Presencial"
-          >
-            Mentoria VIP: Presencial
-          </a>
-      { /*  <button
-            className="border  bg-[#F7931A] text-white w-[253px] py-2 px-2 mt-2   text-md  font-bold rounded-full md:mt-0  xl:w-fit xl:mt-0 xl:py-4 xl:px-5 xl:text-2xl"
-            onClick={() => setIsOpen(true)}
-          >
-            Cajeros Bitcoin
-          </button>}
-        </div>*/}
       </div>
 
     <Marquee

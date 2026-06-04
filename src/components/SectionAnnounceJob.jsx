@@ -1,3 +1,5 @@
+import { buildWhatsAppApiLink } from "../utils/links";
+
 export default function SectionAnnounce() {
   return (
     <section className="py-12 bg-fm-turquesa_very_strong">
@@ -7,7 +9,7 @@ export default function SectionAnnounce() {
         </h2>
 
         <a
-          href="https://api.whatsapp.com/send?phone=593961612048"
+          href={buildWhatsAppApiLink("joinJob", "joinJob")}
           className="inline-block bg-fm-turquesa text-neutral-900  font-bold px-6 py-3 rounded-md transition"
           target="_blank"
           rel="noopener noreferrer"

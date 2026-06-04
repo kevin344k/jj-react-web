@@ -1,6 +1,7 @@
 import React from "react";
 import video from "../assets/Video/hero_video.mp4";
 import "../App.css";
+import { buildWhatsAppApiLink } from "../utils/links";
 
 const cards = [
 
@@ -8,19 +9,19 @@ const cards = [
     title: "Blockstream Jade Plus Hardware Wallet",
     description: "La nueva Jade Plus es la billetera fría más avanzada de Blockstream, con pantalla a color y soporte para Bitcoin y Liquid. Seguridad máxima para tus ahorros.",
     image: "https://store.blockstream.com/cdn/shop/files/2_2.jpg?v=1771356905&width=800",
-    waLink: "https://api.whatsapp.com/send?phone=593939838756&text=Hola,%20quiero%20comprar%20la%20Blockstream%20Jade%20Plus%20Hardware%20Wallet"
+    waLink: buildWhatsAppApiLink("walletSales", "walletJadePlus")
   },
   {
     title: "Blockstream Jade Hardware Wallet",
     description: "La clásica Jade, billetera fría segura y económica, ideal para principiantes y usuarios avanzados. Compatible con Bitcoin y Liquid.",
     image: "https://store.blockstream.com/cdn/shop/files/Jade_Bitcoin_Hardware_Wallet_-_Green_-_Front.png?v=1767373365&width=800",
-    waLink: "https://api.whatsapp.com/send?phone=593939838756&text=Hola,%20quiero%20comprar%20la%20Blockstream%20Jade%20Hardware%20Wallet"
+    waLink: buildWhatsAppApiLink("walletSales", "walletJade")
   },
   {
     title: "Bitcoins Miner Bitaxes Gamma 601",
     description: "Uno de los mineros potentes y eficientes del mercado. Perfecto para minería de Bitcoin.",
     image: "https://m.media-amazon.com/images/I/61wNXnDuSyL._AC_SX466_PIbundle-99,TopRight,0,0_SH20_.jpg",
-    waLink: "https://api.whatsapp.com/send?phone=593939838756&text=Hola,%20quiero%20comprar%20el%20Bitaxes%20Gamma%20601%20para%20minar%20Bitcoin"
+    waLink: buildWhatsAppApiLink("walletSales", "walletGamma601")
   }
 ];
 

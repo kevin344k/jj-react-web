@@ -3,6 +3,7 @@ import wasapIcon from "/imagenes/icon-color/whatsap.svg";
 import amazonIcon from "/imagenes/amazon.svg";
 import libroImg from "/libros/portadas/libro_jj.jpeg";
 import newProductImg from "/imagenes/new.png";
+import { buildWaMeLink } from "../utils/links";
 
 export default function Section_Libro_jj() {
   return (
@@ -31,7 +32,7 @@ export default function Section_Libro_jj() {
           <div className="flex flex-col w-full gap-4">
             {/* Botón WhatsApp */}
             <a
-              href="https://wa.me/593998177135?text=Hola%2C%20quiero%20comprar%20tu%20libro%20%22Invierte%20en%20Bitcoin%20o%20esclavitud%22."
+              href={buildWaMeLink("mentoriaPrimary", "bookPurchase")}
               className="flex items-center justify-center gap-2 bg-white text-fm-turquesa_very_strong font-bold px-5 py-4 rounded-lg shadow transition w-full"
             >
               <span>Comprar en Ecuador</span>

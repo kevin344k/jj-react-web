@@ -1,4 +1,5 @@
 import React from "react";
+import { buildWhatsAppApiLink } from "../utils/links";
 
 export default function Footer() {
   return (
@@ -57,7 +58,7 @@ export default function Footer() {
           ¿Eres nuevo en el mundo de las criptomonedas?
         </p>
         <a
-          href="https://api.whatsapp.com/send?phone=593998177135&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM"
+          href={buildWhatsAppApiLink("mentoriaPrimary", "infoMentoriaPremium")}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-fm-turquesa text-neutral-900 font-bold  px-4 py-2 rounded-full hover:bg-green-600 transition"
@@ -66,7 +67,7 @@ export default function Footer() {
         </a>
       </div>
 </div>
-      <p className="text-xs text-neutral-400">Sitio web desarrollado por <a className="text-yellow-500 underline" href="https://portfolio-kevin-webdeveloper.vercel.app/">kevin344k</a></p>
+      <p className="text-xs text-neutral-400">Sitio web desarrollado por <a className="text-yellow-500 underline" href="https://labsproductivity.com" target="_blank" rel="noopener noreferrer">labsproductivity.com</a></p>
     </footer>
   );
 }
