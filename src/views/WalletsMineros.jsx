@@ -5,20 +5,41 @@ import { buildWhatsAppApiLink } from "../utils/links";
 
 const cards = [
 
+
   {
-    title: "Blockstream Jade Plus Hardware Wallet",
-    description: "La nueva Jade Plus es la billetera fría más avanzada de Blockstream, con pantalla a color y soporte para Bitcoin y Liquid. Seguridad máxima para tus ahorros.",
-    image: "https://store.blockstream.com/cdn/shop/files/2_2.jpg?v=1771356905&width=800",
-    waLink: buildWhatsAppApiLink("walletSales", "walletJadePlus")
+    title: " Jade Core ",
+    subtitle:"Hardware Wallet",
+    description: "Jade Core busca que los nuevos usuarios de Bitcoin puedan guardar y controlar sus propios fondos de forma sencilla, sin depender de plataformas de intercambio ni bancos, siguiendo la visión original de Satoshi Nakamoto de un sistema financiero sin intermediarios.",
+    image: "https://store.blockstream.com/cdn/shop/files/2.jpg?v=1771020835&width=600",
+    waLink: buildWhatsAppApiLink("walletSales", "walletJadeCore"),
+    price:"155",
+    simbol:"USD"
+
   },
   {
-    title: "Blockstream Jade Hardware Wallet",
+    title: " Jade Plus ",
+    subtitle:"Hardware Wallet",
+    description: "La nueva Jade Plus es la billetera fría más avanzada de Blockstream, con pantalla a color y soporte para Bitcoin y Liquid. Seguridad máxima para tus ahorros.",
+    image: "https://store.blockstream.com/cdn/shop/files/2_2.jpg?v=1771356905&width=800",
+    waLink: buildWhatsAppApiLink("walletSales", "walletJadePlus"),
+    price:"220",
+    simbol:"USD"
+  },
+
+
+  
+  {
+    title: " Jade Classic",
+     subtitle:"Hardware Wallet",
     description: "La clásica Jade, billetera fría segura y económica, ideal para principiantes y usuarios avanzados. Compatible con Bitcoin y Liquid.",
     image: "https://store.blockstream.com/cdn/shop/files/Jade_Bitcoin_Hardware_Wallet_-_Green_-_Front.png?v=1767373365&width=800",
-    waLink: buildWhatsAppApiLink("walletSales", "walletJade")
+    waLink: buildWhatsAppApiLink("walletSales", "walletJade"),
+    price:"120",
+    simbol:"USD"
   },
   {
     title: "Bitcoins Miner Bitaxes Gamma 601",
+     subtitle:"Minero",
     description: "Uno de los mineros potentes y eficientes del mercado. Perfecto para minería de Bitcoin.",
     image: "https://m.media-amazon.com/images/I/61wNXnDuSyL._AC_SX466_PIbundle-99,TopRight,0,0_SH20_.jpg",
     waLink: buildWhatsAppApiLink("walletSales", "walletGamma601")
@@ -62,8 +83,20 @@ export default function WalletsMineros({ onBack }) {
         {cards.map((card, idx) => (
           <div
             key={idx}
-            className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 dark:bg-fm-Very-dark-Blue dark:border-neutral-600 w-[340px] min-h-[480px] mb-8"
+            className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 dark:bg-fm-Very-dark-Blue dark:border-neutral-600 w-[340px] min-h-[480px] mb-8 relative overflow-hidden"
           >
+      {card.price && (
+  <div className="absolute -top-10 -right-5 bg-fm-turquesa_strong rounded-full text-black p-20 text-sm shadow-md">
+    <div className="relative">
+      <div className="absolute flex -right-12 -top-10 pt-4 text-[44px]">
+        <p>{card.price}</p>
+        <span className="text-sm text-neutral-600 self-end">
+          {card.simbol}
+        </span>
+      </div>
+    </div>
+  </div>
+)}
             <div className="flex justify-center items-center mb-6">
               <img
                 src={card.image}
@@ -72,13 +105,14 @@ export default function WalletsMineros({ onBack }) {
               />
             </div>
             <h2 className="text-xl font-semibold text-gray-800 mb-2 dark:text-neutral-300 min-h-[56px] text-center">{card.title}</h2>
-            <p className="text-gray-600 mb-4 dark:text-neutral-400 min-h-[72px] text-center">{card.description}</p>
+            <span className="text-sm text-neutral-900 font-bold mb-4">{card.subtitle}</span>
+            <p className="text-gray-600 mb-4 dark:text-neutral-400 min-h-[72px] text-left">{card.description}</p>
             <div className="flex-grow" />
             <a
               href={card.waLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="bg-fm-turquesa text-black py-2 px-4 rounded-lg hover:bg-fm-turquesa_strong hover:font-semibold transition text-center mt-4 text-lg font-semibold w-full"
+              className="bg-fm-turquesa rounded-full text-black py-2 px-4 hover:bg-fm-turquesa_strong hover:font-semibold transition text-center mt-4 text-lg font-semibold w-full"
             >
               Pedir
             </a>

@@ -10,7 +10,7 @@ import SectionLibros from './SectionLibros'
 import SectionCardsMentoria from './SectionCardsMentoria'
 export default function Main() {
   return (
-    <div>
+    <div className="">
       <Hero></Hero>
         <Section_Libro_jj></Section_Libro_jj>
           <SectionCardsMentoria />

@@ -21,7 +21,7 @@
       "label": "BULL BITCOIN - Comprar Bitcoin"
     },
     {
-      "href": "https://api.whatsapp.com/send?phone=593982631730&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM",
+      "href": "https://api.whatsapp.com/send?phone=593998177135&text=INFORMACION%20SOBRE%20LA%20MENTORIA%20PREMIUM",
       "img": "imagenes/icon-color/whatsap.svg",
       "label": "WhatsApp"
     },
@@ -64,7 +64,7 @@
     }
   ],
   "numbers": {
-    "mentoriaPrimary": "593982631730",
+    "mentoriaPrimary": "593998177135",
     "mentoriaAlt": "593996737500",
     "walletSales": "593939838756",
     "joinJob": "593961612048"
@@ -75,6 +75,7 @@
     "bookPurchase": "Hola, quiero comprar tu libro \"Invierte en Bitcoin o esclavitud\".",
     "walletJadePlus": "Hola, quiero comprar la Blockstream Jade Plus Hardware Wallet",
     "walletJade": "Hola, quiero comprar la Blockstream Jade Hardware Wallet",
+     "walletJadeCore": "Hola, quiero comprar la Blockstream Jade Core Hardware Wallet",
     "walletGamma601": "Hola, quiero comprar el Bitaxes Gamma 601 para minar Bitcoin",
     "joinJob": "Hola, quiero trabajar contigo"
   }

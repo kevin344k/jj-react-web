@@ -3,15 +3,20 @@ import jjface from "/imagenes/jjcara.webp";
 import tour_marzo from "/imagenes/cripto-tour.jpg";
 import crossClose from "/imagenes/cross-close.svg";
 import Toggle_dark_mode from "./ToggleTheme";
+import img_wallet_venezuela from "/imagenes/img_wallet_venezuela.jpeg";
 import arrow_down from "/imagenes/arrow-down.svg";
 import { Link } from "react-router-dom";
 import { buildWhatsAppApiLink } from "../utils/links";
-
+import vnzla_img from "/imagenes/venezuela.png";
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [shake, setShake] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
+  const [openHelp, setOpenHelp] = useState(true);
+
+
+
   useEffect(() => {
     // Activa el shake cada 5 segundos
     const interval = setInterval(() => {
@@ -39,14 +44,12 @@ export default function Navbar() {
     };
   }, [isMenuOpen]);
 
-
-
   return (
     <nav id="navBar" className=" bg-[#182025] ">
-      <div className="flex px-2 items-center justify-between p-1 gap-3 md:px-4 xl:max-w-[1450px] lg:px-2 lg:mx-auto">
+      <div className="flex px-2 items-center justify-between p-1 gap-3 md:px-4 xl:max-w-[1450px] lg:px-2 lg:mx-auto ">
         {/* Logo */}
-        <div className="logo  flex items-center  md:gap-3">
-          <div className="flex items-center justify-center px-0 md:px-6 lg:px-2">
+        <div className="logo  flex items-center  md:gap-3 ">
+          <div className="relative flex items-center justify-center px-0 md:px-6 lg:px-2">
             {" "}
             <img
               className="jjface  md:flex w-12 rounded-full shadow-lg h-12 shrink-0"
@@ -56,6 +59,54 @@ export default function Navbar() {
             <p className="hidden sm:hidden md:flex md:ml-2 text-white lg:flex xl:flex xl:ml-4 xl:mr-12 text-lg font-semibold">
               JJChagerben
             </p>
+
+            {
+  openHelp && <div className="absolute top-18 left-0  p-2 rounded-sm  z-50 bg-[#101115] w-[200px] lg:w-[350px]">
+              <div
+                className="absolute -top-3 -right-3 w-7 h-7  rounded-full bg-fm-turquesa_strong border border-[#2d3138] flex items-center justify-center cursor-pointer hover:bg-[#2a2d34] hover:scale-110 transition-all duration-200 shadow-lg hover:cursor-pointer"
+                onClick={() => {
+                  setOpenHelp(false);
+                }}
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2.3"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  className="w-4 h-4 text-slate-700 hover:text-fm-turquesa_strong"
+                >
+                  <line x1="18" y1="6" x2="6" y2="18" />
+                  <line x1="6" y1="6" x2="18" y2="18" />
+                </svg>
+              </div>
+
+
+            <div className="flex items-center place-content-center gap-2 pb-2">
+                <p className="text-slate-200 text-center pb-2  transition-all duration-200">
+                Ayuda a Venezuela
+              </p>
+              <img src={vnzla_img} className="w-8 h-8" alt="" />
+            </div>
+
+              <div className="w-full">
+                <img
+                  src={img_wallet_venezuela}
+                  alt=""
+                  className="w-full h-auto object-contain"
+                />
+              </div>
+              <img
+                src="https://es.wikipedia.org/wiki/Archivo:Venezuela_flag.png"
+                alt=""
+              />
+            </div>
+
+}
+
+           
           </div>
 
           <div className="flex gap-3 ml-3 md:ml-4 xl:gap-6 ">
@@ -101,16 +152,14 @@ export default function Navbar() {
           }`}
         >
           <div className="flex items-center px-8 justify-between gap-4">
-                <Toggle_dark_mode/>
-               <img
-            className="close-btn py-10 w-8 cursor-pointer "
-            src={crossClose}
-            alt="Cerrar menú"
-            onClick={() => setIsMenuOpen(false)}
-          />
-        
+            <Toggle_dark_mode />
+            <img
+              className="close-btn py-10 w-8 cursor-pointer "
+              src={crossClose}
+              alt="Cerrar menú"
+              onClick={() => setIsMenuOpen(false)}
+            />
           </div>
-       
 
           <ul className="menu-options flex flex-col mt-8 px-4 gap-8  text-center">
             <li className="p-2 hover:bg-gray-700 cursor-pointer">
@@ -182,7 +231,10 @@ export default function Navbar() {
             <li className="mt-12 ">
               <a
                 className="boton-mentoria bg-fm-turquesa text-black px-3 py-2 rounded hover:bg-fm-turquesa"
-                href={buildWhatsAppApiLink("mentoriaAlt", "infoMentoriaPremium")}
+                href={buildWhatsAppApiLink(
+                  "mentoriaAlt",
+                  "infoMentoriaPremium",
+                )}
               >
                 Mentoria Premium
               </a>
@@ -230,7 +282,7 @@ export default function Navbar() {
                 {/* Barra animada */}
                 <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#3ef2d0] transition-all group-hover:w-full"></span>
               </li>
-            )
+            ),
           )}
           <li
             className="relative group cursor-pointer"
@@ -286,19 +338,19 @@ export default function Navbar() {
             className="relative bg-white rounded-2xl shadow-lg p-3  w-[80%] md:w-96 animate-fadeIn "
             onClick={(e) => e.stopPropagation()}
           >
-            
-            
-              <img src={tour_marzo} alt="Crypto Tour" className="w-full mb-4 rounded-xl" />
-            
+            <img
+              src={tour_marzo}
+              alt="Crypto Tour"
+              className="w-full mb-4 rounded-xl"
+            />
 
             <div className="flex flex-col items-center">
-           
               <div className="flex gap-2 items-center  py-5">
                 <a
                   className="flex  items-center gap-3 rounded-md shadow-lg px-3 py-2 w-full bg-fm-turquesa"
                   href="https://fusionplusdigital.com/eventos/"
                 >
-                  Comprar Entradas 
+                  Comprar Entradas
                 </a>
               </div>
             </div>
