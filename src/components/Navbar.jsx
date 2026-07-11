@@ -9,12 +9,81 @@ import { Link } from "react-router-dom";
 import { buildWhatsAppApiLink } from "../utils/links";
 import vnzla_img from "/imagenes/venezuela.png";
 import copy_img from "/imagenes/copy.svg";
+
+function DonateWalletCard({ copied, onCopy }) {
+  return (
+    <div className="p-2 rounded-sm bg-[#101115] w-[250px] lg:w-[350px] border border-[#2d3138] shadow-2xl">
+      <div className="flex items-center place-content-center gap-2 pb-2">
+        <p className="text-slate-200 text-center pb-2 transition-all duration-200">
+          Ayuda a Venezuela
+        </p>
+        <img src={vnzla_img} className="w-8 h-8" alt="Bandera de Venezuela" />
+      </div>
+
+      <div className="w-full">
+        <img
+          src={img_wallet_venezuela}
+          alt="QR de wallet"
+          className="w-full h-auto object-contain"
+        />
+        <div className="flex justify-center items-center px-4 py-2 gap-2 mt-2">
+          <p className="text-sm text-neutral-200">
+            <span className="text-sky-700">bc1q</span>{" "}
+            <span className="text-sky-700">33pt</span> s8x3 q27j rt8l ckpw suw3
+            k39l glcg 2ryn 8x
+          </p>
+          <button
+            onClick={onCopy}
+            className={`w-9 h-9 shrink-0 rounded-full flex items-center justify-center relative overflow-hidden
+border transition-all duration-300 hover:cursor-pointer
+${
+  copied
+    ? "bg-fm-turquesa_strong border-fm-turquesa_strong scale-110"
+    : "bg-transparent border-neutral-500 hover:border-fm-turquesa_strong"
+}`}
+            aria-label="Copiar direccion de wallet"
+            type="button"
+          >
+            <img
+              src={copy_img}
+              alt="Copiar"
+              className={`absolute w-4 h-4 transition-all duration-300 ${
+                copied
+                  ? "opacity-0 scale-50 rotate-90"
+                  : "opacity-100 scale-100 rotate-0"
+              }`}
+            />
+
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="black"
+              strokeWidth="3"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              className={`absolute w-5 h-5 transition-all duration-300 ${
+                copied
+                  ? "opacity-100 scale-100 rotate-0"
+                  : "opacity-0 scale-50 -rotate-90"
+              }`}
+            >
+              <polyline points="20 6 9 17 4 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [shake, setShake] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState(false);
   const [openHelp, setOpenHelp] = useState(false);
+  const [isHoveringDonate, setIsHoveringDonate] = useState(false);
   const [copied, setCopied] = useState(false);
   const direccion = "bc1q33pts8x3q27jrt8lckpwsuw3k39lglcg2ryn8x";
 
@@ -79,95 +148,6 @@ export default function Navbar() {
             <p className="hidden sm:hidden md:flex md:ml-2 text-white lg:flex xl:flex xl:ml-4 xl:mr-12 text-lg font-semibold">
               JJChagerben
             </p>
-            {openHelp && (
-              <div className="absolute top-18 left-0  p-2 rounded-sm  z-50 bg-[#101115] w-[250px] lg:w-[350px]">
-                <div
-                  className="absolute -top-3 -right-3 w-7 h-7  rounded-full bg-fm-turquesa_strong border border-[#2d3138] flex items-center justify-center cursor-pointer hover:bg-[#2a2d34] hover:scale-110 transition-all duration-200 shadow-lg hover:cursor-pointer"
-                  onClick={() => {
-                    setOpenHelp(false);
-                  }}
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2.3"
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    className="w-4 h-4 text-slate-700 hover:text-fm-turquesa_strong"
-                  >
-                    <line x1="18" y1="6" x2="6" y2="18" />
-                    <line x1="6" y1="6" x2="18" y2="18" />
-                  </svg>
-                </div>
-
-                <div className="flex items-center place-content-center gap-2 pb-2">
-                  <p className="text-slate-200 text-center pb-2  transition-all duration-200">
-                    Ayuda a Venezuela
-                  </p>
-                  <img src={vnzla_img} className="w-8 h-8" alt="" />
-                </div>
-
-                <div className="w-full">
-                  <img
-                    src={img_wallet_venezuela}
-                    alt=""
-                    className="w-full h-auto object-contain"
-                  />
-                  <div className="flex justify-center  items-center px-4 py-2 gap-2 mt-2">
-                    <p className="text-sm text-neutral-200">
-                      <span className="text-sky-700">bc1q</span>{" "}
-                      <span className="text-sky-700">33pt</span> s8x3 q27j rt8l{" "}
-                      ckpw suw3 k39l glcg 2ryn 8x
-                    </p>
-                    <div
-                      onClick={handleCopy}
-                      className={`w-9 h-9 shrink-0 rounded-full flex items-center justify-center relative overflow-hidden
-  border transition-all duration-300 hover:cursor-pointer
-  ${
-    copied
-      ? "bg-fm-turquesa_strong border-fm-turquesa_strong scale-110"
-      : "bg-transparent border-neutral-500 hover:border-fm-turquesa_strong"
-  }`}
-                    >
-                      {/* Icono copiar */}
-                      <img
-                        src={copy_img}
-                        alt=""
-                        className={`absolute w-4 h-4 transition-all duration-300 ${
-                          copied
-                            ? "opacity-0 scale-50 rotate-90"
-                            : "opacity-100 scale-100 rotate-0"
-                        }`}
-                      />
-
-                      {/* Check */}
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="black"
-                        strokeWidth="3"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        className={`absolute w-5 h-5 transition-all duration-300 ${
-                          copied
-                            ? "opacity-100 scale-100 rotate-0"
-                            : "opacity-0 scale-50 -rotate-90"
-                        }`}
-                      >
-                        <polyline points="20 6 9 17 4 12" />
-                      </svg>
-                    </div>
-                  </div>
-                </div>
-                <img
-                  src="https://es.wikipedia.org/wiki/Archivo:Venezuela_flag.png"
-                  alt=""
-                />
-              </div>
-            )}
           </div>
 
           <div className="flex gap-3 ml-3 md:ml-4 xl:gap-6 ">
@@ -180,7 +160,7 @@ export default function Navbar() {
                 shake ? "shake" : ""
               }`}
             >
-              Canal
+              <span className="hidden md:inline">Canal</span>
               <img
                 src="/imagenes/icon-color/whatsap.svg"
                 alt="WhatsApp"
@@ -196,13 +176,54 @@ export default function Navbar() {
                 shake ? "shake" : ""
               }`}
             >
-              Canal
+              <span className="hidden md:inline">Canal</span>
               <img
                 src="/imagenes/icon-color/telegram.svg"
                 alt="Telegram"
                 className="w-5 h-5 md:w-6 md:h-6"
               />
             </a>
+
+            <button
+              type="button"
+              onClick={() => setOpenHelp(true)}
+              className="flex lg:hidden items-center gap-2 bg-[#F7D154] hover:bg-[#eec84b] text-[#111] font-bold text-center py-1.5 px-3 md:py-2 md:px-4 shadow-lg active:scale-95 text-sm md:text-base rounded-md transition"
+            >
+              Donar a
+              <img
+                src={vnzla_img}
+                alt="Bandera de Venezuela"
+                className="w-5 h-5 md:w-6 md:h-6"
+              />
+            </button>
+
+            <div
+              className="hidden lg:block relative"
+              onMouseEnter={() => setIsHoveringDonate(true)}
+              onMouseLeave={() => setIsHoveringDonate(false)}
+            >
+              <button
+                type="button"
+                className="flex items-center gap-2 bg-[#F7D154] hover:bg-[#eec84b] text-[#111] font-bold text-center py-2 px-4 shadow-lg active:scale-95 text-base rounded-md transition"
+              >
+                Donar a
+                <img
+                  src={vnzla_img}
+                  alt="Bandera de Venezuela"
+                  className="w-6 h-6"
+                />
+              </button>
+
+              <div
+                className={`absolute top-14 right-0 z-50 transition-all duration-300 ease-out origin-top-right ${
+                  isHoveringDonate
+                    ? "opacity-100 translate-y-0 scale-100 pointer-events-auto"
+                    : "opacity-0 -translate-y-1 scale-95 pointer-events-none"
+                }`}
+              >
+                <DonateWalletCard copied={copied} onCopy={handleCopy} />
+              </div>
+            </div>
           </div>
         </div>
 
@@ -436,6 +457,41 @@ export default function Navbar() {
                 />
               </svg>
             </button>
+          </div>
+        </div>
+      )}
+
+      {openHelp && (
+        <div
+          className="fixed inset-0 bg-black/80 backdrop-blur-[2px] flex items-center justify-center z-50 px-3 lg:hidden animate-fade-in"
+          onClick={() => setOpenHelp(false)}
+        >
+          <div
+            className="relative animate-donate-modal"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setOpenHelp(false)}
+              className="absolute -top-3 -right-3 w-7 h-7 rounded-full bg-fm-turquesa_strong border border-[#2d3138] flex items-center justify-center shadow-lg"
+              type="button"
+              aria-label="Cerrar ayuda"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-4 h-4 text-slate-700"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+
+            <DonateWalletCard copied={copied} onCopy={handleCopy} />
           </div>
         </div>
       )}
