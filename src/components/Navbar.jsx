@@ -5,8 +5,7 @@ import crossClose from "/imagenes/cross-close.svg";
 import Toggle_dark_mode from "./ToggleTheme";
 import arrow_down from "/imagenes/arrow-down.svg";
 import { Link } from "react-router-dom";
-
-const MENTORIA_TELEGRAM_URL = "https://t.me/JJChagerbenOficial";
+import { buildWaMeLink } from "../utils/links";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -180,7 +179,7 @@ export default function Navbar() {
             <li className="mt-12 ">
               <a
                 className="boton-mentoria bg-fm-turquesa text-black px-3 py-2 rounded hover:bg-fm-turquesa"
-                href={MENTORIA_TELEGRAM_URL}
+                href={buildWaMeLink("mentoriaPrimary", "infoMentoriaPremium")}
               >
                 Mentoria Premium
               </a>
@@ -265,7 +264,7 @@ export default function Navbar() {
           <li className="hidden">
             <a
               className="boton-mentoria bg-fm-turquesa text-black px-3 py-2 rounded hover:bg-fm-turquesa"
-              href={MENTORIA_TELEGRAM_URL}
+              href={buildWaMeLink("mentoriaPrimary", "infoMentoriaPremium")}
             >
               Mentoria Premium
             </a>

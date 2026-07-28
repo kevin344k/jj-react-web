@@ -3,8 +3,7 @@ import video from "../assets/Video/hero_video.mp4";
 import img_cajero from "/imagenes/cajeros.jpeg";
 import FlipClock from "./FlipClock";
 import Marquee from "./Marquee";
-
-const MENTORIA_TELEGRAM_URL = "https://t.me/JJChagerbenOficial";
+import { buildWaMeLink } from "../utils/links";
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -24,13 +23,13 @@ export default function Hero() {
          <div className="flex flex-col lg:flex-row gap-2 sm:gap-8 items-center justify-center md:grid md:grid-cols-2 md:w-full md:px-6  lg:flex lg:w-[80%]  w-[80%] ">
           <a
             className="p-2 font-bold font-geist py-4 rounded-xl shadow flex justify-center hover:bg-fm-turquesa_strong bg-fm-turquesa w-full transition"
-            href={MENTORIA_TELEGRAM_URL}
+            href={buildWaMeLink("mentoriaPrimary", "infoMentoriaPremium")}
           >
             Mentoria Premium
           </a>
           <a
             className="p-2 font-bold font-geist py-4 rounded-xl shadow flex justify-center hover:bg-fm-turquesa_strong bg-fm-turquesa w-full transition"
-            href={MENTORIA_TELEGRAM_URL}
+            href={buildWaMeLink("mentoriaPrimary", "mentoriaVIPPresencial")}
           >
             Mentoria VIP Presencial
           </a>

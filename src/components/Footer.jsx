@@ -1,6 +1,5 @@
 import React from "react";
-
-const MENTORIA_TELEGRAM_URL = "https://t.me/JJChagerbenOficial";
+import { buildWaMeLink } from "../utils/links";
 
 export default function Footer() {
   return (
@@ -59,7 +58,7 @@ export default function Footer() {
           ¿Eres nuevo en el mundo de las criptomonedas?
         </p>
         <a
-          href={MENTORIA_TELEGRAM_URL}
+          href={buildWaMeLink("mentoriaPrimary", "infoMentoriaPremium")}
           target="_blank"
           rel="noopener noreferrer"
           className="inline-block bg-fm-turquesa text-neutral-900 font-bold  px-4 py-2 rounded-full hover:bg-green-600 transition"
