@@ -9,6 +9,7 @@ import { Link } from "react-router-dom";
 const MENTORIA_TELEGRAM_URL = "https://t.me/JJChagerbenOficial";
 
 export default function Navbar() {
+  const SHOW_DONATE_BUTTON = false;
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [shake, setShake] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
@@ -91,6 +92,54 @@ export default function Navbar() {
                 className="w-5 h-5 md:w-6 md:h-6"
               />
             </a>
+<<<<<<< HEAD
+=======
+
+            {SHOW_DONATE_BUTTON && (
+              <>
+                <button
+                  type="button"
+                  onClick={() => setOpenHelp(true)}
+                  className="flex lg:hidden items-center gap-2 bg-[#F7D154] hover:bg-[#eec84b] text-[#111] font-bold text-center py-1.5 px-3 md:py-2 md:px-4 shadow-lg active:scale-95 text-sm md:text-base rounded-md transition"
+                >
+                  Donar a
+                  <img
+                    src={vnzla_img}
+                    alt="Bandera de Venezuela"
+                    className="w-5 h-5 md:w-6 md:h-6"
+                  />
+                </button>
+
+                <div
+                  className="hidden lg:block relative"
+                  onMouseEnter={() => setIsHoveringDonate(true)}
+                  onMouseLeave={() => setIsHoveringDonate(false)}
+                >
+                  <button
+                    type="button"
+                    className="flex items-center gap-2 bg-[#F7D154] hover:bg-[#eec84b] text-[#111] font-bold text-center py-2 px-4 shadow-lg active:scale-95 text-base rounded-md transition"
+                  >
+                    Donar a
+                    <img
+                      src={vnzla_img}
+                      alt="Bandera de Venezuela"
+                      className="w-6 h-6"
+                    />
+                  </button>
+
+                  <div
+                    className={`absolute top-14 right-0 z-50 transition-all duration-300 ease-out origin-top-right ${
+                      isHoveringDonate
+                        ? "opacity-100 translate-y-0 scale-100 pointer-events-auto"
+                        : "opacity-0 -translate-y-1 scale-95 pointer-events-none"
+                    }`}
+                  >
+                    <DonateWalletCard copied={copied} onCopy={handleCopy} />
+                  </div>
+                </div>
+              </>
+            )}
+>>>>>>> 3071493dc586146e57abed36e76667783ff2249c
           </div>
         </div>
 
@@ -325,6 +374,43 @@ export default function Navbar() {
         </div>
       )}
 
+<<<<<<< HEAD
+=======
+      {SHOW_DONATE_BUTTON && openHelp && (
+        <div
+          className="fixed inset-0 bg-black/80 backdrop-blur-[2px] flex items-center justify-center z-50 px-3 lg:hidden animate-fade-in"
+          onClick={() => setOpenHelp(false)}
+        >
+          <div
+            className="relative animate-donate-modal"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setOpenHelp(false)}
+              className="absolute -top-3 -right-3 w-7 h-7 rounded-full bg-fm-turquesa_strong border border-[#2d3138] flex items-center justify-center shadow-lg"
+              type="button"
+              aria-label="Cerrar ayuda"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth="2.3"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className="w-4 h-4 text-slate-700"
+              >
+                <line x1="18" y1="6" x2="6" y2="18" />
+                <line x1="6" y1="6" x2="18" y2="18" />
+              </svg>
+            </button>
+
+            <DonateWalletCard copied={copied} onCopy={handleCopy} />
+          </div>
+        </div>
+      )}
+>>>>>>> 3071493dc586146e57abed36e76667783ff2249c
     </nav>
   );
 }
