@@ -2,7 +2,8 @@ import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import wallet_jade from "/imagenes/jade-wallet.webp";
 import tour_marzo from "/imagenes/cripto-tour.jpg";
-import { buildWhatsAppApiLink } from "../utils/links";
+
+const MENTORIA_TELEGRAM_URL = "https://t.me/JJChagerbenOficial";
 
 export default function SectionCardsMentoria() {
   const [expandedCard1, setExpandedCard1] = useState(false);
@@ -112,7 +113,7 @@ export default function SectionCardsMentoria() {
 
         <a
           target="_blank"
-          href={buildWhatsAppApiLink("mentoriaPrimary", "mentoriaVIPPresencial")}
+          href={MENTORIA_TELEGRAM_URL}
           className=" bg-fm-turquesa text-black py-2 px-4 rounded-lg hover:bg-fm-turquesa_strong hover:font-semibold  transition text-center"
         >
           Elegir
@@ -149,7 +150,7 @@ export default function SectionCardsMentoria() {
 
         <a
           target="_blank"
-          href={buildWhatsAppApiLink("mentoriaPrimary", "infoMentoriaPremium")}
+          href={MENTORIA_TELEGRAM_URL}
           className="mt-auto bg-fm-turquesa text-black py-2 px-4 rounded-lg hover:bg-fm-turquesa_strong hover:font-semibold  transition text-center"
         >
           Elegir

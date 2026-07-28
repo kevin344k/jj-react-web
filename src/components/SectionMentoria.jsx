@@ -45,10 +45,20 @@ export default function SectionMentoria() {
                 {col1.map(({ href, img, label }, i) => (
                   <li key={i} className="text-center w-[250px] md:w-[300px]">
                     <a
-                      href={href}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex text-center justify-center items-center gap-2 bg-white dark:bg-fm-Dark-Desaturated-Blue px-3 py-3 rounded hover:bg-fm-turquesa_strong active:bg-fm-turquesa_strong active:text-neutral-900 active:scale-95 trasition-all ease-in-out duration-100 hover:scale-105"
+                      href={label === "WhatsApp" ? undefined : href}
+                      target={label === "WhatsApp" ? undefined : "_blank"}
+                      rel={label === "WhatsApp" ? undefined : "noopener noreferrer"}
+                      aria-disabled={label === "WhatsApp"}
+                      onClick={
+                        label === "WhatsApp"
+                          ? (e) => e.preventDefault()
+                          : undefined
+                      }
+                      className={`flex text-center justify-center items-center gap-2 bg-white dark:bg-fm-Dark-Desaturated-Blue px-3 py-3 rounded trasition-all ease-in-out duration-100 ${
+                        label === "WhatsApp"
+                          ? "opacity-50 cursor-not-allowed pointer-events-auto"
+                          : "hover:bg-fm-turquesa_strong active:bg-fm-turquesa_strong active:text-neutral-900 active:scale-95 hover:scale-105"
+                      }`}
                     >
                       <img src={img} alt={label} className="w-6 h-6 object-contain" />
                       <span className="font-medium text-neutral-800 dark:text-white">{label}</span>
