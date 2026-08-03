@@ -8,6 +8,7 @@ import SectionSalvandoAlumnos from './SectionSalvandoAlumnos'
 import SectionAnnounceJob from './SectionAnnounceJob'
 import SectionLibros from './SectionLibros'
 import SectionCardsMentoria from './SectionCardsMentoria'
+import SectionConferencias from './SectionConferencias'
 export default function Main() {
   return (
     <div className="">
@@ -17,6 +18,7 @@ export default function Main() {
     
       <Section_calcualdora></Section_calcualdora>
       <SectionMentoria></SectionMentoria>
+      <SectionConferencias></SectionConferencias>
       <SectionTestimonial></SectionTestimonial>
       <SectionSalvandoAlumnos />
       <SectionAnnounceJob></SectionAnnounceJob>

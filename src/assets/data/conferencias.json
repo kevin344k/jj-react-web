@@ -1,0 +1,164 @@
+{
+  "registros": [
+    {
+      "id": 1,
+      "titulo": "EP #13 | JJ Chagerben, inversor en Bitcoin: CÓMO ESCAPAR DE LA ESCLAVITUD FINANCIERA ANTES DE LOS 40",
+      "tipo": "Podcast",
+      "ponente": "JJ Chagerben",
+      "evento": "Circulo de Poder Podcast - Episodio 13",
+      "organizador": "Circulo de Poder Podcast",
+      "lugar": "",
+      "ciudad": "",
+      "pais": "Ecuador",
+      "fecha": "",
+      "duracion": "",
+      "plataforma": "Spotify",
+      "video_url": "https://open.spotify.com/episode/6bVHKddgLLpX6oAB0Cqqfg",
+      "thumbnail_url": "",
+      "descripcion": "Conversación sobre Bitcoin, libertad financiera, soberanía económica, ahorro e inversión a largo plazo.",
+      "temas_principales": [
+        "Bitcoin",
+        "Libertad financiera",
+        "Inversión",
+        "Ahorro",
+        "Educación financiera"
+      ],
+      "palabras_clave": [
+        "Bitcoin",
+        "esclavitud financiera",
+        "patrimonio",
+        "riqueza",
+        "soberanía"
+      ],
+      "transcripcion_disponible": false
+    },
+    {
+      "id": 2,
+      "titulo": "¿Cómo ESCAPAR de la ESCLAVITUD FINANCIERA? | LA VISIÓN DE JJ CHAGERBEN",
+      "tipo": "Podcast",
+      "ponente": "JJ Chagerben",
+      "evento": "Circulo de Poder Podcast",
+      "organizador": "Circulo de Poder Podcast",
+      "lugar": "",
+      "ciudad": "",
+      "pais": "Ecuador",
+      "fecha": "",
+      "duracion": "",
+      "plataforma": "YouTube",
+      "video_url": "https://www.youtube.com/watch?v=yOpBE9oDpZI",
+      "thumbnail_url": "",
+      "descripcion": "Entrevista extensa donde JJ Chagerben expone su visión sobre Bitcoin como herramienta de soberanía financiera y preservación de valor.",
+      "temas_principales": [
+        "Bitcoin",
+        "Soberanía financiera",
+        "Inversión",
+        "Patrimonio",
+        "Educación financiera"
+      ],
+      "palabras_clave": [
+        "Bitcoin",
+        "finanzas",
+        "inflación",
+        "ahorro",
+        "libertad"
+      ],
+      "transcripcion_disponible": false
+    },
+    {
+      "id": 3,
+      "titulo": "160. @JJChagerben",
+      "tipo": "Podcast",
+      "ponente": "JJ Chagerben",
+      "evento": "₿itcoin y Criptos en español - Episodio 160",
+      "organizador": "₿itcoin y Criptos en español",
+      "lugar": "",
+      "ciudad": "",
+      "pais": "Ecuador",
+      "fecha": "2025-06-21",
+      "duracion": "1 h 34 min",
+      "plataforma": "Otro",
+      "video_url": "https://zeno.fm/podcast/blockchain-y-criptos-en-espanol/episodes/160-jjchagerben/",
+      "thumbnail_url": "",
+      "descripcion": "Entrevista con Juan Landy sobre la experiencia de JJ Chagerben como educador Bitcoin en Latinoamérica y sus perspectivas sobre el ecosistema Bitcoin.",
+      "temas_principales": [
+        "Bitcoin",
+        "Criptomonedas",
+        "Educación financiera",
+        "Adopción Bitcoin",
+        "Inversión"
+      ],
+      "palabras_clave": [
+        "Bitcoin",
+        "Latinoamérica",
+        "cripto",
+        "educación",
+        "inversión"
+      ],
+      "transcripcion_disponible": false
+    },
+    {
+      "id": 4,
+      "titulo": "Bitcoin y el futuro del dinero: cómo proteger valor en la era digital",
+      "tipo": "Seminario",
+      "ponente": "JJ Chagerben",
+      "evento": "Bitcoin y el futuro del dinero: cómo proteger valor en la era digital",
+      "organizador": "EUDE Business School",
+      "lugar": "Edificio EUDE",
+      "ciudad": "Madrid",
+      "pais": "España",
+      "fecha": "2026-02-05",
+      "duracion": "1 hora",
+      "plataforma": "Otro",
+      "video_url": "",
+      "thumbnail_url": "",
+      "descripcion": "Seminario académico sobre Bitcoin, inflación, digitalización del dinero y estrategias para proteger valor en la era digital.",
+      "temas_principales": [
+        "Bitcoin",
+        "Inflación",
+        "Sistema monetario",
+        "Criptomonedas",
+        "Protección de valor"
+      ],
+      "palabras_clave": [
+        "Bitcoin",
+        "dinero",
+        "inflación",
+        "criptomonedas",
+        "valor"
+      ],
+      "transcripcion_disponible": false
+    },
+        {
+      "id": 5,
+      "titulo": "Bitcoin, la digitalización del mundo",
+      "tipo": "Charla Magistral",
+      "ponente": "JJ Chagerben",
+      "evento": "Un espacio para comprender de manera clara y práctica el avance de las criptomonedas y su rol en la economía global",
+      "organizador": "Cámara de Comercio de Machala",
+      "lugar": "Cámara de Comercio de Machala",
+      "ciudad": "Machala",
+      "pais": "Ecuador",
+      "fecha": "2025-11-19",
+      "duracion": "",
+      "plataforma": "Otro",
+      "video_url": "",
+      "thumbnail_url": "",
+      "descripcion": "Seminario académico sobre Bitcoin, inflación, digitalización del dinero y estrategias para proteger valor en la era digital.",
+      "temas_principales": [
+        "Bitcoin",
+        "Inflación",
+        "Sistema monetario",
+        "Criptomonedas",
+        "Protección de valor"
+      ],
+      "palabras_clave": [
+        "Bitcoin",
+        "dinero",
+        "inflación",
+        "criptomonedas",
+        "valor"
+      ],
+      "transcripcion_disponible": false
+    }
+  ]
+}
