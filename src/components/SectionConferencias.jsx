@@ -1,5 +1,6 @@
 import conferenciasData from "../assets/data/conferencias.json";
 import jjtraje from "/public/imagenes/jjtraje.jpg";
+import { buildWaMeLink } from "../utils/links";
 export default function SectionConferencias() {
 
   const conferencias = conferenciasData.registros;
@@ -100,25 +101,58 @@ export default function SectionConferencias() {
 {/* CARD FIJA DE JJ CHAGERBEN */}
 <div
   className="
-    bg-white 
-    rounded-2xl 
-    shadow-xl 
+    relative
+    bg-white
+    rounded-2xl
+    shadow-xl
     overflow-hidden
     border border-neutral-300
-    dark:bg-fm-Very-dark-Blue 
+    dark:bg-fm-Very-dark-Blue
     dark:border-neutral-600
   "
 >
   <img
     src={jjtraje}
-    alt="JJ Chagerben"
+    alt="Jesus Chagerben"
     className="
-      w-full 
-      h-full 
+      w-full
+      h-full
       min-h-[420px]
       object-cover
     "
   />
+
+  {/* Overlay */}
+  <div
+    className="
+      absolute
+      inset-x-0
+      bottom-0
+      p-6
+      bg-gradient-to-t
+      from-black/90
+      via-black/60
+      to-transparent
+      text-white
+    "
+  >
+    <h3 className="text-2xl font-bold">
+      Jesus Chagerben
+    </h3>
+
+    <p className="mt-1 text-sm text-neutral-200">
+      Master en Blockchain y Fintech
+    </p>
+
+        <a
+          href={buildWaMeLink("mentoriaPrimary", "infoMentoriaPremium")}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="inline-block bg-fm-turquesa text-neutral-900 font-bold mt-3 px-4 py-2 rounded-full hover:bg-fm-turquesa_strong transition"
+        >
+          ¡Contáctame!
+        </a>
+  </div>
 </div>
 
       </div>
