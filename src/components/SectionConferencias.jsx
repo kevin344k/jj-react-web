@@ -6,7 +6,7 @@ export default function SectionConferencias() {
   const conferencias = conferenciasData.registros;
 
   return (
-    <div className="bg-white dark:bg-fm-Dark-Desaturated-Blue py-12">
+    <div id="section-conferencias" className="bg-white dark:bg-fm-Dark-Desaturated-Blue py-12">
 
       <div className="text-center mb-8">
         <p className="text-3xl font-bold text-neutral-900 dark:text-white">

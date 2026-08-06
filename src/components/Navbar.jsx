@@ -60,14 +60,14 @@ export default function Navbar() {
           <div className="flex gap-3 ml-3 md:ml-4 xl:gap-6 ">
             {/* Canal WhatsApp */}
             <a
-              href="https://www.whatsapp.com/channel/0029Vah3B5n60eBiIBrX8J1Z"
+            href={buildWaMeLink("mentoriaPrimary", "infoMentoriaPremium")}
               target="_blank"
               rel="noopener noreferrer"
               className={`flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold text-center py-1.5 px-3 md:py-2 md:px-4 shadow-lg active:scale-95 text-sm md:text-base rounded-md transition ${
                 shake ? "shake" : ""
               }`}
             >
-              <span className="hidden md:inline">Canal</span>
+              <span className="hidden md:inline">WhatsApp personal</span>
               <img
                 src="/imagenes/icon-color/whatsap.svg"
                 alt="WhatsApp"
@@ -76,14 +76,14 @@ export default function Navbar() {
             </a>
             {/* Canal Telegram */}
             <a
-              href="https://t.me/jjchagerben357"
+              href="https://t.me/JJChagerbenOficial"
               target="_blank"
               rel="noopener noreferrer"
               className={`flex items-center gap-2 bg-[#2AABEE] hover:bg-[#229ed9] text-white font-bold text-center py-1.5 px-3 md:py-2 md:px-4 shadow-lg active:scale-95 text-sm md:text-base rounded-md transition ${
                 shake ? "shake" : ""
               }`}
             >
-              <span className="hidden md:inline">Canal</span>
+              <span className="hidden md:inline">Telegram personal</span>
               <img
                 src="/imagenes/icon-color/telegram.svg"
                 alt="Telegram"
@@ -120,6 +120,15 @@ export default function Navbar() {
                 href="#sec-announce-book"
               >
                 Mi libro
+              </a>
+            </li>
+                        <li>
+              <a
+                onClick={() => setIsMenuOpen(false)}
+                className="boton-nav hover:underline"
+                href="#section-conferencias"
+              >
+                Conferencias
               </a>
             </li>
             <li>
