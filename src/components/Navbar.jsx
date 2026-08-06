@@ -217,7 +217,7 @@ export default function Navbar() {
             {/* Barra animada */}
             <span className="absolute bottom-0 left-0 w-0 h-[2px] bg-[#3ef2d0] transition-all group-hover:w-full"></span>
           </li>
-          {["Mi libro", "Qué enseño?", "Calculadora", "Testimonios"].map(
+          {["Mi libro","Conferencias", "Qué enseño?", "Calculadora", "Testimonios"].map(
             (text, i) => (
               <li key={i} className="relative group cursor-pointer">
                 <a
@@ -227,6 +227,7 @@ export default function Navbar() {
                       "section-mentoria",
                       "sec-calculadora-jub",
                       "sect-testimonial",
+                      "section-conferencias",
                     ][i]
                   }`}
                   className="boton-nav text-neutral-400 group-hover:text-[#3ef2d0] transition-colors"
