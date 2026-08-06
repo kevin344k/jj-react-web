@@ -67,7 +67,7 @@ export default function Navbar() {
                 shake ? "shake" : ""
               }`}
             >
-              <span className="hidden md:inline">WhatsApp personal</span>
+              <span className="hidden md:inline">WhatsApp </span><span className="hidden md:inline">personal</span>
               <img
                 src="/imagenes/icon-color/whatsap.svg"
                 alt="WhatsApp"
@@ -83,7 +83,7 @@ export default function Navbar() {
                 shake ? "shake" : ""
               }`}
             >
-              <span className="hidden md:inline">Telegram personal</span>
+              <span className=" md:inline">Telegram </span> <span className="hidden md:inline">personal</span>
               <img
                 src="/imagenes/icon-color/telegram.svg"
                 alt="Telegram"
