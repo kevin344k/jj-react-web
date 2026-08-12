@@ -67,7 +67,7 @@ export default function Navbar() {
                 shake ? "shake" : ""
               }`}
             >
-              <span className=" md:inline">WhatsApp </span><span className="hidden md:inline">personal</span>
+              <span className=" md:inline">WhatsApp </span><span className="hidden xl:inline">personal</span>
               <img
                 src="/imagenes/icon-color/whatsap.svg"
                 alt="WhatsApp"
@@ -83,7 +83,7 @@ export default function Navbar() {
                 shake ? "shake" : ""
               }`}
             >
-              <span className=" md:inline">Telegram </span> <span className="hidden md:inline">personal</span>
+              <span className=" md:inline">Telegram </span> <span className="hidden xl:inline">personal</span>
               <img
                 src="/imagenes/icon-color/telegram.svg"
                 alt="Telegram"
@@ -230,7 +230,7 @@ export default function Navbar() {
                       "section-conferencias",
                     ][i]
                   }`}
-                  className="boton-nav text-neutral-400 group-hover:text-[#3ef2d0] transition-colors"
+                  className="boton-nav text-neutral-400 group-hover:text-[#3ef2d0] transition-colors text-sm"
                 >
                   {text}
                 </a>
@@ -243,7 +243,7 @@ export default function Navbar() {
             className="relative group cursor-pointer"
             onClick={() => setSubmenuOpen(!submenuOpen)}
           >
-            <a className="boton-nav flex gap-2 text-neutral-400 group-hover:text-[#3ef2d0] transition-colors">
+            <a className="boton-nav flex gap-2 text-neutral-400 group-hover:text-[#3ef2d0] transition-colors items-center text-sm text-center">
               Mas
               <img
                 src={arrow_down}
