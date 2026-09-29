@@ -1,5 +1,6 @@
 import React from "react";
 
+
 export default function TikTokBrowserNotice() {
   return (
     <div className="h-screen bg-[#0B0E11] px-4 py-3 flex flex-col ">
@@ -20,7 +21,8 @@ export default function TikTokBrowserNotice() {
 
 
      <div className="flex h-full  items-center justify-center border border-amber-500/20">
-          <span className="text-7xl">🤭</span>
+         |<img width={100}
+          height={100} className="object-contain " src="/imagenes/bitcoin.png" alt="btc_icon"/>
         </div>
 
 
