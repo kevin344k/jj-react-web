@@ -4,7 +4,7 @@ import img_cajero from "/imagenes/cajeros.jpeg";
 import FlipClock from "./FlipClock";
 import Marquee from "./Marquee";
 import { buildWaMeLink, whatsappMessages } from "../utils/links";
-import usdt from "/imagenes/USDT.png";
+import usdt from "/imagenes/usdt.svg";
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -16,7 +16,7 @@ export default function Hero() {
  
       <div className=" relative text-center w-full  flex flex-col items-center justify-center xl:max-w-[1250px] xl:py-6">
         {showSellUsdtAd && (
-          <div className="absolute right-5 lg:right-15 z-10 -top-10 w-35 shake">
+          <div className="absolute hover:scale-105 cursor-pointer transition-all duration-100 right-5 lg:right-15 z-10 -top-10 w-35 shake">
             <button
               type="button"
               onClick={(e) => {
