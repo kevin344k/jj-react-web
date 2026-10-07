@@ -14,9 +14,9 @@ export default function Hero() {
   return (
     <div className="relative min-h-[80vh] flex flex-col items-center justify-center pt-20 pb-6 xl:pb-2 xl:py-10">
  
-      <div className=" relative text-center w-full  flex flex-col items-center justify-center xl:max-w-[1250px] xl:py-6">
+      <div className=" relative  text-center w-full   flex flex-col items-center justify-center xl:max-w-[1250px] xl:py-6">
         {showSellUsdtAd && (
-          <div className="absolute hover:scale-105 cursor-pointer transition-all duration-100 right-5 lg:right-15 z-10 -top-10 w-35 shake">
+          <div className="absolute  hover:scale-105 cursor-pointer transition-all duration-100 right-5 lg:right-15 z-10 -top-10 w-20 lg:w-35 shake">
             <button
               type="button"
               onClick={(e) => {
@@ -34,7 +34,7 @@ export default function Hero() {
               className="block w-full"
               aria-label="Vender USDT"
             >
-              <img src={usdt} alt="Vender USDT" />
+              <img  src={usdt} alt="Vender USDT" />
             </button>
           </div>
         )}
