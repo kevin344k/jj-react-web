@@ -67,7 +67,8 @@
     "mentoriaPrimary": "593961147947",
     "mentoriaAlt": "593961147947",
     "walletSales": "593939838756",
-    "joinJob": "593961612048"
+    "joinJob": "593961612048",
+    "sellusdt":"593996737500"
   },
   "messages": {
     "infoMentoriaPremium": "Hola, quiero informacion sobre la mentoria.",
@@ -77,6 +78,7 @@
     "walletJade": "Hola, quiero comprar la Blockstream Jade Hardware Wallet",
      "walletJadeCore": "Hola, quiero comprar la Blockstream Jade Core Hardware Wallet",
     "walletGamma601": "Hola, quiero comprar el Bitaxes Gamma 601 para minar Bitcoin",
-    "joinJob": "Hola, quiero trabajar contigo"
+    "joinJob": "Hola, quiero trabajar contigo",
+    "infosellUSDT":"Hola, quiero comprar USDT en Ecuador. ¿Me puedes enviar la cotización actual y los pasos para realizar la operación?"
   }
 }

@@ -64,7 +64,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               className={`flex items-center gap-2 bg-[#25D366] hover:bg-[#1ebe5d] text-white font-bold text-center py-1.5 px-3 md:py-2 md:px-4 shadow-lg active:scale-95 text-sm md:text-base rounded-md transition ${
-                shake ? "shake" : ""
+                shake ? "" : ""
               }`}
             >
               <span className=" md:inline">WhatsApp </span><span className="hidden xl:inline">personal</span>
@@ -80,7 +80,7 @@ export default function Navbar() {
               target="_blank"
               rel="noopener noreferrer"
               className={`flex items-center gap-2 bg-[#2AABEE] hover:bg-[#229ed9] text-white font-bold text-center py-1.5 px-3 md:py-2 md:px-4 shadow-lg active:scale-95 text-sm md:text-base rounded-md transition ${
-                shake ? "shake" : ""
+                shake ? "" : ""
               }`}
             >
               <span className=" md:inline">Telegram </span> <span className="hidden xl:inline">personal</span>

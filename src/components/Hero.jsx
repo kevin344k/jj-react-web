@@ -4,6 +4,7 @@ import img_cajero from "/imagenes/cajeros.jpeg";
 import FlipClock from "./FlipClock";
 import Marquee from "./Marquee";
 import { buildWaMeLink } from "../utils/links";
+import usdt from "/imagenes/USDT.png";
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +12,12 @@ export default function Hero() {
   return (
     <div className="relative min-h-[80vh] flex flex-col items-center justify-center pt-20 pb-6 xl:pb-2 xl:py-10">
  
-      <div className=" text-center w-full  flex flex-col items-center justify-center xl:max-w-[1250px] xl:py-6">
+      <div className="bg-red-500 relative text-center w-full  flex flex-col items-center justify-center xl:max-w-[1250px] xl:py-6">
+        <div className="absolute right-0 z-10 -top-10 w-35 shake ">
+<img src={usdt} alt="" />
+        </div>
+        
+        
         <p className="text-white text-2xl sm:text-3xl lg:text-4xl font-extrabold px-4 pb-4 lg:pb-5">
           Ayudo a las personas a salir de la pobreza
         </p>
