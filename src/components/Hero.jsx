@@ -3,20 +3,42 @@ import video from "../assets/Video/hero_video.mp4";
 import img_cajero from "/imagenes/cajeros.jpeg";
 import FlipClock from "./FlipClock";
 import Marquee from "./Marquee";
-import { buildWaMeLink } from "../utils/links";
+import { buildWaMeLink, whatsappMessages } from "../utils/links";
 import usdt from "/imagenes/USDT.png";
 
 export default function Hero() {
   const [isOpen, setIsOpen] = useState(false);
+  const [showSellUsdtAd, setShowSellUsdtAd] = useState(true);
+  const [isSellUsdtOpen, setIsSellUsdtOpen] = useState(false);
 
   return (
     <div className="relative min-h-[80vh] flex flex-col items-center justify-center pt-20 pb-6 xl:pb-2 xl:py-10">
  
-      <div className="bg-red-500 relative text-center w-full  flex flex-col items-center justify-center xl:max-w-[1250px] xl:py-6">
-        <div className="absolute right-0 z-10 -top-10 w-35 shake ">
-<img src={usdt} alt="" />
-        </div>
-        
+      <div className=" relative text-center w-full  flex flex-col items-center justify-center xl:max-w-[1250px] xl:py-6">
+        {showSellUsdtAd && (
+          <div className="absolute right-5 lg:right-15 z-10 -top-10 w-35 shake">
+            <button
+              type="button"
+              onClick={(e) => {
+                e.stopPropagation();
+                setShowSellUsdtAd(false);
+              }}
+              className="absolute -top-2 -right-2 z-20 w-6 h-6 flex items-center justify-center rounded-full bg-neutral-900 text-white text-sm font-bold shadow-lg hover:bg-red-600 transition"
+              aria-label="Cerrar anuncio"
+            >
+              ✕
+            </button>
+            <button
+              type="button"
+              onClick={() => setIsSellUsdtOpen(true)}
+              className="block w-full"
+              aria-label="Vender USDT"
+            >
+              <img src={usdt} alt="Vender USDT" />
+            </button>
+          </div>
+        )}
+
         
         <p className="text-white text-2xl sm:text-3xl lg:text-4xl font-extrabold px-4 pb-4 lg:pb-5">
           Ayudo a las personas a salir de la pobreza
@@ -121,6 +143,46 @@ phrases={[
               href="https://linktr.ee/bitcoinecuador"
             >
               Ver ubicaciones
+            </a>
+          </div>
+        </div>
+      )}
+
+      {/* Overlay + Modal Vender USDT */}
+      {isSellUsdtOpen && (
+        <div
+          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 animate-fade-in"
+          onClick={() => setIsSellUsdtOpen(false)}
+        >
+          <div
+            className="relative bg-white rounded-2xl shadow-lg w-[95%] md:w-96 p-6 animate-fadeIn text-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <button
+              onClick={() => setIsSellUsdtOpen(false)}
+              className="absolute top-2 right-2 text-3xl text-neutral-800 hover:text-red-600"
+              aria-label="Cerrar"
+            >
+              ✕
+            </button>
+
+            <img src={usdt} alt="USDT" className="w-24 mx-auto mb-4" />
+
+            <p className="text-xl font-luckiest text-neutral-900 mb-3">
+             VENTA DE USDT
+            </p>
+
+            <p className="text-neutral-700 mb-6">
+             💵 ¿Necesitas USDT? Compra con seguridad, rapidez y la mejor atención en Ecuador. 🇪🇨
+            </p>
+
+            <a
+              className="inline-block px-4 py-3 bg-neutral-900 text-white font-bold shadow-lg rounded-lg hover:text-[#F7931A] w-fit"
+              href={buildWaMeLink("sellusdt", "infosellUSDT")}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Contactar por WhatsApp
             </a>
           </div>
         </div>
