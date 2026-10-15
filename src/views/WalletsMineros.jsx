@@ -43,6 +43,15 @@ const cards = [
     description: "Uno de los mineros potentes y eficientes del mercado. Perfecto para minería de Bitcoin.",
     image: "https://m.media-amazon.com/images/I/61wNXnDuSyL._AC_SX466_PIbundle-99,TopRight,0,0_SH20_.jpg",
     waLink: buildWhatsAppApiLink("walletSales", "walletGamma601")
+  },
+    {
+    title: "LILYGO T-Display-S3 ESP32-S3 TTGO Development Board",
+     subtitle:"Generador de Entropía",
+    description: "Crea tu propia wallet!,Genera tu propia frase semilla ",
+    image: "https://m.media-amazon.com/images/I/51NRszXfwgL._AC_SL1000_.jpg",
+    waLink: buildWhatsAppApiLink("walletSales", "walletGamma601"),
+     price:"75",
+    simbol:"USD"
   }
 ];
 
