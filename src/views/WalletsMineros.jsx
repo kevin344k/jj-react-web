@@ -49,7 +49,7 @@ const cards = [
      subtitle:"Generador de Entropía",
     description: "Crea tu propia wallet!,Genera tu propia frase semilla ",
     image: "https://m.media-amazon.com/images/I/51NRszXfwgL._AC_SL1000_.jpg",
-    waLink: buildWhatsAppApiLink("walletSales", "walletGamma601"),
+    waLink: buildWhatsAppApiLink("walletSales", "esp32EntropiGenerator"),
      price:"75",
     simbol:"USD"
   }
