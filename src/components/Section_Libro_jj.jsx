@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import wasapIcon from "/imagenes/icon-color/whatsap.svg";
 import amazonIcon from "/imagenes/amazon.svg";
 import libroImg from "/libros/portadas/libro_jj.jpeg";
@@ -46,6 +47,14 @@ export default function Section_Libro_jj() {
             >
               <img className="w-30 " src={amazonIcon} alt="Amazon" />
             </a>
+
+            {/* Botón contenido del libro */}
+            <Link
+              to="/jjchagerben/libro/bitcoinoesclavitud"
+              className="flex items-center justify-center border-2 border-white text-white font-bold px-5 py-4 rounded-lg transition w-full hover:bg-white hover:text-fm-turquesa_very_strong"
+            >
+              Contenido del libro
+            </Link>
           </div>
         </div>
 

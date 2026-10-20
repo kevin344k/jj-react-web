@@ -6,6 +6,7 @@ import Debates from "./views/Debates";
 import Compras from "./views/Compras";
 import WalletsMineros from "./views/WalletsMineros";
 import TikTokBrowserNotice from "./views/TikTokBrowserNotice";
+import LibroBitcoinEsclavitud from "./views/LibroBitcoinEsclavitud";
 import { useNavigate } from "react-router-dom";
 
 function isTikTokInAppBrowser() {
@@ -34,6 +35,10 @@ function App() {
       <Route
         path="/wallets&mineros"
         element={<WalletsMineros onBack={() => navigate("/")} />}
+      />
+      <Route
+        path="/jjchagerben/libro/bitcoinoesclavitud"
+        element={<LibroBitcoinEsclavitud />}
       />
       <Route path="/open-in-browser" element={<TikTokBrowserNotice />} />
       <Route path="*" element={<h2>404 - Página no encontrada</h2>} />
