@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import portada from "/libros/portadas/bitcoin_o_esclavitud.png";
 import { buildWaMeLink } from "../utils/links";
 import "./LibroBitcoinEsclavitud.css";
@@ -129,6 +130,23 @@ export default function LibroBitcoinEsclavitud() {
     <div className="libro-btc">
       <header className="site-header" id="header">
         <div className="container header-inner">
+          <Link to="/" className="back-btn" aria-label="Volver al inicio">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2.5"
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M19 12H5" />
+              <path d="M12 19l-7-7 7-7" />
+            </svg>
+            Volver
+          </Link>
           <span className="logo">JJCHAGERBEN</span>
           <nav className={`main-nav${menuAbierto ? " open" : ""}`} id="main-nav">
             <a href="#contenido" onClick={irA}>Contenido</a>

@@ -610,3 +610,21 @@ section {
     gap: 12px;
     justify-content: inherit;
 }
+
+.back-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: #23a78e;
+    border: 2px solid #23a78e;
+    border-radius: 999px;
+    padding: 6px 14px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: background-color var(--transition), color var(--transition);
+}
+
+.back-btn:hover {
+    background-color: #23a78e;
+    color: var(--color-white);
+}
