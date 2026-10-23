@@ -37,7 +37,7 @@ function App() {
         element={<WalletsMineros onBack={() => navigate("/")} />}
       />
       <Route
-        path="/jjchagerben/libro/bitcoinoesclavitud"
+        path="/libro/bitcoinoesclavitud"
         element={<LibroBitcoinEsclavitud />}
       />
       <Route path="/open-in-browser" element={<TikTokBrowserNotice />} />
