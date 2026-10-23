@@ -50,7 +50,7 @@ export default function Section_Libro_jj() {
 
             {/* Botón contenido del libro */}
             <Link
-              to="/jjchagerben/libro/bitcoinoesclavitud"
+              to="/libro/bitcoinoesclavitud"
               className="flex items-center justify-center border-2 border-white text-white font-bold px-5 py-4 rounded-lg transition w-full hover:bg-white hover:text-fm-turquesa_very_strong"
             >
               Contenido del libro

@@ -7,13 +7,13 @@
 
 /* Todo el CSS queda acotado a .libro-btc para no afectar el resto del sitio */
 .libro-btc {
-    --color-primary: #1c2b3a;      /* azul tinta / editorial */
-    --color-secondary: #8a6d3b;    /* dorado envejecido */
-    --color-background: #f7f4ee;   /* papel crema */
-    --color-text: #2a2a28;
-    --color-accent: #b3892f;       /* acento dorado */
+    --color-primary: hsl(230, 17%, 14%);      /* Very Dark Blue */
+    --color-secondary: #23a78e;               /* turquesa muy fuerte */
+    --color-background: hsl(225, 100%, 98%);  /* Very Pale Blue */
+    --color-text: hsl(228, 12%, 44%);         /* Dark Grayish Blue */
+    --color-accent: #3ef2d0;                  /* turquesa */
     --color-white: #ffffff;
-    --color-border: #ddd6c7;
+    --color-border: hsl(227, 47%, 96%);       /* Light Grayish Blue */
 
     --font-title: 'Playfair Display', Georgia, serif;
     --font-body: 'Source Sans 3', Arial, sans-serif;
@@ -63,12 +63,13 @@ h1, h2, h3 { font-family: var(--font-title); color: var(--color-primary); line-h
 
 .btn-primary {
     background-color: var(--color-accent);
-    color: var(--color-white);
+    color: var(--color-primary);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
     background-color: var(--color-secondary);
+    color: var(--color-white);
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
@@ -169,7 +170,7 @@ h1, h2, h3 { font-family: var(--font-title); color: var(--color-primary); line-h
     font-size: 0.8rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    color: var(--color-accent);
+    color: var(--color-secondary);
     font-weight: 600;
     margin-bottom: 12px;
     display: block;
@@ -185,7 +186,7 @@ h1, h2, h3 { font-family: var(--font-title); color: var(--color-primary); line-h
     font-family: var(--font-title);
     font-size: 1.1rem;
     font-style: italic;
-    color: #d8cba9;
+    color: var(--color-accent);
     margin-bottom: 28px;
 }
 
@@ -220,7 +221,7 @@ section {
 
 .section-lead {
     max-width: 720px;
-    color: #4a4a45;
+    color: hsl(228, 12%, 44%);
     margin-bottom: 40px;
     font-size: 1.05rem;
 }
@@ -253,7 +254,7 @@ section {
     display: inline-block;
     font-family: var(--font-title);
     font-size: 1.4rem;
-    color: var(--color-accent);
+    color: var(--color-secondary);
     margin-bottom: 8px;
 }
 
@@ -264,7 +265,7 @@ section {
 
 .card p {
     font-size: 0.95rem;
-    color: #4a4a45;
+    color: hsl(228, 12%, 44%);
 }
 
 /* ===== VIAJE / TIMELINE ===== */
@@ -277,7 +278,8 @@ section {
 .journey .section-eyebrow {
     color: var(--color-white);
 }
-.journey .section-eyebrow { color: var(--color-accent); }
+.journey .section-eyebrow,
+.hero .eyebrow { color: var(--color-accent); }
 
 .timeline {
     display: flex;
@@ -317,7 +319,7 @@ section {
 .timeline-label {
     font-size: 0.75rem;
     letter-spacing: 0.05em;
-    color: #d8cba9;
+    color: var(--color-accent);
 }
 
 /* ===== PREGUNTAS ===== */
@@ -386,7 +388,7 @@ section {
 
 .practical-card p {
     font-size: 0.95rem;
-    color: #4a4a45;
+    color: hsl(228, 12%, 44%);
 }
 
 /* ===== AUDIENCIA ===== */
@@ -400,7 +402,7 @@ section {
 }
 
 .audience-text {
-    color: #4a4a45;
+    color: hsl(228, 12%, 44%);
     margin-top: 8px;
 }
 
@@ -444,14 +446,14 @@ section {
     padding: 6px 0;
     padding-left: 24px;
     position: relative;
-    color: #4a4a45;
+    color: hsl(228, 12%, 44%);
 }
 
 .product-features li::before {
     content: '\2713';
     position: absolute;
     left: 0;
-    color: var(--color-accent);
+    color: var(--color-secondary);
     font-weight: 700;
 }
 
@@ -489,8 +491,8 @@ section {
 
 /* ===== FOOTER ===== */
 .site-footer {
-    background-color: #101821;
-    color: #9fa8b3;
+    background-color: hsl(230, 17%, 14%);
+    color: hsl(228, 34%, 66%);
     text-align: center;
     padding: 32px 0;
     font-size: 0.85rem;
@@ -510,7 +512,7 @@ section {
     height: 44px;
     border-radius: 50%;
     background-color: var(--color-accent);
-    color: var(--color-white);
+    color: var(--color-primary);
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
