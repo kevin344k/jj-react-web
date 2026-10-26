@@ -54,12 +54,22 @@ const cards = [
     simbol:"USD"
   },
    {
-    title: "Placa metálica",
+    title: "KIT Placa metálica",
      subtitle:"Almacenamiento de frases semilla",
     description: "Compatible con formato de 12 y 24 palabras + passphrase",
-    image: "https://m.media-amazon.com/images/I/51NRszXfwgL._AC_SL1000_.jpg",
-    waLink: buildWhatsAppApiLink("walletSales", "esp32EntropiGenerator"),
-     price:"75",
+    image: "/imagenes/placa_de_metal.jpg",
+    waLink: buildWhatsAppApiLink("walletSales", "placa_de_metal"),
+     price:"37",
+    simbol:"USD"
+  },
+  ,
+   {
+    title: "Juego Dados de casino grado AAA",
+     subtitle:"",
+    description: "",
+    image: "https://m.media-amazon.com/images/I/71Ke8DtYAdL._AC_SY300_SX300_QL70_FMwebp_.jpg",
+    waLink: buildWhatsAppApiLink("walletSales", "juego_dados"),
+     price:"28",
     simbol:"USD"
   }
 ];
