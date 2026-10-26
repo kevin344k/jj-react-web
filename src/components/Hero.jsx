@@ -16,26 +16,30 @@ export default function Hero() {
  
       <div className=" relative  text-center w-full   flex flex-col items-center justify-center xl:max-w-[1250px] xl:py-6">
         {showSellUsdtAd && (
-          <div className="absolute  hover:scale-105 cursor-pointer transition-all duration-100 right-5 lg:right-15 z-10 -top-10 w-20 lg:w-35 shake">
+          <div className="absolute  hover:scale-105 cursor-pointer transition-all duration-100 right-5 lg:right-15 z-10 -top-10  shake">
             <button
               type="button"
               onClick={(e) => {
                 e.stopPropagation();
                 setShowSellUsdtAd(false);
               }}
-              className="absolute -top-2 -right-2 z-20 w-6 h-6 flex items-center justify-center rounded-full bg-neutral-900 text-white text-sm font-bold shadow-lg hover:bg-red-600 transition"
+              className="absolute -top-2 -right-2 z-20 w-6 h-6 flex items-center justify-center rounded-full bg-red-600 text-white text-sm font-bold shadow-lg hover:bg-red-500 transition"
               aria-label="Cerrar anuncio"
             >
               ✕
             </button>
-            <button
-              type="button"
+            <div
+           
               onClick={() => setIsSellUsdtOpen(true)}
-              className="block w-full"
+              className="   border border-fm-turquesa bg-black rounded-full flex gap-2 items-center justify-center px-6 py-2 divide-x divide-neutral-400 "
               aria-label="Vender USDT"
             >
-              <img  src={usdt} alt="Vender USDT" />
-            </button>
+              <img  src={usdt} alt="Vender USDT" className="w-12 h-12 pr-2" />
+              <div className="text-white  text-left self-start">
+                <p className="text-neutral-300 text-sm">VENTA DE</p>
+                <span className="text-2xl font-bold">USDT</span>
+              </div>
+            </div>
           </div>
         )}
 
@@ -168,7 +172,7 @@ phrases={[
 
             <img src={usdt} alt="USDT" className="w-24 mx-auto mb-4" />
 
-            <p className="text-xl font-luckiest text-neutral-900 mb-3">
+            <p className="text-xl font-bold text-neutral-900 mb-3">
              VENTA DE USDT
             </p>
 

@@ -52,6 +52,15 @@ const cards = [
     waLink: buildWhatsAppApiLink("walletSales", "esp32EntropiGenerator"),
      price:"75",
     simbol:"USD"
+  },
+   {
+    title: "Placa metálica",
+     subtitle:"Almacenamiento de frases semilla",
+    description: "Compatible con formato de 12 y 24 palabras + passphrase",
+    image: "https://m.media-amazon.com/images/I/51NRszXfwgL._AC_SL1000_.jpg",
+    waLink: buildWhatsAppApiLink("walletSales", "esp32EntropiGenerator"),
+     price:"75",
+    simbol:"USD"
   }
 ];
 
