@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import SectionHeader from "./SectionHeader";
-import AutoCarousel from "./AutoCarousel";
 
 const baseURL = import.meta.env.BASE_URL;
 
@@ -20,20 +19,18 @@ export default function SectionSalvandoAlumnos() {
     <section className="relative bg-ui-bg2 py-20 font-body text-ui-text">
       <SectionHeader eyebrow="Historias reales" title="Salvando a mis alumnos" />
 
-      <AutoCarousel
-        items={images}
-        duration={35}
-        minItems={6}
-        renderItem={(img) => (
+      <div className="mx-auto flex max-w-5xl flex-wrap items-center justify-center gap-5 px-4">
+        {images.map((img) => (
           <button
+            key={img}
             type="button"
             onClick={() => setModalImage(img)}
             className="block h-[340px] cursor-zoom-in overflow-hidden rounded-2xl border border-ui-border bg-ui-bg p-1.5 transition duration-300 hover:-translate-y-1 hover:border-btc/60"
           >
             <img src={img} alt="Alumno ayudado" loading="lazy" className="h-full w-auto rounded-xl object-contain" />
           </button>
-        )}
-      />
+        ))}
+      </div>
 
       {/* Modal */}
       {modalOpen && modalImage && (

@@ -45,11 +45,7 @@ export default function Navbar() {
       <div className="mx-auto flex items-center justify-between gap-3 px-3 py-2 md:px-6 xl:max-w-[1350px]">
         <div className="flex items-center gap-3 md:gap-5">
           <Link to="/" className="flex items-center gap-3">
-            <img
-              className="h-11 w-11 shrink-0 rounded-full border border-btc/50 object-cover"
-              src={jjface}
-              alt="JJ Chagerben"
-            />
+           
             <span className="hidden font-display text-lg font-bold md:block">JJChagerben</span>
           </Link>
           <BtcTicker />
