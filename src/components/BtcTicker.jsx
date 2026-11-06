@@ -17,28 +17,33 @@ function Sparkline({ data, up }) {
   );
 }
 
+// Una sola petición por carga de la web, compartida entre todas las páginas
+let request = null;
+const loadOnce = () => {
+  if (!request) {
+    request = fetch(URL)
+      .then((res) => (res.ok ? res.json() : null))
+      .then((json) => {
+        if (!json) return null;
+        const all = json.prices.map((p) => p[1]);
+        const step = Math.max(1, Math.floor(all.length / 40));
+        return all.filter((_, i) => i % step === 0 || i === all.length - 1);
+      })
+      .catch(() => null);
+  }
+  return request;
+};
+
 export default function BtcTicker() {
   const [prices, setPrices] = useState(null);
 
   useEffect(() => {
     let active = true;
-    const load = async () => {
-      try {
-        const res = await fetch(URL);
-        if (!res.ok) return;
-        const json = await res.json();
-        const all = json.prices.map((p) => p[1]);
-        const step = Math.max(1, Math.floor(all.length / 40));
-        if (active) setPrices(all.filter((_, i) => i % step === 0 || i === all.length - 1));
-      } catch {
-        // se conserva el último dato
-      }
-    };
-    load();
-    const id = setInterval(load, 60000);
+    loadOnce().then((data) => {
+      if (active && data) setPrices(data);
+    });
     return () => {
       active = false;
-      clearInterval(id);
     };
   }, []);
 
