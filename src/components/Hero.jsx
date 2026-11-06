@@ -60,7 +60,7 @@ export default function Hero() {
         <div className="hero-rise text-center lg:text-left flex flex-col items-center lg:items-start order-2 lg:order-1">
           <span className="inline-flex items-center gap-2 rounded-full border border-ui-border bg-ui-bg2 px-4 py-1.5 text-sm text-ui-muted mb-6">
             <span className="w-2 h-2 rounded-full bg-ui-success" />
-            Educación Bitcoin · +10k alumnos
+            Master en Blockchain y Fintech · +10k alumnos
           </span>
           <h1 className="font-display text-4xl sm:text-5xl xl:text-6xl font-bold leading-tight">
             Ayudo a las personas a salir de la pobreza
@@ -129,7 +129,7 @@ export default function Hero() {
             <div className="absolute -bottom-4 left-4 right-4 flex items-center justify-between rounded-xl border border-ui-border bg-ui-bg2/90 backdrop-blur px-4 py-3">
               <div>
                 <p className="font-display font-bold leading-tight">JJ Chagerben</p>
-                <p className="text-ui-muted text-xs">Mentor &amp; autor de Bitcoin</p>
+                <p className="text-ui-muted text-xs">Mentor &amp; Escritor</p>
               </div>
               <span className="text-btc text-2xl font-bold">₿</span>
             </div>
