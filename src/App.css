@@ -219,3 +219,13 @@ html {
   .flip-inner { transition-duration: 0.01s; }
   .flip-text p { transition: none; opacity: 1; transform: none; }
 }
+
+/* USDT chip */
+.usdt-shine {
+  position: absolute; inset: 0; pointer-events: none;
+  background: linear-gradient(110deg, transparent 35%, rgba(247, 147, 26, 0.18) 50%, transparent 65%);
+  transform: translateX(-120%);
+  animation: usdtShine 4.5s ease-in-out infinite;
+}
+@keyframes usdtShine { 0%, 60% { transform: translateX(-120%); } 100% { transform: translateX(120%); } }
+@media (prefers-reduced-motion: reduce) { .usdt-shine { animation: none; } }

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import jjface from "/imagenes/jjcara.webp";
 import Toggle_dark_mode from "./ToggleTheme";
+import ScrollToHero from "./ScrollToHero";
 import BtcTicker from "./BtcTicker";
 import { buildWaMeLink } from "../utils/links";
 import { ChevronDown, Menu, X } from "lucide-react";
@@ -149,6 +149,7 @@ export default function Navbar() {
         </a>
       </aside>
 
+      <ScrollToHero />
       <Toggle_dark_mode />
     </>
   );

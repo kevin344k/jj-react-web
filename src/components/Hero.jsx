@@ -1,19 +1,17 @@
 import React, { useState } from "react";
 import jjtraje from "/imagenes/jjtraje.jpg";
 import btc from "/imagenes/bitcoin.svg";
-import img_cajero from "/imagenes/cajeros.jpeg";
 import FlipClock from "./FlipClock";
 import Marquee from "./Marquee";
 import { buildWaMeLink } from "../utils/links";
 import usdt from "/imagenes/usdt.svg";
 
 export default function Hero() {
-  const [isOpen, setIsOpen] = useState(false);
   const [showSellUsdtAd, setShowSellUsdtAd] = useState(true);
   const [isSellUsdtOpen, setIsSellUsdtOpen] = useState(false);
 
   return (
-    <div className="relative overflow-hidden bg-ui-bg font-body text-ui-text min-h-[80vh] flex flex-col items-center justify-center pt-16 pb-6 xl:pt-20">
+    <div id="hero" className="relative overflow-hidden bg-ui-bg font-body text-ui-text min-h-[80vh] flex flex-col items-center justify-center pt-16 pb-6 xl:pt-20">
       {/* Fondo: gradiente + bitcoin translúcido en movimiento suave */}
       <div className="pointer-events-none absolute inset-0 -z-0" aria-hidden="true">
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_75%_30%,rgba(247,147,26,0.16),transparent_55%),linear-gradient(180deg,var(--color-ui-bg),var(--color-ui-bg2))]" />
@@ -31,29 +29,32 @@ export default function Hero() {
 
       <div className="relative z-10 w-full xl:max-w-[1250px] px-5 md:px-8 grid lg:grid-cols-2 gap-10 items-center py-8">
         {showSellUsdtAd && (
-          <div className="absolute right-3 top-0 z-20 hover:scale-105 cursor-pointer transition-transform duration-200">
+          <div className="usdt-chip absolute right-3 top-0 z-20">
             <button
               type="button"
-              onClick={(e) => {
-                e.stopPropagation();
-                setShowSellUsdtAd(false);
-              }}
-              className="absolute -top-2 -right-2 z-20 w-6 h-6 flex items-center justify-center rounded-full bg-ui-border text-ui-text text-xs font-bold hover:bg-btc hover:text-black transition"
+              onClick={() => setShowSellUsdtAd(false)}
+              className="absolute -top-2 -right-2 z-20 flex h-6 w-6 items-center justify-center rounded-full border border-ui-border bg-ui-bg2 text-xs font-bold text-ui-muted transition hover:border-btc hover:text-btc"
               aria-label="Cerrar anuncio"
             >
               ✕
             </button>
-            <div
+            <button
+              type="button"
               onClick={() => setIsSellUsdtOpen(true)}
-              className="border border-ui-border bg-ui-bg2/90 backdrop-blur rounded-full flex gap-2 items-center px-4 py-1.5 divide-x divide-ui-border"
               aria-label="Vender USDT"
+              className="group relative flex items-center gap-3 overflow-hidden rounded-2xl border border-btc/40 bg-ui-bg2/90 py-2 pl-2.5 pr-4 shadow-lg shadow-black/40 backdrop-blur transition duration-300 hover:-translate-y-0.5 hover:border-btc hover:shadow-btc/20"
             >
-              <img src={usdt} alt="Vender USDT" className="w-9 h-9 pr-2" />
-              <div className="text-left pl-2">
-                <p className="text-ui-muted text-[11px] leading-none">VENTA DE</p>
-                <span className="text-lg font-bold">USDT</span>
-              </div>
-            </div>
+              <span className="usdt-shine" aria-hidden="true" />
+              <span className="relative flex h-10 w-10 items-center justify-center rounded-xl bg-[#26A17B]/15 ring-1 ring-[#26A17B]/40">
+                <img src={usdt} alt="" className="h-6 w-6" />
+                <span className="absolute -right-0.5 -top-0.5 h-2.5 w-2.5 animate-pulse rounded-full bg-ui-success ring-2 ring-ui-bg2" />
+              </span>
+              <span className="text-left">
+                <span className="block text-[10px] font-semibold uppercase leading-none tracking-[0.15em] text-btc">Venta de</span>
+                <span className="mt-1 block font-display text-lg font-bold leading-none">USDT</span>
+              </span>
+              <span className="text-btc transition-transform duration-300 group-hover:translate-x-1" aria-hidden="true">→</span>
+            </button>
           </div>
         )}
 
@@ -198,70 +199,49 @@ export default function Hero() {
         duration={60}
       />
 
-      {/* Overlay + Modal */}
-      {isOpen && (
-        <div
-          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 animate-fade-in"
-          onClick={() => setIsOpen(false)}
-        >
-          {/* Contenedor del modal */}
-          <div
-            className="relative bg-white rounded-2xl shadow-lg  w-[95%] md:w-96 animate-fadeIn  "
-            onClick={(e) => e.stopPropagation()}
-          >
-            {/* Botón X */}
-            <button
-              onClick={() => setIsOpen(false)}
-              className="absolute top-2 right-2 text-3xl text-white hover:text-gray-800"
-            >
-              ✕
-            </button>
-            <img src={img_cajero} alt="" />
-
-            <p className="absolute z-20 bottom-0 left-1/2 -translate-x-1/2 mb-15 px-4 py-3 w-full text-xl text-center font-luckiest text-white">
-              COMPRA BITCOIN EN TU CAJERO MAS CERCANO
-            </p>
-
-            <a
-              className="absolute z-10 bottom-0 left-1/2 -translate-x-1/2 mb-5 px-4 py-3  bg-neutral-900 text-white font-bold shadow-lg rounded-lg hover:text-[#F7931A] w-fit"
-              href="https://linktr.ee/bitcoinecuador"
-            >
-              Ver ubicaciones
-            </a>
-          </div>
-        </div>
-      )}
-
-      {/* Overlay + Modal Vender USDT */}
+      {/* Modal Vender USDT */}
       {isSellUsdtOpen && (
         <div
-          className="fixed inset-0 bg-black/80 flex items-center justify-center z-50 animate-fade-in"
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/75 p-4 backdrop-blur-sm animate-fade-in"
           onClick={() => setIsSellUsdtOpen(false)}
+          role="dialog"
+          aria-modal="true"
+          aria-label="Venta de USDT"
         >
           <div
-            className="relative bg-white rounded-2xl shadow-lg w-[95%] md:w-96 p-6 animate-fadeIn text-center"
+            className="relative w-full max-w-md overflow-hidden rounded-3xl border border-btc/30 bg-gradient-to-b from-ui-bg2 to-ui-bg p-7 text-center shadow-2xl shadow-black/70 animate-fade-in"
             onClick={(e) => e.stopPropagation()}
           >
+            <div className="pointer-events-none absolute -top-24 left-1/2 h-48 w-48 -translate-x-1/2 rounded-full bg-[#26A17B]/25 blur-3xl" aria-hidden="true" />
             <button
               onClick={() => setIsSellUsdtOpen(false)}
-              className="absolute top-2 right-2 text-3xl text-neutral-800 hover:text-red-600"
+              className="absolute right-3 top-3 flex h-8 w-8 items-center justify-center rounded-full border border-ui-border text-ui-muted transition hover:border-btc hover:text-btc"
               aria-label="Cerrar"
             >
               ✕
             </button>
 
-            <img src={usdt} alt="USDT" className="w-24 mx-auto mb-4" />
+            <div className="relative mx-auto flex h-20 w-20 items-center justify-center rounded-2xl bg-[#26A17B]/15 ring-1 ring-[#26A17B]/40">
+              <img src={usdt} alt="USDT" className="h-12 w-12" />
+            </div>
 
-            <p className="text-xl font-bold text-neutral-900 mb-3">
-             VENTA DE USDT
+            <p className="mt-5 text-xs font-semibold uppercase tracking-[0.2em] text-btc">Ecuador 🇪🇨</p>
+            <h3 className="mt-1 font-display text-3xl font-bold">Venta de USDT</h3>
+            <p className="mt-3 text-ui-muted">
+              Compra USDT con seguridad, rapidez y atención personalizada.
             </p>
 
-            <p className="text-neutral-700 mb-6">
-             💵 ¿Necesitas USDT? Compra con seguridad, rapidez y la mejor atención en Ecuador. 🇪🇨
-            </p>
+            <ul className="mt-5 grid grid-cols-3 gap-2 text-xs">
+              {["Seguro", "Rápido", "Atención directa"].map((t) => (
+                <li key={t} className="rounded-xl border border-ui-border bg-ui-bg px-2 py-2.5 font-semibold">
+                  <span className="mr-1 text-ui-success">✓</span>
+                  {t}
+                </li>
+              ))}
+            </ul>
 
             <a
-              className="inline-block px-4 py-3 bg-neutral-900 text-white font-bold shadow-lg rounded-lg hover:text-[#F7931A] w-fit"
+              className="mt-6 block w-full rounded-xl bg-btc py-3.5 font-bold text-black shadow-lg shadow-btc/20 transition hover:-translate-y-0.5 hover:bg-btc-dark"
               href={buildWaMeLink("sellusdt", "infosellUSDT")}
               target="_blank"
               rel="noreferrer"
