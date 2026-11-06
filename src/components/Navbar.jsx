@@ -13,6 +13,7 @@ const sections = [
   { label: "Calculadora", href: "#sec-calculadora-jub" },
   { label: "Redes", href: "#section-mentoria" },
   { label: "Testimonios", href: "#sect-testimonial" },
+  { label: "Acerca de mí", href: "#acerca-de" },
 ];
 
 const moreLinks = [

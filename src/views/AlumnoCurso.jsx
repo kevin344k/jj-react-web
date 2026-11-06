@@ -51,7 +51,6 @@ export default function AlumnoCurso() {
       <header className="sticky top-0 z-30 border-b border-ui-border bg-ui-bg/85 backdrop-blur-md">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-3 px-4 py-3">
           <Link to="/" className="flex items-center gap-3">
-            <img src={jjface} alt="JJ Chagerben" className="h-10 w-10 rounded-full border border-btc/50 object-cover" />
             <span className="hidden font-display text-lg font-bold sm:block">JJChagerben</span>
             <span className="rounded-full bg-btc/15 px-2.5 py-0.5 text-xs font-bold text-btc">DEMO</span>
           </Link>

@@ -120,18 +120,66 @@ export default function Hero() {
           <div className="absolute inset-0 m-auto h-3/4 w-3/4 rounded-full bg-btc/25 blur-3xl" aria-hidden="true" />
           <div className="relative">
             <div className="absolute -inset-3 rounded-[2rem] border border-btc/30 translate-x-3 translate-y-3" aria-hidden="true" />
-            <img
-              src={jjtraje}
-              alt="JJ Chagerben"
-              className="relative w-64 sm:w-80 lg:w-[400px] aspect-[4/5] object-cover object-top rounded-[1.75rem] border border-ui-border shadow-2xl shadow-black/70"
-            />
-            <div className="absolute inset-x-0 bottom-0 h-1/3 rounded-b-[1.75rem] bg-gradient-to-t from-black/70 to-transparent" aria-hidden="true" />
-            <div className="absolute -bottom-4 left-4 right-4 flex items-center justify-between rounded-xl border border-ui-border bg-ui-bg2/90 backdrop-blur px-4 py-3">
-              <div>
-                <p className="font-display font-bold leading-tight">JJ Chagerben</p>
-                <p className="text-ui-muted text-xs">Mentor &amp; Escritor</p>
+            <div
+              className="flip-card relative w-[min(92vw,420px)] sm:w-[480px] lg:w-[400px] aspect-[4/5] sm:aspect-[4/4.6] lg:aspect-[4/5] outline-none"
+              tabIndex={0}
+              role="button"
+              aria-label="Girar tarjeta para leer mi historia"
+              onClick={(e) => e.currentTarget.classList.toggle("is-flipped")}
+              onKeyDown={(e) => {
+                if (e.key === "Enter" || e.key === " ") {
+                  e.preventDefault();
+                  e.currentTarget.classList.toggle("is-flipped");
+                }
+              }}
+            >
+              <div className="flip-inner">
+                <div className="flip-face">
+                  <img
+                    src={jjtraje}
+                    alt="JJ Chagerben"
+                    className="h-full w-full object-cover object-top rounded-[1.75rem] border border-ui-border shadow-2xl shadow-black/70"
+                  />
+                  <div className="absolute inset-x-0 bottom-0 h-1/3 rounded-b-[1.75rem] bg-gradient-to-t from-black/70 to-transparent" aria-hidden="true" />
+                  <div className="absolute bottom-4 left-4 right-4 flex items-center justify-between rounded-xl border border-ui-border bg-ui-bg2/90 backdrop-blur px-4 py-3">
+                    <div>
+                      <p className="font-display font-bold leading-tight">JJ Chagerben</p>
+                      <p className="text-ui-muted text-xs">Mentor &amp; Escritor</p>
+                    </div>
+                    <span className="text-btc text-2xl font-bold">₿</span>
+                  </div>
+                  <span className="flip-hint absolute right-3 top-3 rounded-full border border-btc/40 bg-black/50 px-3 py-1 text-[11px] font-semibold text-btc backdrop-blur">
+                    Acerca de mí ↻
+                  </span>
+                </div>
+
+                <div className="flip-face flip-back rounded-[1.75rem] border border-btc/40 bg-gradient-to-br from-ui-bg2 to-ui-bg p-5 sm:p-7 shadow-2xl shadow-black/70 flex flex-col justify-center">
+                  <p className="text-xs font-semibold uppercase tracking-[0.2em] text-btc">Acerca de mí</p>
+                  <h3 className="mt-1 font-display text-xl sm:text-2xl font-bold">JJCHAGERBEN</h3>
+                  <p className="mt-1 text-xs sm:text-[13px] font-semibold text-ui-text">
+                    Ingeniero, maestrante en Blockchain y FinTech, escritor, inversionista y conferencista internacional
+                  </p>
+                  <div className="mt-3 h-px w-12 bg-btc" />
+                  <div className="flip-text mt-3 space-y-2.5 text-[13px] sm:text-sm leading-relaxed text-ui-muted">
+                    <p>
+                      Ingeniero en Petróleos ecuatoriano, graduado de la <mark>ESPOL</mark> y maestrante en Blockchain y FinTech. Pasó de vender caramelos a lograr su <mark>independencia financiera con Bitcoin</mark>.
+                    </p>
+                    <p>
+                      Autor de <mark>«Invertir en Bitcoin o Esclavitud»</mark>, conductor de «Crypto Adicto» y comunidad de <mark>más de 1 millón</mark> de seguidores.
+                    </p>
+                    <p>
+                      Mejor Educador en Latinoamérica 2026. Su lema: <mark>paciencia, prudencia y disciplina</mark>.
+                    </p>
+                  </div>
+                  <a
+                    href="#acerca-de"
+                    onClick={(e) => e.stopPropagation()}
+                    className="mt-4 inline-flex w-fit items-center gap-1 rounded-lg bg-btc px-4 py-2 text-sm font-bold text-black transition hover:bg-btc-dark"
+                  >
+                    Leer más →
+                  </a>
+                </div>
               </div>
-              <span className="text-btc text-2xl font-bold">₿</span>
             </div>
           </div>
         </div>
