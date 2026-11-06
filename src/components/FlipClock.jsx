@@ -13,10 +13,10 @@ export default function FlipClock() {
       if (w < 640) {
         // < sm
         setDigitStyle({
-          width: "1.5rem",
+          width: "1.25rem",
             backgroundColor: '#333',
-          height: "2.5rem",
-          fontSize: "1.25rem",
+          height: "2rem",
+          fontSize: "1rem",
           borderRadius: "0.3rem",
         });
         setSeparatorStyle({
@@ -26,53 +26,53 @@ export default function FlipClock() {
       } else if (w < 768) {
         // sm ≤ w < md
         setDigitStyle({
-          width: "3rem",
-          height: "4rem",
-          fontSize: "2.5rem",
+          width: "2.25rem",
+          height: "3rem",
+          fontSize: "1.75rem",
            backgroundColor: '#333',
           borderRadius: "0.4rem",
         });
         setSeparatorStyle({
            color: "#333",
-          size: "9px",
+          size: "6px",
         });
       } else if (w < 1024) {
         // md ≤ w < lg
         setDigitStyle({
-          width: "4.5rem",
-          height: "5.5rem",
+          width: "2.75rem",
+          height: "3.5rem",
            backgroundColor: '#333',
-          fontSize: "3.5rem",
+          fontSize: "2.25rem",
           borderRadius: "0.5rem",
         });
         setSeparatorStyle({
            color: "#333",
-          size: "12px",
+          size: "8px",
         });
       } else if (w < 1280) {
         // lg ≤ w < xl
         setDigitStyle({
-          width: "4rem",
-          height: "5rem",
+          width: "2.5rem",
+          height: "3.25rem",
           fontSize: "2rem",
           borderRadius: "0.6rem",
         });
         setSeparatorStyle({
            color: "#333",
-          size: "12px",
+          size: "8px",
         });
       } else {
         // ≥ xl
         setDigitStyle({
-          width: "4.5rem",
-          height: "5.5rem",
-          fontSize: "3.25rem",
+          width: "2.75rem",
+          height: "3.5rem",
+          fontSize: "2.25rem",
            backgroundColor: '#333',
           borderRadius: "0.7rem",
         });
         setSeparatorStyle({
            color: "#333",
-          size: "16px",
+          size: "8px",
         });
       }
     }

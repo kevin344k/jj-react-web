@@ -1,207 +1,160 @@
 import React, { useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { Check, ChevronDown } from "lucide-react";
 import wallet_jade from "/imagenes/jade-wallet.webp";
-import tour_marzo from "/imagenes/cripto-tour.jpg";
 import { buildWaMeLink } from "../utils/links";
 
-export default function SectionCardsMentoria() {
-  const [expandedCard1, setExpandedCard1] = useState(false);
-  const [expandedCard2, setExpandedCard2] = useState(false);
+const premiumItems = [
+  "Crear wallets - de 0 a experto",
+  "Manejo de sub-billeteras",
+  "Manejo de wallet de Bitcoin y altcoins",
+  "Guardar correctamente las llaves privadas",
+  "Uso profesional de hardware wallets y software wallets",
+  "Recuperación de accesos y saldos de wallets (según gravedad del caso)",
+  "Manejo de wallets geográficas",
+  "Evitar estafas, fraudes y esquemas maliciosos",
+  "Comprar y transferir Bitcoin de la forma más económica y eficiente",
+  "Creación de portafolio personalizado (incluye análisis de altcoins)",
+  "Revisión profesional de proyectos y empresas cripto",
+  "Participación en airdrops y launchpools",
+  "Crear intercambios personales (Exchange básico y seguro)",
+  "Aplicación del Protocolo Martha Julia",
+];
 
-  const itemsCard1 = [
-    "Crear wallets - de 0 a experto",
-    "Manejo de sub-billeteras",
-    "Manejo de wallet de Bitcoin y altcoins",
-    "Guardar correctamente las llaves privadas",
-    "Uso profesional de hardware wallets y software wallets",
-    "Recuperación de accesos y saldos de wallets (según gravedad del caso)",
-    "Manejo de wallets geográficas",
-    "Evitar estafas, fraudes y esquemas maliciosos",
-    "Comprar y transferir Bitcoin de la forma más económica y eficiente",
-    "Creación de portafolio personalizado (incluye análisis de altcoins)",
-    "Revisión profesional de proyectos y empresas cripto",
-    "Participación en airdrops y launchpools",
-    "Crear intercambios personales(Exchange básico y seguro)",
-    "Aplicación del Protocolo Martha Julia",
-  ];
+const vipItems = [
+  "Sesión presencial ÚNICA de 180 minutos",
+  "Virtudes fundamentales del individuo libre",
+  "Historia del dinero y evolución monetaria",
+  "Qué es bitcoin",
+  "Bitcoin vs Oro",
+  "Bitcoin vs Bienes Raíces",
+  "Cómo evitar y reconocer estafas",
+  "Pools de liquidez",
+  "Rastreo de wallets de ballenas",
+  "Explicación de Capa 2 y llaves privadas",
+  "Cómo invertir en Bitcoin de la forma más segura",
+  "Cómo comprar Bitcoin paso a paso",
+  "Crear wallets - de 0 a experto",
+  "Manejo de sub-billeteras",
+  "Manejo de wallet de Bitcoin y altcoins",
+  "Guardar correctamente las llaves privadas",
+  "Comprar tus primeros Bitcoin en vivo",
+  "Manejo de billeteras frías",
+  "Recuperación de errores de proceso",
+  "Creación de portafolio personalizado",
+  "REMOTO incluido: acceso a contenido digital especializado",
+  "REMOTO incluido: actualización constante del contenido",
+  "REMOTO incluido: soporte 24/7 prioritario (chat y presencial bajo costo)",
+  "REMOTO incluido: grupo VIP",
+  "REMOTO incluido: 1 Zoom de emergencia por mes",
+];
 
-  const itemsCard2 = [
-    "Sesión presencial ÚNICA de 180 minutos",
-    "Virtudes fundamentales del individuo libre",
-    "Historia del dinero y evolución monetaria",
-    "Qué es bitcoin",
-    "Bitcoin vs Oro",
-    "Bitcoin vs Bienes Raíces",
-    "Cómo evitar y reconocer estafas",
-    "Pools de liquidez",
-    "Rastreo de wallets de ballenas",
-    "Explicación de Capa 2 y llaves privadas",
-    "Cómo invertir en Bitcoin de la forma más segura",
-    "Como comprar Bitcoin paso a paso",
-    "Crear wallets - de 0 a experto",
-    "Manejo de sub-billeteras",
-    "Manejo de wallet de Bitcoin y altcoins",
-    "Guardar correctamente las llaves privadas",
-    "Comprar tus primeros Bitcoin en vivo",
-    "Manejo de billeteras frías",
-    "Recuperación de errores de proceso",
-    "Creación de portafolio personalizado",
-  ];
+const walletItems = [
+  "Hardware wallets para guardar tus llaves",
+  "Mineros Bitaxe para minar en casa",
+  "Asesoría para elegir el equipo adecuado",
+];
 
-  const remoteExtras = [
-    "Acceso a contenido digital especializado",
-    "Actualización constante del contenido",
-    "Soporte 24/7 PRIORITARIO (chat y presencial bajo costo)",
-    "Grupo VIP",
-    "1 Zoom de emergencia por mes",
-  ];
+const VISIBLE = 6;
 
-  const renderItems = (items, expanded) =>
-    expanded ? items : items.slice(0, 0);
+function PlanCard({ title, tagline, items, cta, href, featured, badge, children }) {
+  const [expanded, setExpanded] = useState(false);
+  const shown = expanded ? items : items.slice(0, VISIBLE);
 
   return (
-    <div className="bg-white dark:bg-fm-Dark-Desaturated-Blue py-12">
-         <div className="text-center mb-8">
-          <p className="text-3xl font-bold text-neutral-900 dark:text-white">Que enseño</p>
-          <div className="w-24 h-1 bg-fm-turquesa mx-auto mt-3"></div>
-        </div>
-      <div className="grid grid-cols-1 md:grid-cols-3   gap-6 max-w-6xl  mx-auto py-10  items-start md:px-3 px-2  ">
-     
-    
-               {/* CARD 2 */}
-      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300  dark:bg-fm-Very-dark-Blue dark:border-neutral-600">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2 dark:text-neutral-300">
-          MENTORIA VIP PRESENCIAL
-        </h3>
-        <p className="text-gray-600 mb-4 dark:text-neutral-400">
-          La experiencia más completa, personalizada e intensiva
-        </p>
-
-        <ul className="mb-4 space-y-2 text-gray-700">
-          {renderItems(itemsCard2, expandedCard2).map((item, index) => (
-            <li key={index} className="flex gap-x-1 dark:text-neutral-500">
-              <span>⭐</span> {item}
-            </li>
-          ))}
-
-          {expandedCard2 && (
-            <div className="flex flex-col my-4">
-              <ul className="list-disc gap-y-1 px-6 my-3">
-                <li className="font-semibold list-none flex gap-1 dark:text-neutral-400">
-                  <span>🔹</span> REMOTO (Incluido en la VIP)
-                </li>
-                {remoteExtras.map((extra, i) => (
-                  <li className="dark:text-neutral-300" key={i}>{extra}</li>
-                ))}
-              </ul>
-            </div>
+    <div
+      className={`relative flex flex-col rounded-2xl border p-7 transition duration-300 hover:-translate-y-1 ${
+        featured
+          ? "border-btc bg-ui-bg2 shadow-2xl shadow-btc/15 lg:scale-105"
+          : "border-ui-border bg-ui-bg2/70 hover:border-btc/50"
+      }`}
+    >
+      {badge && (
+        <span className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-btc px-4 py-1 text-xs font-bold uppercase tracking-wide text-black">
+          {badge}
+        </span>
+      )}
+      <h3 className="font-display text-2xl font-bold text-ui-text">{title}</h3>
+      <p className="mt-2 text-sm text-ui-muted">{tagline}</p>
+      <div className="my-5 h-px bg-ui-border" />
+      {children}
+      {items && (
+        <>
+          <ul className="space-y-3 text-sm text-ui-text/90">
+            {shown.map((item) => (
+              <li key={item} className="flex gap-3">
+                <Check className="mt-0.5 h-4 w-4 shrink-0 text-ui-success" />
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+          {items.length > VISIBLE && (
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="mt-4 flex items-center gap-1 self-start text-sm font-semibold text-btc hover:text-btc-dark transition"
+            >
+              {expanded ? "Ver menos" : `Ver los ${items.length} beneficios`}
+              <ChevronDown className={`h-4 w-4 transition-transform duration-500 ${expanded ? "rotate-180" : ""}`} />
+            </button>
           )}
-        </ul>
-
-        <button
-          onClick={() => setExpandedCard2(!expandedCard2)}
-          className="flex items-center gap-2 self-end text-gray-600 hover:text-gray-800 transition font-medium mb-4 mt-auto dark:text-neutral-300 dark:hover:text-neutral-400"
-        >
-          {expandedCard2 ? "Ver menos" : "Ver beneficios"}
-          <ChevronDown
-            className={`transition-transform duration-500 ${
-              expandedCard2 ? "rotate-180" : ""
-            }`}
-          />
-        </button>
-
-        <a
-          target="_blank"
-          href={buildWaMeLink("mentoriaPrimary", "mentoriaVIPPresencial")}
-          className=" bg-fm-turquesa text-black py-2 px-4 rounded-lg hover:bg-fm-turquesa_strong hover:font-semibold  transition text-center"
-        >
-          Elegir
-        </a>
-      </div>
-      {/* CARD 1 */}
-      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 dark:bg-fm-Very-dark-Blue dark:border-neutral-600">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2 dark:text-neutral-300">
-          MENTORIA PREMIUM
-        </h3>
-        <p className="text-gray-600 mb-4 dark:text-neutral-400">
-          Ideal para comenzar y dominar todo el ecosistema cripto desde cero.
-        </p>
-
-        <ul className="text-gray-700 mb-4 space-y-2">
-          {renderItems(itemsCard1, expandedCard1).map((item, index) => (
-            <li key={index} className="flex gap-x-1 dark:text-neutral-500">
-              <span>🔥</span> {item}
-            </li>
-          ))}
-        </ul>
-
-        <button
-          onClick={() => setExpandedCard1(!expandedCard1)}
-          className="flex items-center gap-2 self-end text-gray-600 hover:text-gray-800 transition font-medium mb-4 dark:text-neutral-300 dark:hover:text-neutral-400"
-        >
-          {expandedCard1 ? "Ver menos" : "Ver beneficios"}
-          <ChevronDown
-            className={`transition-transform duration-500 ${
-              expandedCard1 ? "rotate-180" : ""
-            }`}
-          />
-        </button>
-
-        <a
-          target="_blank"
-          href={buildWaMeLink("mentoriaPrimary", "infoMentoriaPremium")}
-          className="mt-auto bg-fm-turquesa text-black py-2 px-4 rounded-lg hover:bg-fm-turquesa_strong hover:font-semibold  transition text-center"
-        >
-          Elegir
-        </a>
-      </div>
-      {/* CARD 3 - sin comportamiento de expandir 
-      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 min-h-[650px]">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2">
-          Inconfiscable World Tour
-        </h3>
-        <img
-          src={tour_marzo}
-          alt="Crypto Tour"
-          className="w-full mb-4 rounded-xl"
-        />
-        <p className="text-gray-600 mb-4">
-          CryptoTour 2026 Inconfiscable es la gira educativa que está impulsando
-          una nueva forma de entender y proteger el patrimonio en la era
-          digital.
-        </p>
-        <a
-          href="https://fusionplusdigital.com/eventos/"
-          className="mt-auto bg-fm-turquesa text-black py-2 px-4 rounded-lg hover:bg-fm-turquesa_strong hover:font-semibold transition text-center"
-        >
-          Adquiere tus entradas
-        </a>
-      </div>
-*/}
-      {/* CARD 4- sin comportamiento de expandir */}
-      <div className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 dark:bg-fm-Very-dark-Blue dark:border-neutral-600">
-        <h3 className="text-xl font-semibold text-gray-800 mb-2 dark:text-neutral-300">
-          WALLET FRIA Y MINERO
-        </h3>
-      <div className="flex gap-2 items-center justify-around">
-          <img
-          src={wallet_jade}
-          alt="Crypto Tour"
-          className="w-25 mb-4 rounded-xl"
-        />
-       <img src="https://m.media-amazon.com/images/I/61wNXnDuSyL._AC_SX466_PIbundle-99,TopRight,0,0_SH20_.jpg" alt="img-bitaxe"   className="w-15 mb-4 rounded-xl"/>
-      </div>
-        <a
-          
-          href="/wallets&mineros"
-          className="bg-fm-turquesa text-black py-2 px-4 rounded-lg hover:bg-fm-turquesa_strong hover:font-semibold transition mt-auto text-center"
-        >
-          {" "}
-          Ver catálogo
-        </a>
-      </div>
+        </>
+      )}
+      <a
+        target="_blank"
+        rel="noreferrer"
+        href={href}
+        className={`mt-auto block rounded-lg py-3 text-center font-bold transition ${
+          featured
+            ? "bg-btc text-black hover:bg-btc-dark"
+            : "border border-btc text-btc hover:bg-btc/10"
+        }`}
+        style={{ marginTop: "2rem" }}
+      >
+        {cta}
+      </a>
     </div>
-    </div>
-    
+  );
+}
+
+export default function SectionCardsMentoria() {
+  return (
+    <section id="mis-servicios" className="bg-ui-bg py-20 font-body text-ui-text">
+      <div className="mx-auto max-w-6xl px-4">
+        <div className="mb-14 text-center">
+          <p className="text-sm font-semibold uppercase tracking-[0.2em] text-btc">Planes</p>
+          <h2 className="mt-2 font-display text-4xl font-bold sm:text-5xl">Mis servicios</h2>
+          <p className="mx-auto mt-4 max-w-xl text-ui-muted">
+            Elige el nivel de acompañamiento que necesitas para dominar Bitcoin y proteger tu patrimonio.
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 items-stretch gap-8 md:grid-cols-3">
+          <PlanCard
+            title="Mentoría Premium"
+            tagline="Ideal para comenzar y dominar todo el ecosistema cripto desde cero."
+            items={premiumItems}
+            cta="Consultar precio"
+            href={buildWaMeLink("mentoriaPrimary", "infoMentoriaPremium")}
+          />
+          <PlanCard
+            featured
+            badge="Más completa"
+            title="Mentoría VIP Presencial"
+            tagline="La experiencia más completa, personalizada e intensiva."
+            items={vipItems}
+            cta="Reservar mi cupo"
+            href={buildWaMeLink("mentoriaPrimary", "mentoriaVIPPresencial")}
+          />
+          <PlanCard
+            title="Wallets y Mineros"
+            tagline="Equipos para custodiar y minar tu propio Bitcoin."
+            items={walletItems}
+            cta="Ver catálogo"
+            href="/wallets&mineros"
+          >
+            <img src={wallet_jade} alt="Jade wallet" className="mx-auto mb-5 h-28 object-contain" />
+          </PlanCard>
+        </div>
+      </div>
+    </section>
   );
 }

@@ -7,13 +7,14 @@
 
 /* Todo el CSS queda acotado a .libro-btc para no afectar el resto del sitio */
 .libro-btc {
-    --color-primary: hsl(230, 17%, 14%);      /* Very Dark Blue */
-    --color-secondary: #23a78e;               /* turquesa muy fuerte */
-    --color-background: hsl(225, 100%, 98%);  /* Very Pale Blue */
-    --color-text: hsl(228, 12%, 44%);         /* Dark Grayish Blue */
-    --color-accent: #3ef2d0;                  /* turquesa */
-    --color-white: #ffffff;
-    --color-border: hsl(227, 47%, 96%);       /* Light Grayish Blue */
+    --color-primary: var(--color-ui-text);
+    --color-secondary: var(--color-btc-dark);
+    --color-background: var(--color-ui-bg);
+    --color-text: var(--color-ui-muted);
+    --color-accent: var(--color-btc);
+    --color-white: var(--color-ui-text);
+    --color-border: var(--color-ui-border);
+    --surface: var(--color-ui-bg2);
 
     --font-title: 'Playfair Display', Georgia, serif;
     --font-body: 'Source Sans 3', Arial, sans-serif;
@@ -63,13 +64,13 @@ h1, h2, h3 { font-family: var(--font-title); color: var(--color-primary); line-h
 
 .btn-primary {
     background-color: var(--color-accent);
-    color: var(--color-primary);
+    color: #000;
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
     background-color: var(--color-secondary);
-    color: var(--color-white);
+    color: #000;
     transform: translateY(-2px);
     box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
@@ -82,8 +83,8 @@ h1, h2, h3 { font-family: var(--font-title); color: var(--color-primary); line-h
 
 .btn-secondary:hover,
 .btn-secondary:focus {
-    background-color: var(--color-white);
-    color: var(--color-primary);
+    background-color: var(--color-ui-text);
+    color: var(--color-ui-bg);
 }
 
 .btn:focus-visible {
@@ -96,7 +97,7 @@ h1, h2, h3 { font-family: var(--font-title); color: var(--color-primary); line-h
     position: sticky;
     top: 0;
     z-index: 100;
-    background-color: var(--color-white);
+    background-color: var(--surface);
     border-bottom: 1px solid var(--color-border);
 }
 
@@ -148,13 +149,13 @@ h1, h2, h3 { font-family: var(--font-title); color: var(--color-primary); line-h
 .nav-toggle span {
     width: 24px;
     height: 2px;
-    background-color: var(--color-primary);
+    background-color: var(--color-ui-text);
     transition: transform var(--transition), opacity var(--transition);
 }
 
 /* ===== HERO ===== */
 .hero {
-    background-color: var(--color-primary);
+    background-color: var(--surface);
     color: var(--color-white);
     padding: 80px 0;
 }
@@ -197,7 +198,7 @@ h1, h2, h3 { font-family: var(--font-title); color: var(--color-primary); line-h
 }
 
 .hero-text-secondary {
-    color: #cfd6dd;
+    color: var(--color-ui-muted);
     margin-bottom: 32px;
     max-width: 480px;
 }
@@ -221,14 +222,14 @@ section {
 
 .section-lead {
     max-width: 720px;
-    color: hsl(228, 12%, 44%);
+    color: var(--color-ui-muted);
     margin-bottom: 40px;
     font-size: 1.05rem;
 }
 
 /* ===== BLOQUES DE CONTENIDO ===== */
 .content-blocks {
-    background-color: var(--color-white);
+    background-color: var(--surface);
 }
 
 .cards-grid {
@@ -265,12 +266,12 @@ section {
 
 .card p {
     font-size: 0.95rem;
-    color: hsl(228, 12%, 44%);
+    color: var(--color-ui-muted);
 }
 
 /* ===== VIAJE / TIMELINE ===== */
 .journey {
-    background-color: var(--color-primary);
+    background-color: var(--surface);
     color: var(--color-white);
 }
 
@@ -296,7 +297,7 @@ section {
     left: 0;
     right: 0;
     height: 2px;
-    background-color: rgba(255,255,255,0.25);
+    background-color: var(--color-ui-border);
 }
 
 .timeline-item {
@@ -324,7 +325,7 @@ section {
 
 /* ===== PREGUNTAS ===== */
 .questions {
-    background-color: var(--color-white);
+    background-color: var(--surface);
 }
 
 .questions-grid {
@@ -374,7 +375,7 @@ section {
 }
 
 .practical-card {
-    background-color: var(--color-white);
+    background-color: var(--surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius);
     padding: 26px;
@@ -388,12 +389,12 @@ section {
 
 .practical-card p {
     font-size: 0.95rem;
-    color: hsl(228, 12%, 44%);
+    color: var(--color-ui-muted);
 }
 
 /* ===== AUDIENCIA ===== */
 .audience {
-    background-color: var(--color-white);
+    background-color: var(--surface);
     text-align: center;
 }
 
@@ -402,7 +403,7 @@ section {
 }
 
 .audience-text {
-    color: hsl(228, 12%, 44%);
+    color: var(--color-ui-muted);
     margin-top: 8px;
 }
 
@@ -415,7 +416,7 @@ section {
     display: grid;
     grid-template-columns: 0.8fr 1.2fr;
     gap: 40px;
-    background-color: var(--color-white);
+    background-color: var(--surface);
     border: 1px solid var(--color-border);
     border-radius: var(--radius);
     padding: 40px;
@@ -446,7 +447,7 @@ section {
     padding: 6px 0;
     padding-left: 24px;
     position: relative;
-    color: hsl(228, 12%, 44%);
+    color: var(--color-ui-muted);
 }
 
 .product-features li::before {
@@ -467,12 +468,12 @@ section {
 .product-disclaimer {
     margin-top: 20px;
     font-size: 0.85rem;
-    color: #7a7a72;
+    color: var(--color-ui-muted);
 }
 
 /* ===== CTA FINAL ===== */
 .final-cta {
-    background-color: var(--color-primary);
+    background-color: var(--surface);
     color: var(--color-white);
     text-align: center;
 }
@@ -486,13 +487,14 @@ section {
 
 .final-cta-text {
     margin-bottom: 32px;
-    color: #cfd6dd;
+    color: var(--color-ui-muted);
 }
 
 /* ===== FOOTER ===== */
 .site-footer {
-    background-color: hsl(230, 17%, 14%);
-    color: hsl(228, 34%, 66%);
+    background-color: var(--surface);
+    color: var(--color-ui-muted);
+    border-top: 1px solid var(--color-ui-border);
     text-align: center;
     padding: 32px 0;
     font-size: 0.85rem;
@@ -500,7 +502,7 @@ section {
 
 .footer-note {
     margin-top: 6px;
-    color: #7c8590;
+    color: var(--color-ui-muted);
 }
 
 /* ===== BOTON VOLVER ARRIBA ===== */
@@ -512,7 +514,7 @@ section {
     height: 44px;
     border-radius: 50%;
     background-color: var(--color-accent);
-    color: var(--color-primary);
+    color: #000;
     border: none;
     font-size: 1.2rem;
     cursor: pointer;
@@ -563,7 +565,7 @@ section {
         top: 100%;
         left: 0;
         right: 0;
-        background-color: var(--color-white);
+        background-color: var(--surface);
         flex-direction: column;
         gap: 0;
         border-bottom: 1px solid var(--color-border);
@@ -617,8 +619,8 @@ section {
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    color: #23a78e;
-    border: 2px solid #23a78e;
+    color: var(--color-btc);
+    border: 2px solid var(--color-btc);
     border-radius: 999px;
     padding: 6px 14px;
     font-weight: 600;
@@ -627,6 +629,6 @@ section {
 }
 
 .back-btn:hover {
-    background-color: #23a78e;
-    color: var(--color-white);
+    background-color: var(--color-btc);
+    color: #000;
 }

@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React from 'react'
 import icon_wasap from "/imagenes/whatsapp.svg"
 import icon_amazon from "/imagenes/amazon.svg"
 import icon_dowload from "/imagenes/arrow-download.svg"
@@ -10,7 +10,7 @@ export default function CardBook({book,idx}) {
   return (
       <div   key={idx} 
   
-      className="div-libro relative snap-center bg-white dark:bg-fm-Dark-Desaturated-Blue w-60 h-90  flex-shrink-0 shadow-md p-2 overflow-hidden rounded-xl hover:scale-105 transition-scale ease-in-out duration-100 ">
+      className="div-libro relative bg-ui-bg2 border border-ui-border w-56 h-80 flex-shrink-0 p-2 overflow-hidden rounded-2xl transition duration-300 hover:-translate-y-1 hover:border-btc/60 ">
               <img
                 src={book.img}
                 alt={book.title}
@@ -21,7 +21,7 @@ export default function CardBook({book,idx}) {
                 {book.whatsappLink && (
                   <a
                     href={book.whatsappLink}
-                    className="bg-fm-turquesa text-black px-4 py-2 flex items-center gap-2 rounded-md shadow"
+                    className="bg-btc text-black font-bold px-4 py-2 flex items-center gap-2 rounded-md shadow"
                   >
                     Comprar
                     <img src={icon_wasap} alt="whatsapp" className="w-5 h-5" />
@@ -30,7 +30,7 @@ export default function CardBook({book,idx}) {
                 {book.amazonLink && (
                   <a
                     href={book.amazonLink}
-                    className="bg-white py-2 px-4 rounded-md"
+                    className="bg-ui-bg2 py-2 px-4 rounded-md"
                   >
                     <img src={icon_amazon} alt="amazon" className="w-24" />
                   </a>
@@ -41,7 +41,7 @@ export default function CardBook({book,idx}) {
                       href={book.pdf}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="bg-fm-turquesa text-black w-[50%]  py-2 flex items-center justify-center gap-2 rounded-md"
+                      className="bg-btc text-black font-semibold w-[50%]  py-2 flex items-center justify-center gap-2 rounded-md"
                     >
                
                       Leer
@@ -50,7 +50,7 @@ export default function CardBook({book,idx}) {
                     <a
                       href={book.pdf}
                       download={book.downloadName || ""}
-                      className="bg-fm-turquesa text-black w-[50%] py-2 flex items-center justify-center gap-2 rounded-md"
+                      className="bg-btc text-black font-semibold w-[50%] py-2 flex items-center justify-center gap-2 rounded-md"
                     >
                        Descargar
                       <img src={icon_dowload} alt="descargar" className="w-4" />

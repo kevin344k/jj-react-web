@@ -39,6 +39,7 @@
 }
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 .animate-fade-in {
   animation: fadeIn 0.3s ease-out forwards;
@@ -152,3 +153,38 @@ html {
   100% { transform: translateX(-50%); }
 }
 
+
+/* Hero redesign */
+@keyframes btcFloat {
+  0%, 100% { transform: translateY(0) rotate(-4deg); }
+  50% { transform: translateY(-28px) rotate(4deg); }
+}
+@keyframes btcFloatSlow {
+  0%, 100% { transform: translate(0, 0); }
+  50% { transform: translate(-18px, 22px); }
+}
+@keyframes heroRise {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.btc-float { animation: btcFloat 9s ease-in-out infinite; }
+.btc-float-slow { animation: btcFloatSlow 13s ease-in-out infinite; }
+.hero-rise { animation: heroRise 0.9s cubic-bezier(0.22, 1, 0.36, 1) both; }
+@media (prefers-reduced-motion: reduce) {
+  .btc-float, .btc-float-slow, .hero-rise { animation: none; }
+}
+
+/* Carrusel automático continuo */
+@keyframes autoScroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+.auto-carousel-track {
+  display: flex;
+  width: max-content;
+  animation: autoScroll var(--carousel-duration, 40s) linear infinite;
+}
+.auto-carousel:hover .auto-carousel-track { animation-play-state: paused; }
+@media (prefers-reduced-motion: reduce) {
+  .auto-carousel-track { animation: none; }
+}

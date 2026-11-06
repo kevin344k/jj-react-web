@@ -1,0 +1,132 @@
+- generic [ref=f12e3]:
+  - navigation [ref=f12e4]:
+    - generic [ref=f12e5]:
+      - link "JJ Chagerben JJChagerben" [ref=f12e7] [cursor=pointer]:
+        - /url: /
+        - img "JJ Chagerben" [ref=f12e8]
+        - generic [ref=f12e9]: JJChagerben
+      - list [ref=f12e11]:
+        - listitem [ref=f12e12]:
+          - link "Mi libro" [ref=f12e13] [cursor=pointer]:
+            - /url: "#sec-announce-book"
+        - listitem [ref=f12e14]:
+          - link "Servicios" [ref=f12e15] [cursor=pointer]:
+            - /url: "#mis-servicios"
+        - listitem [ref=f12e16]:
+          - link "Conferencias" [ref=f12e17] [cursor=pointer]:
+            - /url: "#section-conferencias"
+        - listitem [ref=f12e18]:
+          - link "Calculadora" [ref=f12e19] [cursor=pointer]:
+            - /url: "#sec-calculadora-jub"
+        - listitem [ref=f12e20]:
+          - link "Redes" [ref=f12e21] [cursor=pointer]:
+            - /url: "#section-mentoria"
+        - listitem [ref=f12e22]:
+          - link "Testimonios" [ref=f12e23] [cursor=pointer]:
+            - /url: "#sect-testimonial"
+        - listitem [ref=f12e24]:
+          - button "Más" [ref=f12e25]
+        - listitem [ref=f12e28]:
+          - link "Mentoría Premium" [ref=f12e29] [cursor=pointer]:
+            - /url: https://wa.me/593961147947?text=Hola%2C%20quiero%20informacion%20sobre%20la%20mentoria.
+  - button "Cambiar a tema claro" [ref=f12e30]
+  - main [ref=f12e31]:
+    - link "Volver al inicio" [ref=f12e32] [cursor=pointer]:
+      - /url: /
+    - generic [ref=f12e35]:
+      - paragraph [ref=f12e36]: Catálogo
+      - heading "Mineros y Wallets" [level=2] [ref=f12e37]
+      - paragraph [ref=f12e38]: Equipos originales para custodiar y minar tu propio Bitcoin.
+    - generic [ref=f12e39]:
+      - article [ref=f12e40]:
+        - generic [ref=f12e41]:
+          - img "Jade Core"
+        - generic [ref=f12e42]: Hardware Wallet
+        - heading "Jade Core" [level=2] [ref=f12e43]
+        - paragraph [ref=f12e44]: Jade Core busca que los nuevos usuarios de Bitcoin puedan guardar y controlar sus propios fondos de forma sencilla, sin depender de plataformas de intercambio ni bancos, siguiendo la visión original de Satoshi Nakamoto de un sistema financiero sin intermediarios.
+        - generic [ref=f12e45]:
+          - paragraph [ref=f12e46]: $155 USD
+          - link "Pedir" [ref=f12e47] [cursor=pointer]:
+            - /url: https://api.whatsapp.com/send?phone=593939838756&text=Hola%2C%20quiero%20comprar%20la%20Blockstream%20Jade%20Core%20Hardware%20Wallet
+      - article [ref=f12e48]:
+        - generic [ref=f12e49]:
+          - img "Jade Plus"
+        - generic [ref=f12e50]: Hardware Wallet
+        - heading "Jade Plus" [level=2] [ref=f12e51]
+        - paragraph [ref=f12e52]: La nueva Jade Plus es la billetera fría más avanzada de Blockstream, con pantalla a color y soporte para Bitcoin y Liquid. Seguridad máxima para tus ahorros.
+        - generic [ref=f12e53]:
+          - paragraph [ref=f12e54]: $220 USD
+          - link "Pedir" [ref=f12e55] [cursor=pointer]:
+            - /url: https://api.whatsapp.com/send?phone=593939838756&text=Hola%2C%20quiero%20comprar%20la%20Blockstream%20Jade%20Plus%20Hardware%20Wallet
+      - article [ref=f12e56]:
+        - generic [ref=f12e57]:
+          - img "Jade Classic"
+        - generic [ref=f12e58]: Hardware Wallet
+        - heading "Jade Classic" [level=2] [ref=f12e59]
+        - paragraph [ref=f12e60]: La clásica Jade, billetera fría segura y económica, ideal para principiantes y usuarios avanzados. Compatible con Bitcoin y Liquid.
+        - generic [ref=f12e61]:
+          - paragraph [ref=f12e62]: $120 USD
+          - link "Pedir" [ref=f12e63] [cursor=pointer]:
+            - /url: https://api.whatsapp.com/send?phone=593939838756&text=Hola%2C%20quiero%20comprar%20la%20Blockstream%20Jade%20Hardware%20Wallet
+      - article [ref=f12e64]:
+        - generic [ref=f12e65]:
+          - img "Bitcoins Miner Bitaxes Gamma 601"
+        - generic [ref=f12e66]: Minero
+        - heading "Bitcoins Miner Bitaxes Gamma 601" [level=2] [ref=f12e67]
+        - paragraph [ref=f12e68]: Uno de los mineros potentes y eficientes del mercado. Perfecto para minería de Bitcoin.
+        - generic [ref=f12e69]:
+          - paragraph [ref=f12e70]: Consultar precio
+          - link "Pedir" [ref=f12e71] [cursor=pointer]:
+            - /url: https://api.whatsapp.com/send?phone=593939838756&text=Hola%2C%20quiero%20comprar%20el%20Bitaxes%20Gamma%20601%20para%20minar%20Bitcoin
+      - article [ref=f12e72]:
+        - generic [ref=f12e73]:
+          - img "LILYGO T-Display-S3 ESP32-S3 TTGO Development Board"
+        - generic [ref=f12e74]: Generador de Entropía
+        - heading "LILYGO T-Display-S3 ESP32-S3 TTGO Development Board" [level=2] [ref=f12e75]
+        - paragraph [ref=f12e76]: Crea tu propia wallet!,Genera tu propia frase semilla
+        - generic [ref=f12e77]:
+          - paragraph [ref=f12e78]: $75 USD
+          - link "Pedir" [ref=f12e79] [cursor=pointer]:
+            - /url: https://api.whatsapp.com/send?phone=593939838756&text=Hola%2C%20quiero%20comprar%20el%20LILYGO%20T-Display-S3%20ESP32-S3%20TTGO%20Development%20Board
+      - article [ref=f12e80]:
+        - img "KIT Placa metálica" [ref=f12e82]
+        - generic [ref=f12e83]: Almacenamiento de frases semilla
+        - heading "KIT Placa metálica" [level=2] [ref=f12e84]
+        - paragraph [ref=f12e85]: Compatible con formato de 12 y 24 palabras + passphrase
+        - generic [ref=f12e86]:
+          - paragraph [ref=f12e87]: $37 USD
+          - link "Pedir" [ref=f12e88] [cursor=pointer]:
+            - /url: https://api.whatsapp.com/send?phone=593939838756&text=Hola%2C%20quiero%20comprar%20EL%20KIT%20Placa%20met%C3%A1lica
+      - article [ref=f12e89]:
+        - generic [ref=f12e90]:
+          - img "Juego Dados de casino grado AAA"
+        - heading "Juego Dados de casino grado AAA" [level=2] [ref=f12e91]
+        - generic [ref=f12e92]:
+          - paragraph [ref=f12e93]: $28 USD
+          - link "Pedir" [ref=f12e94] [cursor=pointer]:
+            - /url: https://api.whatsapp.com/send?phone=593939838756&text=Hola%2C%20quiero%20comprar%20el%20Juego%20Dados%20de%20casino%20grado%20AAA
+  - contentinfo [ref=f12e95]:
+    - generic [ref=f12e96]:
+      - list [ref=f12e97]:
+        - listitem [ref=f12e98]:
+          - link [ref=f12e99] [cursor=pointer]:
+            - /url: https://mempool.space/es/
+            - text: mempool - Bitcoin Explorer
+            - img "Mempool favicon" [ref=f12e100]
+        - listitem [ref=f12e101]:
+          - link "Bitcoin Rich List" [ref=f12e102] [cursor=pointer]:
+            - /url: https://bitinfocharts.com/top-100-richest-bitcoin-addresses.html
+        - listitem [ref=f12e103]:
+          - link "Tabla - Block Subsidy" [ref=f12e104] [cursor=pointer]:
+            - /url: https://pbs.twimg.com/media/FwLQcUMWIAQ4wYN?format=png&name=900x900
+        - listitem [ref=f12e105]:
+          - link "Top Assets by Market Cap" [ref=f12e106] [cursor=pointer]:
+            - /url: https://companiesmarketcap.com/assets-by-market-cap/
+      - generic [ref=f12e107]:
+        - paragraph [ref=f12e108]: ¿Eres nuevo en el mundo de las criptomonedas?
+        - link "¡Contáctame!" [ref=f12e109] [cursor=pointer]:
+          - /url: https://wa.me/593961147947?text=Hola%2C%20quiero%20informacion%20sobre%20la%20mentoria.
+    - paragraph [ref=f12e110]:
+      - text: Sitio web desarrollado por
+      - link "labsproductivity.com" [ref=f12e111] [cursor=pointer]:
+        - /url: https://labsproductivity.com

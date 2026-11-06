@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Source+Sans+3:wght@300..800&display=swap');
 @import "tailwindcss";
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 .font-luckiest {
@@ -7,6 +8,16 @@
 }
 
 @theme{
+    --font-display: "Playfair Display", Georgia, serif;
+    --font-body: "Source Sans 3", Arial, sans-serif;
+    --color-ui-bg: #0B0B0B;
+    --color-ui-bg2: #141414;
+    --color-btc: #F7931A;
+    --color-btc-dark: #D97706;
+    --color-ui-text: #F8F8F8;
+    --color-ui-muted: #B3B3B3;
+    --color-ui-border: #2A2A2A;
+    --color-ui-success: #16A34A;
     --color-fm-turquesa: #3ef2d0;
     --color-fm-turquesa_strong: #19e6c0;
 --color-fm-turquesa_very_strong: #23a78e;
@@ -39,4 +50,23 @@
   font-optical-sizing: auto;
 
   font-style: normal;
+}
+
+/* Tema claro del rediseño: sobrescribe los tokens ui-* */
+:root[data-theme="light"] {
+  --color-ui-bg: #FAF8F5;
+  --color-ui-bg2: #FFFFFF;
+  --color-ui-text: #141414;
+  --color-ui-muted: #5C5C5C;
+  --color-ui-border: #E4E0D8;
+}
+
+body {
+  background-color: var(--color-ui-bg);
+  color: var(--color-ui-text);
+  font-family: var(--font-body);
+}
+
+:root:not([data-theme="light"]) .info-ico {
+  filter: invert(1);
 }

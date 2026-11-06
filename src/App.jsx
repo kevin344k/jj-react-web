@@ -7,7 +7,8 @@ import Compras from "./views/Compras";
 import WalletsMineros from "./views/WalletsMineros";
 import TikTokBrowserNotice from "./views/TikTokBrowserNotice";
 import LibroBitcoinEsclavitud from "./views/LibroBitcoinEsclavitud";
-import { useNavigate } from "react-router-dom";
+import AlumnoLogin from "./views/AlumnoLogin";
+import AlumnoCurso from "./views/AlumnoCurso";
 
 function isTikTokInAppBrowser() {
   if (typeof navigator === "undefined") return false;
@@ -21,8 +22,6 @@ function isTikTokInAppBrowser() {
 }
 
 function App() {
-  const navigate = useNavigate();
-
   if (isTikTokInAppBrowser()) {
     return <TikTokBrowserNotice />;
   }
@@ -32,14 +31,13 @@ function App() {
       <Route path="/" element={<Home />} />
       <Route path="/debates" element={<Debates />} />
       <Route path="/compras" element={<Compras />} />
-      <Route
-        path="/wallets&mineros"
-        element={<WalletsMineros onBack={() => navigate("/")} />}
-      />
+      <Route path="/wallets&mineros" element={<WalletsMineros />} />
       <Route
         path="/libro/bitcoinoesclavitud"
         element={<LibroBitcoinEsclavitud />}
       />
+      <Route path="/alumnos" element={<AlumnoLogin />} />
+      <Route path="/alumnos/curso" element={<AlumnoCurso />} />
       <Route path="/open-in-browser" element={<TikTokBrowserNotice />} />
       <Route path="*" element={<h2>404 - Página no encontrada</h2>} />
     </Routes>

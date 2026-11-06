@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import SectionHeader from "./SectionHeader";
 import bitcoin from "/imagenes/bitcoin.png";
 import dollar from "/imagenes/dollar.png";
 import info from "/imagenes/info.png";
@@ -212,17 +213,14 @@ export default function Section_calcualdora() {
     <>
       <section
         id="sec-calculadora-jub"
-        className={`min-w-[320px] flex flex-col justify-center items-center  py-15 px-1 bg-neutral-100 dark:bg-fm-Very-dark-Blue ${
+        className={`min-w-[320px] flex flex-col justify-center items-center  py-15 px-1 bg-ui-bg ${
           animate ? "animate-fade-in" : "opacity-0"
         }`}
       >
-        <div className="text-center mb-8">
-          <p className="text-3xl font-bold text-neutral-900 dark:text-white">Calculadora de Jubilación</p>
-          <div className="w-24 h-1 bg-fm-turquesa mx-auto mt-3"></div>
-        </div>
+        <SectionHeader eyebrow="Herramienta" title="Calculadora de Jubilación" />
 
         {/* Anuncio */}
-        <div className="bg-[#effefa] border border-[#22dfc1] rounded-2xl text-center p-4 leading-6 max-w-[425px] shadow-md my-8 dark:bg-transparent dark:text-neutral-400">
+        <div className="bg-btc/10 border border-btc rounded-2xl text-center p-4 leading-6 max-w-[425px] shadow-md my-8">
           <p>
             *Estos valores son especulativos sobre un modelo estático y pueden
             cambiar si las condiciones de mercado varían.
@@ -232,11 +230,11 @@ export default function Section_calcualdora() {
         {/* Contenido principal */}
         <div className="flex flex-col  xl:flex-row gap-6 items-start md:w-[600px] xl:w-[1200px] ">
           {/* Card calculadora */}
-          <div className="bg-white shadow-md  p-4 relative items-center rounded-md animate-fade-in xl:w-[650px] xl:shrink-0 dark:bg-fm-Dark-Desaturated-Blue">
+          <div className="bg-ui-bg2 shadow-md  p-4 relative items-center rounded-md animate-fade-in xl:w-[650px] xl:shrink-0">
             <div className="flex justify-between items-center px-2">
               <div className="flex items-center gap-4">
                 <img src={bitcoin} alt="btc" className="w-7" />
-                <span className="text-md font-normal text-black dark:text-white" id="span-price-btc">
+                <span className="text-md font-normal text-ui-text" id="span-price-btc">
                   {priceBTC === null ? (
                     // Loader mientras no hay precio
                     <div className="flex justify-center items-center h-40">
@@ -272,7 +270,7 @@ export default function Section_calcualdora() {
                 onClick={() => setIsModalOpen(true)}
                 className="m-4 bg-transparent border-0 rounded-full"
               >
-                <img src={info} alt="info-ico" className="w-6" />
+                <img src={info} alt="info-ico" className="w-6 info-ico" />
               </button>
             </div>
 
@@ -280,25 +278,25 @@ export default function Section_calcualdora() {
             <div className="flex flex-col-reverse justify-center items-center gap-8 text-center pb-12 md:pb-8 mt-8 animate-fade-in ">
               <div className="flex justify-center gap-1 items-center text-center ">
                 <div>
-                  <var className="text-black dark:text-white">PBTC</var>  <var className="text-black dark:text-white"> = </var>
+                  <var className="text-ui-text">PBTC</var>  <var className="text-ui-text"> = </var>
                 </div>
                 <div>
                   <div>
-                    <var className="text-black dark:text-white">(RI</var> <vae className="text-black dark:text-white">*</vae>  <var className="text-black dark:text-white">CP)</var>
-                    <var className="text-black dark:text-white">*2</var>
-                    <var className="text-black dark:text-white">
+                    <var className="text-ui-text">(RI</var> <vae className="text-ui-text">*</vae>  <var className="text-ui-text">CP)</var>
+                    <var className="text-ui-text">*2</var>
+                    <var className="text-ui-text">
                       <sup>NH</sup>
                     </var>
                   </div>
-                  <div className="border-t border-black dark:border-t dark:border-white">
-                    <var className="text-black dark:text-white">RF</var>
+                  <div className="border-t border-ui-text">
+                    <var className="text-ui-text">RF</var>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Input inversión */}
-            <div className="flex flex-col justify-center items-center pb-12 border-b border-gray-400 animate-fade-in md:flex-row md:gap-6">
+            <div className="flex flex-col justify-center items-center pb-12 border-b border-ui-border animate-fade-in md:flex-row md:gap-6">
               <div className="flex gap-8 items-center md:gap-4">
                 <img src={dollar} alt="dollar" className="w-7 mx-auto " />
                 <input
@@ -306,7 +304,7 @@ export default function Section_calcualdora() {
                   type="text"
                   min="0"
                   placeholder="Inversión inicial"
-                  className="p-2 outline-[#22dfc1] text-center outline-none border rounded-md active:outline-[#22dfc1] focus:outline-[#22dfc1] focus:ring-1 focus:ring-[#22dfc1] dark:bg-fm-Very-Dark-Blue dark:text-white dark:border-neutral-600"
+                  className="p-2 outline-btc text-center outline-none border rounded-md active:outline-btc focus:outline-btc focus:ring-1 focus:ring-btc bg-ui-bg text-ui-text border-ui-border"
                   value={inputDollar}
                   onChange={handleChangeDollar}
                 />
@@ -322,7 +320,7 @@ export default function Section_calcualdora() {
                   type="text"
                   id="input-result-equiv-btc"
                   placeholder="Equivalencia en btc"
-                  className="p-2 outline-none text-center border rounded-md active:outline-[#22dfc1] focus:outline-[#22dfc1] focus:ring-1 focus:ring-[#22dfc1] dark:bg-fm-Very-Dark-Blue dark:text-white dark:border-neutral-600"
+                  className="p-2 outline-none text-center border rounded-md active:outline-btc focus:outline-btc focus:ring-1 focus:ring-btc bg-ui-bg text-ui-text border-ui-border"
                   value={inputBTC}
                   onChange={handleChangeBTC}
                 />
@@ -330,36 +328,36 @@ export default function Section_calcualdora() {
             </div>
 
             {/* Resultados Halvings */}
-            <div className="py-12 flex flex-col gap-8 text-center border-b border-gray-400 animate-fade-in md:flex-row">
-              <div className="rounded-2xl border p-4 w-full dark:border-neutral-500">
-                <p className="font-bold pb-2 text-black dark:text-white">Halvin actual</p>
+            <div className="py-12 flex flex-col gap-8 text-center border-b border-ui-border animate-fade-in md:flex-row">
+              <div className="rounded-2xl border p-4 w-full">
+                <p className="font-bold pb-2 text-ui-text">Halvin actual</p>
                 <span
                   id="span-halvin-now-nro"
-                  className="flex justify-center pb-2 text-gray-500 dark:text-neutral-400"
+                  className="flex justify-center pb-2 text-ui-muted"
                 >
                   {halvin_now.halvin_now_numero}
                 </span>
-                <p className="font-bold pb-2 text-black dark:text-white">Año de halvin</p>
+                <p className="font-bold pb-2 text-ui-text">Año de halvin</p>
                 <span
                   id="span-halvin-now-anio"
-                  className="flex justify-center pb-2 text-gray-500 dark:text-neutral-400"
+                  className="flex justify-center pb-2 text-ui-muted"
                 >
                   {halvin_now.anio_halvin_actual}
                 </span>
-                <p className="font-bold pb-2  dark:text-white">Rec. x bloque</p>
+                <p className="font-bold pb-2">Rec. x bloque</p>
                 <span
                   id="span-halvin-now-reward"
-                  className="flex justify-center pb-2 text-gray-500 dark:text-neutral-400"
+                  className="flex justify-center pb-2 text-ui-muted"
                 >
                   {halvin_now.recompensaBloqueNow}
                 </span>
               </div>
 
-              <div className="rounded-2xl border border-[#22dfc1] bg-[#effefa] dark:bg-fm-Very-Dark-Blue shadow-md p-4 w-full">
-                <p className="font-bold pb-2 dark:text-white">Halvin jubilación</p>
+              <div className="rounded-2xl border border-btc bg-btc/10 shadow-md p-4 w-full">
+                <p className="font-bold pb-2">Halvin jubilación</p>
                 <span
                   id="span-halvin-jub-nro"
-                  className="flex justify-center pb-2 text-gray-500"
+                  className="flex justify-center pb-2 text-ui-muted"
                 >
                   {halvingEncontrado ? (
                     <NumberFlow value={halvingEncontrado.numero} />
@@ -367,17 +365,17 @@ export default function Section_calcualdora() {
                     "-"
                   )}
                 </span>
-                <p className="font-bold pb-2 dark:text-white">Año</p>
+                <p className="font-bold pb-2">Año</p>
                 <span
                   id="span-halvin-jub-anio"
-                  className="flex justify-center pb-2 text-gray-500"
+                  className="flex justify-center pb-2 text-ui-muted"
                 >
                   {halvingEncontrado ? halvingEncontrado.Year : "-"}
                 </span>
-                <p className="font-bold pb-2 dark:text-white">Rec. x bloque</p>
+                <p className="font-bold pb-2">Rec. x bloque</p>
                 <span
                   id="span-halvin-jub-reward"
-                  className="flex justify-center pb-2 text-gray-500"
+                  className="flex justify-center pb-2 text-ui-muted"
                 >
                   {halvingEncontrado
                     ? halvingEncontrado.Rewards.toFixed(9)
@@ -388,14 +386,14 @@ export default function Section_calcualdora() {
 
             {/* Resultado fórmula */}
             <div className="p-8 text-center animate-fade-in">
-              <p className="dark:text-white">La inversión inicial equivale a:</p>
+              <p className="">La inversión inicial equivale a:</p>
               <span
                 id="result_calc-formula "
-                className="bg-[#22dfc1] block rounded-lg p-4 my-4 md:max-w-[250px] md:mx-auto text-xl border-b-4 border-[#299b86] shadow-md min-w-[10rem] text-neutral-600 dark:text-neutral-900 font-bold"
+                className="bg-btc block rounded-lg p-4 my-4 md:max-w-[250px] md:mx-auto text-xl border-b-4 border-btc-dark shadow-md min-w-[10rem] text-ui-text font-bold"
               >
                 {result !== "" ? <>${<NumberFlow value={result} />}</> : ""}
               </span>
-              <p className="dark:text-white">
+              <p className="">
                 para el año{" "}
                 <span id="result-calc-anio">{halvingEncontrado?.Year}</span>
               </p>
@@ -420,7 +418,7 @@ export default function Section_calcualdora() {
           onClick={handleBackdropClick}
           className="fixed inset-0 z-50  flex items-center justify-center bg-black/50"
         >
-          <div className="bg-white rounded-lg shadow-lg w-[90%] max-w-[380px] animate-fade-in">
+          <div className="bg-ui-bg2 rounded-lg shadow-lg w-[90%] max-w-[380px] animate-fade-in">
             {/* Header */}
             <div className="flex justify-between items-center border-b p-4">
               <h2 className="text-xl font-bold">Nomenclatura</h2>
@@ -446,7 +444,7 @@ export default function Section_calcualdora() {
                       <sup>NH</sup>
                     </var>
                   </div>
-                  <div className="border-t border-black text-center">
+                  <div className="border-t border-ui-text text-center">
                     <var>RF</var>
                   </div>
                 </div>

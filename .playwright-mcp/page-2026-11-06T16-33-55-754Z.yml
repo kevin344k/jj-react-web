@@ -1,0 +1,131 @@
+- generic [ref=f13e3]:
+  - banner [ref=f13e4]:
+    - generic [ref=f13e5]:
+      - link "Volver al inicio" [ref=f13e6] [cursor=pointer]:
+        - /url: /
+        - text: Volver
+      - generic [ref=f13e9]: JJCHAGERBEN
+      - navigation [ref=f13e10]:
+        - link "Contenido" [ref=f13e11] [cursor=pointer]:
+          - /url: "#contenido"
+        - link "El viaje" [ref=f13e12] [cursor=pointer]:
+          - /url: "#viaje"
+        - link "Preguntas" [ref=f13e13] [cursor=pointer]:
+          - /url: "#preguntas"
+        - link "Comprar" [ref=f13e14] [cursor=pointer]:
+          - /url: "#producto"
+  - main [ref=f13e15]:
+    - generic [ref=f13e17]:
+      - generic [ref=f13e18]:
+        - paragraph [ref=f13e19]: Libro
+        - heading "INVERTIR EN BITCOIN O ESCLAVITUD" [level=1] [ref=f13e20]
+        - paragraph [ref=f13e21]: Hazte millonario con Bitcoin y aprende a invertir en él
+        - heading "¿Entiendes realmente el dinero que utilizas todos los días?" [level=2] [ref=f13e22]
+        - paragraph [ref=f13e23]: Una mirada a la historia del dinero, la inflación, el sistema monetario y Bitcoin, desde la perspectiva correcta.
+        - link "QUIERO CONOCER EL LIBRO" [ref=f13e24] [cursor=pointer]:
+          - /url: "#contenido"
+      - img "Portada del libro Invertir en Bitcoin o Esclavitud, de JJCHAGERBEN" [ref=f13e26]
+    - generic [ref=f13e28]:
+      - paragraph [ref=f13e29]: Contenido del libro
+      - heading "¿Qué encontrarás en el libro?" [level=2] [ref=f13e30]
+      - paragraph [ref=f13e31]: Muchos intentan entender Bitcoin sin antes comprender el dinero. Por eso, este libro comienza explorando el origen del dinero, su evolución y el sistema financiero actual. Con esa base, entender Bitcoin, su propósito y su papel en la inversión y la seguridad será mucho más sencillo.
+      - generic [ref=f13e32]:
+        - article [ref=f13e33]:
+          - generic [ref=f13e34]: "01"
+          - heading "El origen del dinero" [level=3] [ref=f13e35]
+          - paragraph [ref=f13e36]: El libro comienza explorando la relación entre el ser humano, la pobreza y el dinero, para posteriormente analizar qué es el dinero y cuáles son sus propiedades.
+        - article [ref=f13e37]:
+          - generic [ref=f13e38]: "02"
+          - heading "La historia de las monedas" [level=3] [ref=f13e39]
+          - paragraph [ref=f13e40]: "Recorre distintos momentos de la historia monetaria: Roma, los templarios, el florín, el real portugués, el real español, la bolsa de Amberes, la libra francesa y la libra esterlina, mostrando la evolución de las monedas y los sistemas monetarios."
+        - article [ref=f13e41]:
+          - generic [ref=f13e42]: "03"
+          - heading "Oro, inflación y dinero fiat" [level=3] [ref=f13e43]
+          - paragraph [ref=f13e44]: Analiza acontecimientos como la Primera Guerra Mundial, la inflación, la Reserva Federal, Bretton Woods, el final del patrón oro, la decisión de Nixon en 1971 y la expansión del dinero fiat, conectando estos hechos con la crítica del autor al sistema monetario actual.
+        - article [ref=f13e45]:
+          - generic [ref=f13e46]: "04"
+          - heading "Bitcoin" [level=3] [ref=f13e47]
+          - paragraph [ref=f13e48]: Presenta qué es Bitcoin, su escasez, su descentralización, su funcionamiento basado en reglas matemáticas, una comparación con el oro y la idea de propiedad y soberanía sobre los propios fondos.
+        - article [ref=f13e49]:
+          - generic [ref=f13e50]: "05"
+          - heading "Inversión y estrategia" [level=3] [ref=f13e51]
+          - paragraph [ref=f13e52]: El libro aborda la inversión en Bitcoin, la acumulación, la preparación, la disciplina, la lectura, la creación de ingresos y una comparación entre Bitcoin y bienes raíces, dentro de una estrategia a largo plazo. Este contenido refleja el análisis del autor y no constituye asesoría financiera personalizada.
+        - article [ref=f13e53]:
+          - generic [ref=f13e54]: "06"
+          - heading "Seguridad y estafas" [level=3] [ref=f13e55]
+          - paragraph [ref=f13e56]: "Uno de los bloques más prácticos: llaves privadas, custodia, wallets, exchanges, cómo reconocer estafas, promesas de rentabilidades imposibles y ejemplos de esquemas relacionados con criptomonedas. No basta con conocer Bitcoin: también hay que saber protegerlo y reconocer posibles fraudes."
+    - generic [ref=f13e58]:
+      - paragraph [ref=f13e59]: Estructura del libro
+      - heading "El viaje que propongo en mi libro" [level=2] [ref=f13e60]
+      - list [ref=f13e61]:
+        - listitem [ref=f13e62]: 1. DINERO
+        - listitem [ref=f13e64]: 2. HISTORIA MONETARIA
+        - listitem [ref=f13e66]: 3. ORO
+        - listitem [ref=f13e68]: 4. INFLACIÓN
+        - listitem [ref=f13e70]: 5. SISTEMA FIAT
+        - listitem [ref=f13e72]: 6. BITCOIN
+        - listitem [ref=f13e74]: 7. INVERSIÓN
+        - listitem [ref=f13e76]: 8. SEGURIDAD
+        - listitem [ref=f13e78]: 9. ESTRATEGIA
+    - generic [ref=f13e81]:
+      - paragraph [ref=f13e82]: Antes de seguir leyendo
+      - heading "El viaje comienza con una pregunta" [level=2] [ref=f13e83]
+      - generic [ref=f13e84]:
+        - paragraph [ref=f13e85]: ¿Qué hace que algo sea considerado dinero?
+        - paragraph [ref=f13e86]: ¿Por qué algunas monedas perdieron su valor?
+        - paragraph [ref=f13e87]: ¿Qué ocurrió con el patrón oro?
+        - paragraph [ref=f13e88]: ¿Cómo llegamos al actual sistema de dinero fiat?
+        - paragraph [ref=f13e89]: ¿Qué diferencia a Bitcoin de las monedas tradicionales?
+        - paragraph [ref=f13e90]: ¿Qué significa realmente controlar tus propios Bitcoin?
+        - paragraph [ref=f13e91]: ¿Cómo reconocer una promesa de rentabilidad que parece demasiado buena para ser cierta?
+    - generic [ref=f13e93]:
+      - heading "Bitcoin no es solo el precio" [level=2] [ref=f13e94]
+      - paragraph [ref=f13e95]: Bitcoin es mucho más que un precio en una pantalla. A lo largo de este libro descubrirás su origen, funcionamiento, escasez, custodia y la forma en que se relaciona con el sistema monetario actual.
+    - generic [ref=f13e97]:
+      - paragraph [ref=f13e98]: Contenido aplicado
+      - 'heading "Una parte especialmente práctica: reconocer estafas" [level=2] [ref=f13e99]'
+      - paragraph [ref=f13e100]: El libro dedica un capítulo específico a identificar señales de posibles fraudes relacionados con Bitcoin y otras criptomonedas.
+      - generic [ref=f13e101]:
+        - article [ref=f13e102]:
+          - heading "Rentabilidades imposibles" [level=3] [ref=f13e103]
+          - paragraph [ref=f13e104]: Promesas como "1% diario" pueden ser una señal de alerta que el libro invita a reconocer.
+        - article [ref=f13e105]:
+          - heading "Dinero rápido y fácil" [level=3] [ref=f13e106]
+          - paragraph [ref=f13e107]: El libro analiza diferentes episodios de especulación y estafas relacionados con criptomonedas.
+        - article [ref=f13e108]:
+          - heading "Custodia" [level=3] [ref=f13e109]
+          - paragraph [ref=f13e110]: Explica la importancia de comprender las llaves privadas y quién tiene realmente el control de tu bitcoin.
+    - generic [ref=f13e112]:
+      - heading "¿Para quién es este libro?" [level=2] [ref=f13e113]
+      - paragraph [ref=f13e114]: Puede resultar interesante para personas que quieren comprender mejor el dinero, la inflación, la historia monetaria y Bitcoin antes de tomar sus propias decisiones.
+      - paragraph [ref=f13e115]: También puede interesar a lectores que disfrutan de economía, historia, inversiones, Bitcoin, finanzas personales, sistemas monetarios y libertad financiera.
+    - generic [ref=f13e117]:
+      - heading "¿Qué recibes?" [level=2] [ref=f13e118]
+      - generic [ref=f13e119]:
+        - img "Portada del libro digital Invertir en Bitcoin o Esclavitud" [ref=f13e121]
+        - generic [ref=f13e122]:
+          - heading "INVERTIR EN BITCOIN O ESCLAVITUD" [level=3] [ref=f13e123]
+          - paragraph [ref=f13e124]: Libro digital · JJCHAGERBEN
+          - list [ref=f13e125]:
+            - listitem [ref=f13e126]: ✓ Formato digital
+            - listitem [ref=f13e127]: ✓ Lectura desde computadora
+            - listitem [ref=f13e128]: ✓ Lectura desde tablet
+            - listitem [ref=f13e129]: ✓ Lectura desde teléfono
+            - listitem [ref=f13e130]: ✓ Entrega digital
+          - paragraph
+          - generic [ref=f13e131]:
+            - link "COMPRAR EN ECUADOR (WHATSAPP)" [ref=f13e132] [cursor=pointer]:
+              - /url: https://wa.me/593961147947?text=Hola%2C%20quiero%20comprar%20tu%20libro%20%22Invierte%20en%20Bitcoin%20o%20esclavitud%22.
+            - link "COMPRAR EN AMAZON" [ref=f13e133] [cursor=pointer]:
+              - /url: https://www.amazon.com/dp/B0FKSPCYJP
+          - paragraph [ref=f13e134]: Este libro representa la perspectiva y el análisis del autor. La decisión de invertir corresponde siempre al lector.
+    - generic [ref=f13e136]:
+      - heading "Antes de invertir, entiende aquello en lo que estás invirtiendo" [level=2] [ref=f13e137]
+      - paragraph [ref=f13e138]: Conoce el recorrido que propone este libro desde la historia del dinero hasta Bitcoin, la inversión y la seguridad.
+      - link "QUIERO LEER EL LIBRO" [ref=f13e139] [cursor=pointer]:
+        - /url: "#producto"
+  - contentinfo [ref=f13e140]:
+    - generic [ref=f13e141]:
+      - paragraph [ref=f13e142]: © 2026 JJCHAGERBEN. Todos los derechos reservados.
+      - paragraph [ref=f13e143]: El contenido de este libro representa la perspectiva del autor y no constituye asesoría financiera.
+  - button "Volver arriba": ↑

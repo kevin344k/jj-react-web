@@ -67,7 +67,7 @@ export default function Marquee({
         {items.map((text, idx) => (
           <div
             key={`${idx}-${text}`}
-            className="flex items-center whitespace-nowrap text-sm sm:text-base text-gray-200 dark:text-gray-200"
+            className="flex items-center whitespace-nowrap text-sm sm:text-base text-ui-muted"
           >
             <span
            className="pr-2"
@@ -83,7 +83,7 @@ export default function Marquee({
                 {text}
               </span>
             ) : (
-              <span className="font-medium text-neutral-400">{text}</span>
+              <span className="font-medium text-ui-muted">{text}</span>
             )}
           </div>
         ))}

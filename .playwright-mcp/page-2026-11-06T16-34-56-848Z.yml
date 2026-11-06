@@ -1,0 +1,697 @@
+- generic [ref=f15e2]:
+  - navigation [ref=f15e3]:
+    - generic [ref=f15e4]:
+      - link [ref=f15e6] [cursor=pointer]:
+        - /url: /
+        - img "JJ Chagerben" [ref=f15e7]
+      - button "Abrir menú" [ref=f15e9]
+  - complementary [ref=f15e11]:
+    - button "Cerrar menú" [ref=f15e12]
+    - list [ref=f15e16]:
+      - listitem [ref=f15e17]:
+        - link "Inicio" [ref=f15e18] [cursor=pointer]:
+          - /url: /
+      - listitem [ref=f15e19]:
+        - link "Mi libro" [ref=f15e20] [cursor=pointer]:
+          - /url: "#sec-announce-book"
+      - listitem [ref=f15e21]:
+        - link "Servicios" [ref=f15e22] [cursor=pointer]:
+          - /url: "#mis-servicios"
+      - listitem [ref=f15e23]:
+        - link "Conferencias" [ref=f15e24] [cursor=pointer]:
+          - /url: "#section-conferencias"
+      - listitem [ref=f15e25]:
+        - link "Calculadora" [ref=f15e26] [cursor=pointer]:
+          - /url: "#sec-calculadora-jub"
+      - listitem [ref=f15e27]:
+        - link "Redes" [ref=f15e28] [cursor=pointer]:
+          - /url: "#section-mentoria"
+      - listitem [ref=f15e29]:
+        - link "Testimonios" [ref=f15e30] [cursor=pointer]:
+          - /url: "#sect-testimonial"
+      - listitem [ref=f15e31]:
+        - link "Soy alumno" [ref=f15e32] [cursor=pointer]:
+          - /url: /alumnos
+      - listitem [ref=f15e33]:
+        - link "Debates" [ref=f15e34] [cursor=pointer]:
+          - /url: /debates
+      - listitem [ref=f15e35]:
+        - link "Compras" [ref=f15e36] [cursor=pointer]:
+          - /url: /compras
+      - listitem [ref=f15e37]:
+        - link "Wallets & Mineros" [ref=f15e38] [cursor=pointer]:
+          - /url: /wallets&mineros
+    - link "Mentoría Premium" [ref=f15e39] [cursor=pointer]:
+      - /url: https://wa.me/593961147947?text=Hola%2C%20quiero%20informacion%20sobre%20la%20mentoria.
+  - button "Cambiar a tema claro" [ref=f15e40]
+  - generic [ref=f15e41]:
+    - generic [ref=f15e42]:
+      - generic [ref=f15e43]:
+        - generic [ref=f15e44] [cursor=pointer]:
+          - button "Cerrar anuncio" [ref=f15e45]: ✕
+          - generic "Vender USDT" [ref=f15e46]:
+            - img "Vender USDT" [ref=f15e47]
+            - generic [ref=f15e48]:
+              - paragraph [ref=f15e49]: VENTA DE
+              - text: USDT
+        - generic [ref=f15e50]:
+          - generic [ref=f15e51]: Educación Bitcoin · +10k alumnos
+          - heading "Ayudo a las personas a salir de la pobreza" [level=1] [ref=f15e53]
+          - paragraph [ref=f15e54]: ₿itcoin es sacarse la lotería en cámara lenta
+          - generic [ref=f15e58]:
+            - link "Mentoría Premium" [ref=f15e59] [cursor=pointer]:
+              - /url: https://wa.me/593961147947?text=Hola%2C%20quiero%20informacion%20sobre%20la%20mentoria.
+            - link "Mentoría VIP Presencial" [ref=f15e60] [cursor=pointer]:
+              - /url: https://wa.me/593961147947?text=Hola%2C%20quiero%20informacion%20sobre%20la%20mentoria%20VIP%20presencial.
+            - link "Mi libro" [ref=f15e61] [cursor=pointer]:
+              - /url: "#sec-announce-book"
+            - link "Wallet & Mineros" [ref=f15e62] [cursor=pointer]:
+              - /url: /wallets&mineros
+          - generic [ref=f15e63]:
+            - generic [ref=f15e64]:
+              - generic [ref=f15e65]: 10k+
+              - paragraph [ref=f15e66]: Alumnos
+            - generic [ref=f15e67]:
+              - generic [ref=f15e68]: 12+
+              - paragraph [ref=f15e69]: Años de experiencia
+            - generic [ref=f15e70]:
+              - text: BTC
+              - paragraph [ref=f15e71]: Autor best-seller
+        - generic [ref=f15e74]:
+          - img "JJ Chagerben" [ref=f15e76]
+          - generic [ref=f15e78]:
+            - generic [ref=f15e79]:
+              - paragraph [ref=f15e80]: JJ Chagerben
+              - paragraph [ref=f15e81]: Mentor & autor de Bitcoin
+            - generic [ref=f15e82]: ₿
+      - region "Marquee de frases" [ref=f15e83]:
+        - generic [ref=f15e84]:
+          - generic [ref=f15e85]: NO TUS LLAVES PRIVADAS, NO TUS BITCOINS
+          - generic [ref=f15e91]: VERIFICA, NO CONFÍES
+          - generic [ref=f15e97]: NOT YOUR KEYS, NOT YOUR BITCOINS
+          - generic [ref=f15e103]: NADIE LE GANA AL HOLDER
+          - generic [ref=f15e109]: NO HAGAS TRADING
+          - generic [ref=f15e115]: FIX THE MONEY, FIX THE WORLD
+          - generic [ref=f15e121]: NO TUS LLAVES PRIVADAS, NO TUS BITCOINS
+          - generic [ref=f15e127]: VERIFICA, NO CONFÍES
+          - generic [ref=f15e133]: NOT YOUR KEYS, NOT YOUR BITCOINS
+          - generic [ref=f15e139]: NADIE LE GANA AL HOLDER
+          - generic [ref=f15e145]: NO HAGAS TRADING
+          - generic [ref=f15e151]: FIX THE MONEY, FIX THE WORLD
+          - generic [ref=f15e157]: NO TUS LLAVES PRIVADAS, NO TUS BITCOINS
+          - generic [ref=f15e163]: VERIFICA, NO CONFÍES
+          - generic [ref=f15e169]: NOT YOUR KEYS, NOT YOUR BITCOINS
+          - generic [ref=f15e175]: NADIE LE GANA AL HOLDER
+          - generic [ref=f15e181]: NO HAGAS TRADING
+          - generic [ref=f15e187]: FIX THE MONEY, FIX THE WORLD
+          - generic [ref=f15e193]: NO TUS LLAVES PRIVADAS, NO TUS BITCOINS
+          - generic [ref=f15e199]: VERIFICA, NO CONFÍES
+          - generic [ref=f15e205]: NOT YOUR KEYS, NOT YOUR BITCOINS
+          - generic [ref=f15e211]: NADIE LE GANA AL HOLDER
+          - generic [ref=f15e217]: NO HAGAS TRADING
+          - generic [ref=f15e223]: FIX THE MONEY, FIX THE WORLD
+    - generic [ref=f15e230]:
+      - generic [ref=f15e231]:
+        - img "Libro JJ" [ref=f15e233]
+        - img "Nuevo producto" [ref=f15e234]
+      - generic [ref=f15e235]:
+        - paragraph [ref=f15e236]: Libro
+        - heading "Adquiere mi libro" [level=2] [ref=f15e237]
+        - paragraph [ref=f15e238]: …y deja de ser un esclavo.
+        - generic [ref=f15e239]:
+          - link "Comprar en Ecuador WhatsApp" [ref=f15e240] [cursor=pointer]:
+            - /url: https://wa.me/593961147947?text=Hola%2C%20quiero%20comprar%20tu%20libro%20%22Invierte%20en%20Bitcoin%20o%20esclavitud%22.
+            - generic [ref=f15e241]: Comprar en Ecuador
+            - img "WhatsApp" [ref=f15e242]
+          - link [ref=f15e243] [cursor=pointer]:
+            - /url: https://www.amazon.com/dp/B0FKSPCYJP
+            - img "Amazon" [ref=f15e244]
+          - link "Contenido del libro" [ref=f15e245] [cursor=pointer]:
+            - /url: /libro/bitcoinoesclavitud
+    - generic [ref=f15e247]:
+      - generic [ref=f15e248]:
+        - paragraph [ref=f15e249]: Planes
+        - heading "Mis servicios" [level=2] [ref=f15e250]
+        - paragraph [ref=f15e251]: Elige el nivel de acompañamiento que necesitas para dominar Bitcoin y proteger tu patrimonio.
+      - generic [ref=f15e252]:
+        - generic [ref=f15e253]:
+          - heading "Mentoría Premium" [level=3] [ref=f15e254]
+          - paragraph [ref=f15e255]: Ideal para comenzar y dominar todo el ecosistema cripto desde cero.
+          - list [ref=f15e257]:
+            - listitem [ref=f15e258]:
+              - generic [ref=f15e261]: Crear wallets - de 0 a experto
+            - listitem [ref=f15e262]:
+              - generic [ref=f15e265]: Manejo de sub-billeteras
+            - listitem [ref=f15e266]:
+              - generic [ref=f15e269]: Manejo de wallet de Bitcoin y altcoins
+            - listitem [ref=f15e270]:
+              - generic [ref=f15e273]: Guardar correctamente las llaves privadas
+            - listitem [ref=f15e274]:
+              - generic [ref=f15e277]: Uso profesional de hardware wallets y software wallets
+            - listitem [ref=f15e278]:
+              - generic [ref=f15e281]: Recuperación de accesos y saldos de wallets (según gravedad del caso)
+          - button "Ver los 14 beneficios" [ref=f15e282]
+          - link "Consultar precio" [ref=f15e285] [cursor=pointer]:
+            - /url: https://wa.me/593961147947?text=Hola%2C%20quiero%20informacion%20sobre%20la%20mentoria.
+        - generic [ref=f15e286]:
+          - generic [ref=f15e287]: Más completa
+          - heading "Mentoría VIP Presencial" [level=3] [ref=f15e288]
+          - paragraph [ref=f15e289]: La experiencia más completa, personalizada e intensiva.
+          - list [ref=f15e291]:
+            - listitem [ref=f15e292]:
+              - generic [ref=f15e295]: Sesión presencial ÚNICA de 180 minutos
+            - listitem [ref=f15e296]:
+              - generic [ref=f15e299]: Virtudes fundamentales del individuo libre
+            - listitem [ref=f15e300]:
+              - generic [ref=f15e303]: Historia del dinero y evolución monetaria
+            - listitem [ref=f15e304]:
+              - generic [ref=f15e307]: Qué es bitcoin
+            - listitem [ref=f15e308]:
+              - generic [ref=f15e311]: Bitcoin vs Oro
+            - listitem [ref=f15e312]:
+              - generic [ref=f15e315]: Bitcoin vs Bienes Raíces
+          - button "Ver los 25 beneficios" [ref=f15e316]
+          - link "Reservar mi cupo" [ref=f15e319] [cursor=pointer]:
+            - /url: https://wa.me/593961147947?text=Hola%2C%20quiero%20informacion%20sobre%20la%20mentoria%20VIP%20presencial.
+        - generic [ref=f15e320]:
+          - heading "Wallets y Mineros" [level=3] [ref=f15e321]
+          - paragraph [ref=f15e322]: Equipos para custodiar y minar tu propio Bitcoin.
+          - img "Jade wallet" [ref=f15e324]
+          - list [ref=f15e325]:
+            - listitem [ref=f15e326]:
+              - generic [ref=f15e329]: Hardware wallets para guardar tus llaves
+            - listitem [ref=f15e330]:
+              - generic [ref=f15e333]: Mineros Bitaxe para minar en casa
+            - listitem [ref=f15e334]:
+              - generic [ref=f15e337]: Asesoría para elegir el equipo adecuado
+          - link "Ver catálogo" [ref=f15e338] [cursor=pointer]:
+            - /url: /wallets&mineros
+    - generic [ref=f15e339]:
+      - generic [ref=f15e340]:
+        - paragraph [ref=f15e341]: Herramienta
+        - heading "Calculadora de Jubilación" [level=2] [ref=f15e342]
+      - paragraph [ref=f15e344]: "*Estos valores son especulativos sobre un modelo estático y pueden cambiar si las condiciones de mercado varían."
+      - generic [ref=f15e345]:
+        - generic [ref=f15e346]:
+          - generic [ref=f15e347]:
+            - img "btc" [ref=f15e349]
+            - button [ref=f15e353]:
+              - img "info-ico" [ref=f15e354]
+          - generic [ref=f15e356]:
+            - generic [ref=f15e357]: PBTC =
+            - generic [ref=f15e358]:
+              - generic [ref=f15e359]:
+                - text: (RI * CP)*2
+                - superscript [ref=f15e361]: NH
+              - generic [ref=f15e362]: RF
+          - generic [ref=f15e363]:
+            - generic [ref=f15e364]:
+              - img "dollar" [ref=f15e365]
+              - textbox "Inversión inicial" [ref=f15e366]
+            - img "arrow" [ref=f15e367]
+            - generic [ref=f15e368]:
+              - img "btc" [ref=f15e369]
+              - textbox "Equivalencia en btc" [ref=f15e370]
+          - generic [ref=f15e371]:
+            - generic [ref=f15e372]:
+              - paragraph [ref=f15e373]: Halvin actual
+              - generic [ref=f15e374]: "5"
+              - paragraph [ref=f15e375]: Año de halvin
+              - generic [ref=f15e376]: "2024"
+              - paragraph [ref=f15e377]: Rec. x bloque
+              - generic [ref=f15e378]: "3.125"
+            - generic [ref=f15e379]:
+              - paragraph [ref=f15e380]: Halvin jubilación
+              - generic [ref=f15e381]: "-"
+              - paragraph [ref=f15e382]: Año
+              - generic [ref=f15e383]: "-"
+              - paragraph [ref=f15e384]: Rec. x bloque
+              - generic [ref=f15e385]: "-"
+          - generic [ref=f15e386]:
+            - paragraph [ref=f15e387]: "La inversión inicial equivale a:"
+            - paragraph [ref=f15e389]: para el año
+        - generic [ref=f15e390]:
+          - paragraph [ref=f15e391]: Equivalencia en cada halvin
+          - generic [ref=f15e392]:
+            - paragraph [ref=f15e393]: Año
+            - paragraph [ref=f15e394]: PBTC
+            - paragraph [ref=f15e395]: Inversión
+          - paragraph [ref=f15e396]: No hay equivalencias para mostrar
+    - generic [ref=f15e398]:
+      - generic [ref=f15e399]:
+        - paragraph [ref=f15e400]: Comunidad
+        - heading "Redes Sociales" [level=2] [ref=f15e401]
+        - paragraph [ref=f15e402]: Sígueme y aprende Bitcoin todos los días.
+      - list [ref=f15e403]:
+        - listitem [ref=f15e404]:
+          - link "Fedi Fedi" [ref=f15e405] [cursor=pointer]:
+            - /url: https://app.fedi.xyz/get-the-app
+            - img "Fedi" [ref=f15e406]
+            - generic [ref=f15e407]: Fedi
+        - listitem [ref=f15e408]:
+          - link "Pools de Liquidez Pools de Liquidez" [ref=f15e409] [cursor=pointer]:
+            - /url: https://tradingdifferent.com/?ref=YELgWNnX
+            - img "Pools de Liquidez" [ref=f15e410]
+            - generic [ref=f15e411]: Pools de Liquidez
+        - listitem [ref=f15e412]:
+          - link "UGLYCASH UGLYCASH" [ref=f15e413] [cursor=pointer]:
+            - /url: https://link.ugly.cash/referral/balder
+            - img "UGLYCASH" [ref=f15e414]
+            - generic [ref=f15e415]: UGLYCASH
+        - listitem [ref=f15e416]:
+          - link "BULL BITCOIN - Comprar Bitcoin BULL BITCOIN - Comprar Bitcoin" [ref=f15e417] [cursor=pointer]:
+            - /url: https://accounts.bullbitcoin.com/en/registration?referral_code=jjchagerben
+            - img "BULL BITCOIN - Comprar Bitcoin" [ref=f15e418]
+            - generic [ref=f15e419]: BULL BITCOIN - Comprar Bitcoin
+        - listitem [ref=f15e420]:
+          - generic [ref=f15e421]:
+            - img "WhatsApp" [ref=f15e422]
+            - generic [ref=f15e423]: WhatsApp
+        - listitem [ref=f15e424]:
+          - link "Canal de WhatsApp Canal de WhatsApp" [ref=f15e425] [cursor=pointer]:
+            - /url: https://www.whatsapp.com/channel/0029Vah3B5n60eBiIBrX8J1Z
+            - img "Canal de WhatsApp" [ref=f15e426]
+            - generic [ref=f15e427]: Canal de WhatsApp
+        - listitem [ref=f15e428]:
+          - link "Telegram Telegram" [ref=f15e429] [cursor=pointer]:
+            - /url: https://t.me/jjchagerben357
+            - img "Telegram" [ref=f15e430]
+            - generic [ref=f15e431]: Telegram
+        - listitem [ref=f15e432]:
+          - link "Instagram Instagram" [ref=f15e433] [cursor=pointer]:
+            - /url: https://www.instagram.com/jjchagerben33/
+            - img "Instagram" [ref=f15e434]
+            - generic [ref=f15e435]: Instagram
+        - listitem [ref=f15e436]:
+          - link "Facebook Facebook" [ref=f15e437] [cursor=pointer]:
+            - /url: https://www.facebook.com/people/JJChagerben/61557765639522/?mibextid=ZbWKwL
+            - img "Facebook" [ref=f15e438]
+            - generic [ref=f15e439]: Facebook
+        - listitem [ref=f15e440]:
+          - link "X X" [ref=f15e441] [cursor=pointer]:
+            - /url: https://x.com/JJChagerben357
+            - img "X" [ref=f15e442]
+            - generic [ref=f15e443]: X
+      - generic [ref=f15e444]:
+        - paragraph [ref=f15e445]: En vivo · Lunes a Viernes | 20:00 | UTC -05:00
+        - list [ref=f15e446]:
+          - listitem [ref=f15e447]:
+            - link [ref=f15e448] [cursor=pointer]:
+              - /url: https://www.twitch.tv/jjchagerben
+              - img "Twitch" [ref=f15e449]
+          - listitem [ref=f15e450]:
+            - link [ref=f15e451] [cursor=pointer]:
+              - /url: https://www.youtube.com/@jjchagerben
+              - img "YouTube" [ref=f15e452]
+    - generic [ref=f15e453]:
+      - generic [ref=f15e454]:
+        - paragraph [ref=f15e455]: Escenarios
+        - heading "Conferencias" [level=2] [ref=f15e456]
+      - generic [ref=f15e457]:
+        - generic [ref=f15e458]:
+          - generic [ref=f15e459]: Podcast
+          - 'heading "EP #13 | JJ Chagerben, inversor en Bitcoin: CÓMO ESCAPAR DE LA ESCLAVITUD FINANCIERA ANTES DE LOS 40" [level=3] [ref=f15e460]'
+          - paragraph [ref=f15e461]: Circulo de Poder Podcast - Episodio 13
+          - paragraph [ref=f15e462]: Conversación sobre Bitcoin, libertad financiera, soberanía económica, ahorro e inversión a largo plazo.
+          - generic [ref=f15e463]:
+            - generic [ref=f15e464]: Bitcoin
+            - generic [ref=f15e465]: Libertad financiera
+            - generic [ref=f15e466]: Inversión
+            - generic [ref=f15e467]: Ahorro
+          - paragraph [ref=f15e469]:
+            - strong [ref=f15e470]: "Plataforma:"
+            - text: Spotify
+          - link "Ver contenido" [ref=f15e471] [cursor=pointer]:
+            - /url: https://open.spotify.com/episode/6bVHKddgLLpX6oAB0Cqqfg
+        - generic [ref=f15e472]:
+          - generic [ref=f15e473]: Podcast
+          - heading "¿Cómo ESCAPAR de la ESCLAVITUD FINANCIERA? | LA VISIÓN DE JJ CHAGERBEN" [level=3] [ref=f15e474]
+          - paragraph [ref=f15e475]: Circulo de Poder Podcast
+          - paragraph [ref=f15e476]: Entrevista extensa donde JJ Chagerben expone su visión sobre Bitcoin como herramienta de soberanía financiera y preservación de valor.
+          - generic [ref=f15e477]:
+            - generic [ref=f15e478]: Bitcoin
+            - generic [ref=f15e479]: Soberanía financiera
+            - generic [ref=f15e480]: Inversión
+            - generic [ref=f15e481]: Patrimonio
+          - paragraph [ref=f15e483]:
+            - strong [ref=f15e484]: "Plataforma:"
+            - text: YouTube
+          - link "Ver contenido" [ref=f15e485] [cursor=pointer]:
+            - /url: https://www.youtube.com/watch?v=yOpBE9oDpZI
+        - generic [ref=f15e486]:
+          - generic [ref=f15e487]: Podcast
+          - heading "160. @JJChagerben" [level=3] [ref=f15e488]
+          - paragraph [ref=f15e489]: ₿itcoin y Criptos en español - Episodio 160
+          - paragraph [ref=f15e490]: Entrevista con Juan Landy sobre la experiencia de JJ Chagerben como educador Bitcoin en Latinoamérica y sus perspectivas sobre el ecosistema Bitcoin.
+          - generic [ref=f15e491]:
+            - generic [ref=f15e492]: Bitcoin
+            - generic [ref=f15e493]: Criptomonedas
+            - generic [ref=f15e494]: Educación financiera
+            - generic [ref=f15e495]: Adopción Bitcoin
+          - generic [ref=f15e496]:
+            - paragraph [ref=f15e497]:
+              - strong [ref=f15e498]: "Fecha:"
+              - text: 2025-06-21
+            - paragraph [ref=f15e499]:
+              - strong [ref=f15e500]: "Plataforma:"
+              - text: Otro
+            - paragraph [ref=f15e501]:
+              - strong [ref=f15e502]: "Duración:"
+              - text: 1 h 34 min
+          - link "Ver contenido" [ref=f15e503] [cursor=pointer]:
+            - /url: https://zeno.fm/podcast/blockchain-y-criptos-en-espanol/episodes/160-jjchagerben/
+        - generic [ref=f15e504]:
+          - generic [ref=f15e505]: Seminario
+          - 'heading "Bitcoin y el futuro del dinero: cómo proteger valor en la era digital" [level=3] [ref=f15e506]'
+          - paragraph [ref=f15e507]: "Bitcoin y el futuro del dinero: cómo proteger valor en la era digital"
+          - paragraph [ref=f15e508]: Seminario académico sobre Bitcoin, inflación, digitalización del dinero y estrategias para proteger valor en la era digital.
+          - generic [ref=f15e509]:
+            - generic [ref=f15e510]: Bitcoin
+            - generic [ref=f15e511]: Inflación
+            - generic [ref=f15e512]: Sistema monetario
+            - generic [ref=f15e513]: Criptomonedas
+          - generic [ref=f15e514]:
+            - paragraph [ref=f15e515]:
+              - strong [ref=f15e516]: "Fecha:"
+              - text: 2026-02-05
+            - paragraph [ref=f15e517]:
+              - strong [ref=f15e518]: "Plataforma:"
+              - text: Otro
+            - paragraph [ref=f15e519]:
+              - strong [ref=f15e520]: "Duración:"
+              - text: 1 hora
+        - generic [ref=f15e521]:
+          - generic [ref=f15e522]: Charla Magistral
+          - heading "Bitcoin, la digitalización del mundo" [level=3] [ref=f15e523]
+          - paragraph [ref=f15e524]: Un espacio para comprender de manera clara y práctica el avance de las criptomonedas y su rol en la economía global
+          - paragraph [ref=f15e525]: Seminario académico sobre Bitcoin, inflación, digitalización del dinero y estrategias para proteger valor en la era digital.
+          - generic [ref=f15e526]:
+            - generic [ref=f15e527]: Bitcoin
+            - generic [ref=f15e528]: Inflación
+            - generic [ref=f15e529]: Sistema monetario
+            - generic [ref=f15e530]: Criptomonedas
+          - generic [ref=f15e531]:
+            - paragraph [ref=f15e532]:
+              - strong [ref=f15e533]: "Fecha:"
+              - text: 2025-11-19
+            - paragraph [ref=f15e534]:
+              - strong [ref=f15e535]: "Plataforma:"
+              - text: Otro
+        - generic [ref=f15e536]:
+          - img "Jesus Chagerben" [ref=f15e537]
+          - generic [ref=f15e538]:
+            - heading "Jesus Chagerben" [level=3] [ref=f15e539]
+            - paragraph [ref=f15e540]: Master en Blockchain y Fintech
+            - link "¡Contáctame!" [ref=f15e541] [cursor=pointer]:
+              - /url: https://wa.me/593961147947?text=Hola%2C%20quiero%20informacion%20sobre%20la%20mentoria.
+    - generic [ref=f15e542]:
+      - generic [ref=f15e543]:
+        - paragraph [ref=f15e544]: Resultados
+        - heading "Ganancias de mis alumnos" [level=2] [ref=f15e545]
+      - generic [ref=f15e547]:
+        - button [ref=f15e549]:
+          - img "Resultado de alumno" [ref=f15e550]
+        - button [ref=f15e552]:
+          - img "Resultado de alumno" [ref=f15e553]
+        - button [ref=f15e555]:
+          - img "Resultado de alumno" [ref=f15e556]
+        - button [ref=f15e558]:
+          - img "Resultado de alumno" [ref=f15e559]
+        - button [ref=f15e561]:
+          - img "Resultado de alumno" [ref=f15e562]
+        - button [ref=f15e564]:
+          - img "Resultado de alumno" [ref=f15e565]
+        - button [ref=f15e567]:
+          - img "Resultado de alumno" [ref=f15e568]
+        - button [ref=f15e570]:
+          - img "Resultado de alumno" [ref=f15e571]
+        - button [ref=f15e573]:
+          - img "Resultado de alumno" [ref=f15e574]
+        - button [ref=f15e576]:
+          - img "Resultado de alumno" [ref=f15e577]
+        - button [ref=f15e579]:
+          - img "Resultado de alumno" [ref=f15e580]
+        - button [ref=f15e582]:
+          - img "Resultado de alumno" [ref=f15e583]
+        - button [ref=f15e585]:
+          - img "Resultado de alumno" [ref=f15e586]
+        - button [ref=f15e588]:
+          - img "Resultado de alumno" [ref=f15e589]
+        - button [ref=f15e591]:
+          - img "Resultado de alumno" [ref=f15e592]
+        - button [ref=f15e594]:
+          - img "Resultado de alumno" [ref=f15e595]
+        - button [ref=f15e597]:
+          - img "Resultado de alumno" [ref=f15e598]
+        - button [ref=f15e600]:
+          - img "Resultado de alumno" [ref=f15e601]
+        - button [ref=f15e603]:
+          - img "Resultado de alumno" [ref=f15e604]
+        - button [ref=f15e606]:
+          - img "Resultado de alumno" [ref=f15e607]
+        - button [ref=f15e609]:
+          - img "Resultado de alumno" [ref=f15e610]
+        - button [ref=f15e612]:
+          - img "Resultado de alumno" [ref=f15e613]
+        - button [ref=f15e615]:
+          - img "Resultado de alumno" [ref=f15e616]
+        - button [ref=f15e618]:
+          - img "Resultado de alumno" [ref=f15e619]
+    - generic [ref=f15e620]:
+      - generic [ref=f15e621]:
+        - paragraph [ref=f15e622]: Historias reales
+        - heading "Salvando a mis alumnos" [level=2] [ref=f15e623]
+      - generic [ref=f15e625]:
+        - button "Alumno ayudado" [ref=f15e627]:
+          - img "Alumno ayudado"
+        - button "Alumno ayudado" [ref=f15e629]:
+          - img "Alumno ayudado"
+        - button "Alumno ayudado" [ref=f15e631]:
+          - img "Alumno ayudado"
+        - button "Alumno ayudado" [ref=f15e633]:
+          - img "Alumno ayudado"
+        - button "Alumno ayudado" [ref=f15e635]:
+          - img "Alumno ayudado"
+        - button "Alumno ayudado" [ref=f15e637]:
+          - img "Alumno ayudado"
+        - button "Alumno ayudado" [ref=f15e639]:
+          - img "Alumno ayudado"
+        - button "Alumno ayudado" [ref=f15e641]:
+          - img "Alumno ayudado"
+        - button "Alumno ayudado" [ref=f15e643]:
+          - img "Alumno ayudado"
+        - button "Alumno ayudado" [ref=f15e645]:
+          - img "Alumno ayudado"
+        - button "Alumno ayudado" [ref=f15e647]:
+          - img "Alumno ayudado"
+        - button "Alumno ayudado" [ref=f15e649]:
+          - img "Alumno ayudado"
+    - generic [ref=f15e652]:
+      - heading "¿Sabes editar? Trabaja conmigo" [level=2] [ref=f15e653]
+      - link "Unirme" [ref=f15e654] [cursor=pointer]:
+        - /url: https://api.whatsapp.com/send?phone=593961612048&text=Hola%2C%20quiero%20trabajar%20contigo
+    - generic [ref=f15e655]:
+      - generic [ref=f15e656]:
+        - paragraph [ref=f15e657]: Biblioteca
+        - heading "Libros" [level=2] [ref=f15e658]
+        - paragraph [ref=f15e659]: Lecturas esenciales sobre libertad, dinero y economía.
+      - generic [ref=f15e661]:
+        - generic [ref=f15e663]:
+          - img "Invierte en Bitcoin o esclavitud" [ref=f15e664]
+          - generic [ref=f15e665]:
+            - link [ref=f15e666] [cursor=pointer]:
+              - /url: https://wa.me/593961147947?text=Hola%2C%20quiero%20comprar%20tu%20libro%20%22Invierte%20en%20Bitcoin%20o%20esclavitud%22.
+              - text: Comprar
+              - img "whatsapp" [ref=f15e667]
+            - link [ref=f15e668] [cursor=pointer]:
+              - /url: https://www.amazon.com/dp/9942516654/ref=tmm_pap_swatch_0
+              - img "amazon" [ref=f15e669]
+        - generic [ref=f15e671]:
+          - img "El Hombre Más Rico de Babilonia" [ref=f15e672]
+          - generic [ref=f15e673]:
+            - link [ref=f15e674] [cursor=pointer]:
+              - /url: /libros/pdf/el_hombre_mas_rico_de_babilonia.pdf
+              - text: Leer
+              - img "leer" [ref=f15e675]
+            - link [ref=f15e676] [cursor=pointer]:
+              - /url: /libros/pdf/el_hombre_mas_rico_de_babilonia.pdf
+              - text: Descargar
+              - img "descargar" [ref=f15e677]
+        - generic [ref=f15e679]:
+          - img "La virtud del egoísmo" [ref=f15e680]
+          - generic [ref=f15e681]:
+            - link [ref=f15e682] [cursor=pointer]:
+              - /url: /libros/pdf/virtud_egoismo.pdf
+              - text: Leer
+              - img "leer" [ref=f15e683]
+            - link [ref=f15e684] [cursor=pointer]:
+              - /url: /libros/pdf/virtud_egoismo.pdf
+              - text: Descargar
+              - img "descargar" [ref=f15e685]
+        - generic [ref=f15e687]:
+          - img "La mentalidad anticapitalista" [ref=f15e688]
+          - generic [ref=f15e689]:
+            - link [ref=f15e690] [cursor=pointer]:
+              - /url: /libros/pdf/la_mentalidad_anticapitalista_ludwig_von_mises.pdf
+              - text: Leer
+              - img "leer" [ref=f15e691]
+            - link [ref=f15e692] [cursor=pointer]:
+              - /url: /libros/pdf/la_mentalidad_anticapitalista_ludwig_von_mises.pdf
+              - text: Descargar
+              - img "descargar" [ref=f15e693]
+        - generic [ref=f15e695]:
+          - img "Camino de servidumbre" [ref=f15e696]
+          - generic [ref=f15e697]:
+            - link [ref=f15e698] [cursor=pointer]:
+              - /url: /libros/pdf/camino_servidumbre.pdf
+              - text: Leer
+              - img "leer" [ref=f15e699]
+            - link [ref=f15e700] [cursor=pointer]:
+              - /url: /libros/pdf/camino_servidumbre.pdf
+              - text: Descargar
+              - img "descargar" [ref=f15e701]
+        - generic [ref=f15e703]:
+          - img "Lo que se ve y no se ve" [ref=f15e704]
+          - generic [ref=f15e705]:
+            - link [ref=f15e706] [cursor=pointer]:
+              - /url: /libros/pdf/lo_que_se_ve_y_no.pdf
+              - text: Leer
+              - img "leer" [ref=f15e707]
+            - link [ref=f15e708] [cursor=pointer]:
+              - /url: /libros/pdf/lo_que_se_ve_y_no.pdf
+              - text: Descargar
+              - img "descargar" [ref=f15e709]
+        - generic [ref=f15e711]:
+          - img "Los enemigos del comercio" [ref=f15e712]
+          - generic [ref=f15e713]:
+            - link [ref=f15e714] [cursor=pointer]:
+              - /url: /libros/pdf/los_enemigos_del_comercio.pdf
+              - text: Leer
+              - img "leer" [ref=f15e715]
+            - link [ref=f15e716] [cursor=pointer]:
+              - /url: /libros/pdf/los_enemigos_del_comercio.pdf
+              - text: Descargar
+              - img "descargar" [ref=f15e717]
+        - generic [ref=f15e719]:
+          - img "Poder y mercado" [ref=f15e720]
+          - generic [ref=f15e721]:
+            - link [ref=f15e722] [cursor=pointer]:
+              - /url: /libros/pdf/poder_y_mercado.pdf
+              - text: Leer
+              - img "leer" [ref=f15e723]
+            - link [ref=f15e724] [cursor=pointer]:
+              - /url: /libros/pdf/poder_y_mercado.pdf
+              - text: Descargar
+              - img "descargar" [ref=f15e725]
+        - generic [ref=f15e727]:
+          - img "Invierte en Bitcoin o esclavitud" [ref=f15e728]
+          - generic [ref=f15e729]:
+            - link [ref=f15e730] [cursor=pointer]:
+              - /url: https://wa.me/593961147947?text=Hola%2C%20quiero%20comprar%20tu%20libro%20%22Invierte%20en%20Bitcoin%20o%20esclavitud%22.
+              - text: Comprar
+              - img "whatsapp" [ref=f15e731]
+            - link [ref=f15e732] [cursor=pointer]:
+              - /url: https://www.amazon.com/dp/9942516654/ref=tmm_pap_swatch_0
+              - img "amazon" [ref=f15e733]
+        - generic [ref=f15e735]:
+          - img "El Hombre Más Rico de Babilonia" [ref=f15e736]
+          - generic [ref=f15e737]:
+            - link [ref=f15e738] [cursor=pointer]:
+              - /url: /libros/pdf/el_hombre_mas_rico_de_babilonia.pdf
+              - text: Leer
+              - img "leer" [ref=f15e739]
+            - link [ref=f15e740] [cursor=pointer]:
+              - /url: /libros/pdf/el_hombre_mas_rico_de_babilonia.pdf
+              - text: Descargar
+              - img "descargar" [ref=f15e741]
+        - generic [ref=f15e743]:
+          - img "La virtud del egoísmo" [ref=f15e744]
+          - generic [ref=f15e745]:
+            - link [ref=f15e746] [cursor=pointer]:
+              - /url: /libros/pdf/virtud_egoismo.pdf
+              - text: Leer
+              - img "leer" [ref=f15e747]
+            - link [ref=f15e748] [cursor=pointer]:
+              - /url: /libros/pdf/virtud_egoismo.pdf
+              - text: Descargar
+              - img "descargar" [ref=f15e749]
+        - generic [ref=f15e751]:
+          - img "La mentalidad anticapitalista" [ref=f15e752]
+          - generic [ref=f15e753]:
+            - link [ref=f15e754] [cursor=pointer]:
+              - /url: /libros/pdf/la_mentalidad_anticapitalista_ludwig_von_mises.pdf
+              - text: Leer
+              - img "leer" [ref=f15e755]
+            - link [ref=f15e756] [cursor=pointer]:
+              - /url: /libros/pdf/la_mentalidad_anticapitalista_ludwig_von_mises.pdf
+              - text: Descargar
+              - img "descargar" [ref=f15e757]
+        - generic [ref=f15e759]:
+          - img "Camino de servidumbre" [ref=f15e760]
+          - generic [ref=f15e761]:
+            - link [ref=f15e762] [cursor=pointer]:
+              - /url: /libros/pdf/camino_servidumbre.pdf
+              - text: Leer
+              - img "leer" [ref=f15e763]
+            - link [ref=f15e764] [cursor=pointer]:
+              - /url: /libros/pdf/camino_servidumbre.pdf
+              - text: Descargar
+              - img "descargar" [ref=f15e765]
+        - generic [ref=f15e767]:
+          - img "Lo que se ve y no se ve" [ref=f15e768]
+          - generic [ref=f15e769]:
+            - link [ref=f15e770] [cursor=pointer]:
+              - /url: /libros/pdf/lo_que_se_ve_y_no.pdf
+              - text: Leer
+              - img "leer" [ref=f15e771]
+            - link [ref=f15e772] [cursor=pointer]:
+              - /url: /libros/pdf/lo_que_se_ve_y_no.pdf
+              - text: Descargar
+              - img "descargar" [ref=f15e773]
+        - generic [ref=f15e775]:
+          - img "Los enemigos del comercio" [ref=f15e776]
+          - generic [ref=f15e777]:
+            - link [ref=f15e778] [cursor=pointer]:
+              - /url: /libros/pdf/los_enemigos_del_comercio.pdf
+              - text: Leer
+              - img "leer" [ref=f15e779]
+            - link [ref=f15e780] [cursor=pointer]:
+              - /url: /libros/pdf/los_enemigos_del_comercio.pdf
+              - text: Descargar
+              - img "descargar" [ref=f15e781]
+        - generic [ref=f15e783]:
+          - img "Poder y mercado" [ref=f15e784]
+          - generic [ref=f15e785]:
+            - link [ref=f15e786] [cursor=pointer]:
+              - /url: /libros/pdf/poder_y_mercado.pdf
+              - text: Leer
+              - img "leer" [ref=f15e787]
+            - link [ref=f15e788] [cursor=pointer]:
+              - /url: /libros/pdf/poder_y_mercado.pdf
+              - text: Descargar
+              - img "descargar" [ref=f15e789]
+  - contentinfo [ref=f15e790]:
+    - generic [ref=f15e791]:
+      - list [ref=f15e792]:
+        - listitem [ref=f15e793]:
+          - link [ref=f15e794] [cursor=pointer]:
+            - /url: https://mempool.space/es/
+            - text: mempool - Bitcoin Explorer
+            - img "Mempool favicon" [ref=f15e795]
+        - listitem [ref=f15e796]:
+          - link "Bitcoin Rich List" [ref=f15e797] [cursor=pointer]:
+            - /url: https://bitinfocharts.com/top-100-richest-bitcoin-addresses.html
+        - listitem [ref=f15e798]:
+          - link "Tabla - Block Subsidy" [ref=f15e799] [cursor=pointer]:
+            - /url: https://pbs.twimg.com/media/FwLQcUMWIAQ4wYN?format=png&name=900x900
+        - listitem [ref=f15e800]:
+          - link "Top Assets by Market Cap" [ref=f15e801] [cursor=pointer]:
+            - /url: https://companiesmarketcap.com/assets-by-market-cap/
+      - generic [ref=f15e802]:
+        - paragraph [ref=f15e803]: ¿Eres nuevo en el mundo de las criptomonedas?
+        - link "¡Contáctame!" [ref=f15e804] [cursor=pointer]:
+          - /url: https://wa.me/593961147947?text=Hola%2C%20quiero%20informacion%20sobre%20la%20mentoria.
+    - paragraph [ref=f15e805]:
+      - text: Sitio web desarrollado por
+      - link "labsproductivity.com" [ref=f15e806] [cursor=pointer]:
+        - /url: https://labsproductivity.com

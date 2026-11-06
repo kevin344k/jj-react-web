@@ -1,28 +1,21 @@
 import conferenciasData from "../assets/data/conferencias.json";
-import jjtraje from "/public/imagenes/jjtraje.jpg";
+import jjtraje from "/imagenes/jjtraje.jpg";
+import SectionHeader from "./SectionHeader";
 import { buildWaMeLink } from "../utils/links";
 export default function SectionConferencias() {
 
   const conferencias = conferenciasData.registros;
 
   return (
-    <div id="section-conferencias" className="bg-white dark:bg-fm-Dark-Desaturated-Blue py-12">
+    <section id="section-conferencias" className="bg-ui-bg py-20 font-body text-ui-text">
+      <SectionHeader eyebrow="Escenarios" title="Conferencias" />
 
-      <div className="text-center mb-8">
-        <p className="text-3xl font-bold text-neutral-900 dark:text-white">
-          Conferencias
-        </p>
-
-        <div className="w-24 h-1 bg-fm-turquesa mx-auto mt-3"></div>
-      </div>
-
-
-      <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto py-10 px-2 md:px-3">
+      <div className="mx-auto grid max-w-6xl grid-cols-1 gap-6 px-4 md:grid-cols-3">
 
       {conferencias.map((conf) => (
   <div
     key={conf.id}
-    className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 dark:bg-fm-Very-dark-Blue dark:border-neutral-600"
+    className="flex flex-col rounded-2xl border border-ui-border bg-ui-bg2 p-5 transition duration-300 hover:-translate-y-1 hover:border-btc/50"
   >
 
     {conf.thumbnail_url && (
@@ -33,19 +26,19 @@ export default function SectionConferencias() {
       />
     )}
 
-    <span className="inline-block bg-fm-turquesa text-black text-xs font-bold px-3 py-1 rounded-full mb-3 w-fit">
+    <span className="mb-3 inline-block w-fit rounded-full bg-btc/15 px-3 py-1 text-xs font-bold text-btc">
       {conf.tipo}
     </span>
 
-    <h3 className="text-xl font-semibold text-gray-800 mb-2 dark:text-neutral-300">
+    <h3 className="font-display text-xl font-bold text-ui-text mb-2">
       {conf.titulo}
     </h3>
 
-    <p className="text-sm text-gray-500 mb-2">
+    <p className="text-sm text-ui-muted mb-2">
       {conf.evento}
     </p>
 
-    <p className="text-gray-600 text-sm mb-4 dark:text-neutral-400 line-clamp-4">
+    <p className="text-ui-muted text-sm mb-4 line-clamp-4">
       {conf.descripcion}
     </p>
 
@@ -53,14 +46,14 @@ export default function SectionConferencias() {
       {conf.temas_principales?.slice(0,4).map((tema)=>(
         <span
           key={tema}
-          className="bg-gray-200 dark:bg-neutral-700 px-2 py-1 rounded-full text-xs"
+          className="border border-ui-border px-2 py-1 rounded-full text-xs text-ui-muted"
         >
           {tema}
         </span>
       ))}
     </div>
 
-    <div className="text-sm space-y-1 mb-5 dark:text-neutral-400">
+    <div className="text-sm space-y-1 mb-5 text-ui-muted">
 
       {conf.fecha && (
         <p>
@@ -88,7 +81,7 @@ export default function SectionConferencias() {
         href={conf.video_url}
         target="_blank"
         rel="noopener noreferrer"
-        className="mt-auto bg-fm-turquesa text-black font-bold py-2 px-4 rounded-xl text-center"
+        className="mt-auto rounded-lg bg-btc py-2.5 px-4 text-center font-bold text-black transition hover:bg-btc-dark"
       >
         Ver contenido
       </a>
@@ -102,13 +95,10 @@ export default function SectionConferencias() {
 <div
   className="
     relative
-    bg-white
+    bg-ui-bg2
     rounded-2xl
-    shadow-xl
     overflow-hidden
-    border border-neutral-300
-    dark:bg-fm-Very-dark-Blue
-    dark:border-neutral-600
+    border border-ui-border
   "
 >
   <img
@@ -136,7 +126,7 @@ export default function SectionConferencias() {
       text-white
     "
   >
-    <h3 className="text-2xl font-bold">
+    <h3 className="font-display text-2xl font-bold">
       Jesus Chagerben
     </h3>
 
@@ -148,7 +138,7 @@ export default function SectionConferencias() {
           href={buildWaMeLink("mentoriaPrimary", "infoMentoriaPremium")}
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-block bg-fm-turquesa text-neutral-900 font-bold mt-3 px-4 py-2 rounded-full hover:bg-fm-turquesa_strong transition"
+          className="inline-block bg-btc text-black font-bold mt-3 px-4 py-2 rounded-full hover:bg-btc-dark transition"
         >
           ¡Contáctame!
         </a>
@@ -157,6 +147,6 @@ export default function SectionConferencias() {
 
       </div>
 
-    </div>
+    </section>
   );
 }

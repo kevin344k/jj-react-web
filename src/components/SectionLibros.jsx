@@ -1,5 +1,7 @@
-import React, { useState, useRef, useEffect } from "react";
+import React from "react";
+import SectionHeader from "./SectionHeader";
 import CardBook from "./CardBook";
+import AutoCarousel from "./AutoCarousel";
 import { buildWaMeLink } from "../utils/links";
 
 const baseURL = import.meta.env.BASE_URL;
@@ -49,92 +51,11 @@ const books = [
   }
 ];
 
-const CARD_WIDTH = 230;
-
-const SectionLibros = () => {
-  const sliderRef = useRef(null);
-  const [scrollProgress, setScrollProgress] = useState(0);
-  const [currentIndex, setCurrentIndex] = useState(0);
-
-  useEffect(() => {
-    const container = sliderRef.current;
-    if (!container) return;
-
-    const handleScroll = () => {
-      const scrollLeft = container.scrollLeft;
-      const maxScrollLeft = container.scrollWidth - container.clientWidth;
-      const progress = maxScrollLeft > 0 ? (scrollLeft / maxScrollLeft) * 100 : 0;
-      setScrollProgress(progress);
-
-      const index = Math.round(scrollLeft / CARD_WIDTH);
-      setCurrentIndex(index);
-    };
-
-    container.addEventListener("scroll", handleScroll);
-    handleScroll();
-    return () => container.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToIndex = (index) => {
-    const container = sliderRef.current;
-    if (!container) return;
-
-    const maxIndex = books.length - 1;
-    const newIndex = Math.min(Math.max(index, 0), maxIndex);
-
-    container.scrollTo({
-      left: newIndex * CARD_WIDTH,
-      behavior: "smooth",
-    });
-
-    setCurrentIndex(newIndex);
-  };
-
-  const handlePrev = () => scrollToIndex(currentIndex - 1);
-  const handleNext = () => scrollToIndex(currentIndex + 1);
-
+export default function SectionLibros() {
   return (
-    <section id="sect-books" className="py-12 relative xl:py-30 bg-white dark:bg-fm-Very-Dark-Blue">
-      <div className="mb-6">
-        <h2 className="text-3xl font-semibold text-center text-neutral-900 dark:text-white">Libros</h2>
-        <div className="w-16 h-1 bg-fm-turquesa mx-auto mt-2 rounded-full" />
-      </div>
-
-      {/* Botones desktop */}
-      <button
-        onClick={handlePrev}
-        aria-label="Anterior"
-        className="hidden lg:flex absolute top-1/2 left-4 -translate-y-1/2 z-10 w-15 h-20 bg-gradient-to-r from-[#22dfc1] to-transparent text-white text-5xl shadow hover:bg-[#1bb8a9] justify-center items-center active:scale-95 cursor-pointer"
-      >
-        &#8249;
-      </button>
-
-      <button
-        onClick={handleNext}
-        aria-label="Siguiente"
-        className="hidden lg:flex absolute top-1/2 right-4 -translate-y-1/2 z-10 w-15 h-20 bg-gradient-to-l from-[#22dfc1] to-transparent text-5xl text-white shadow hover:bg-[#1bb8a9] justify-center items-center cursor-pointer"
-      >
-        &#8250;
-      </button>
-
-      <div
-        ref={sliderRef}
-        className="flex w-full overflow-x-auto scrollbar-hide snap-x snap-mandatory gap-4 px-5 py-4 scroll-smooth hide-scrollbar"
-      >
-        {books.map((book, idx) => (
-          <CardBook book={book} key={idx} />
-        ))}
-      </div>
-
-      {/* Barra progreso en móvil */}
-      <div className="relative mt-2 h-1 bg-gray-300 rounded-full mx-6 overflow-x-hidden lg:hidden xl:hidden">
-        <div
-          className="h-1 bg-[#40E0D0] rounded-full transition-all duration-200"
-          style={{ width: `${scrollProgress}%` }}
-        />
-      </div>
+    <section id="sect-books" className="relative bg-ui-bg py-20 font-body text-ui-text">
+      <SectionHeader eyebrow="Biblioteca" title="Libros" subtitle="Lecturas esenciales sobre libertad, dinero y economía." />
+      <AutoCarousel items={books} duration={45} renderItem={(book) => <CardBook book={book} />} />
     </section>
   );
-};
-
-export default SectionLibros;
+}

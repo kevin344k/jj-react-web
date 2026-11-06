@@ -1,6 +1,9 @@
 import React from "react";
-import video from "../assets/Video/hero_video.mp4";
-import "../App.css";
+import { Link } from "react-router-dom";
+import { ArrowLeft } from "lucide-react";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import SectionHeader from "../components/SectionHeader";
 import { buildWhatsAppApiLink } from "../utils/links";
 
 const cards = [
@@ -62,8 +65,7 @@ const cards = [
      price:"37",
     simbol:"USD"
   },
-  ,
-   {
+  {
     title: "Juego Dados de casino grado AAA",
      subtitle:"",
     description: "",
@@ -74,81 +76,58 @@ const cards = [
   }
 ];
 
-export default function WalletsMineros({ onBack }) {
+export default function WalletsMineros() {
   return (
-    <div className="relative min-h-screen w-full">
-      {/* Video de fondo que cubre todo el contenido */}
-      <div className="absolute top-0 left-0 w-full h-full z-[-1]">
-        <video
-          className="w-full h-full object-cover brightness-[0.5]"
-          autoPlay
-          muted
-          loop
-          playsInline
-        >
-          <source src={video} type="video/mp4" />
-        </video>
-      </div>
-      <nav id="navBar" className=" bg-[#182025] py-3  px-12 flex items-start justify-start  w-full">
-                   <button
-        onClick={onBack}
-        className="flex items-center gap-3 shadow-md text-neutral-900 border border-neutral-600 hover:border-fm-turquesa hover:shadow-xl hover:brightness-110 rounded-xl py-1 px-3 text-lg font-bold transition bg-white dark:bg-fm-Very-dark-Blue dark:text-neutral-200"
-      >
-        <svg width="20px" height="20px" viewBox="-19.04 0 75.803 75.803" xmlns="http://www.w3.org/2000/svg">
-  <g id="Group_64" data-name="Group 64" transform="translate(-624.082 -383.588)">
-    <path id="Path_56" data-name="Path 56" d="M660.313,383.588a1.5,1.5,0,0,1,1.06,2.561l-33.556,33.56a2.528,2.528,0,0,0,0,3.564l33.556,33.558a1.5,1.5,0,0,1-2.121,2.121L625.7,425.394a5.527,5.527,0,0,1,0-7.807l33.556-33.559A1.5,1.5,0,0,1,660.313,383.588Z" fill="#00000"/>
-  </g>
-</svg> Volver 
-      </button>
-            
-            </nav>
-         
-     <div className="flex  flex-col  w-full h-full items-center justify-center">
-            <h1 className="text-3xl font-bold my-8 text-center  text-neutral-200 dark:text-fm-turquesa">Mineros y Wallets</h1>
-      <div className="flex flex-wrap gap-5 lg:gap-9  justify-center ">
+    <div className="min-h-screen bg-ui-bg font-body text-ui-text">
+      <Navbar />
+      <main className="relative mx-auto max-w-7xl px-4 py-16">
+        <Link to="/" className="mb-8 inline-flex items-center gap-2 text-sm text-ui-muted transition hover:text-btc">
+          <ArrowLeft className="h-4 w-4" /> Volver al inicio
+        </Link>
+        <SectionHeader
+          eyebrow="Catálogo"
+          title="Mineros y Wallets"
+          subtitle="Equipos originales para custodiar y minar tu propio Bitcoin."
+        />
 
-     
-        {cards.map((card, idx) => (
-          <div
-            key={idx}
-            className="bg-white rounded-2xl shadow-xl p-6 flex flex-col border border-neutral-300 hover:scale-105 transition duration-300 dark:bg-fm-Very-dark-Blue dark:border-neutral-600 w-[340px] min-h-[480px] mb-8 relative overflow-hidden"
-          >
-      {card.price && (
-  <div className="absolute -top-10 -right-5 bg-fm-turquesa_strong rounded-full text-black p-20 text-sm shadow-md">
-    <div className="relative">
-      <div className="absolute flex -right-12 -top-10 pt-4 text-[44px]">
-        <p>{card.price}</p>
-        <span className="text-sm text-neutral-600 self-end">
-          {card.simbol}
-        </span>
-      </div>
-    </div>
-  </div>
-)}
-            <div className="flex justify-center items-center mb-6">
-              <img
-                src={card.image}
-                alt={card.title}
-                className="w-[130px] h-[150px] object-cover  bg-white"
-              />
-            </div>
-            <h2 className="text-xl font-semibold text-gray-800 mb-2 dark:text-neutral-300 min-h-[56px] text-center">{card.title}</h2>
-            <span className="text-sm text-neutral-900 font-bold mb-4">{card.subtitle}</span>
-            <p className="text-gray-600 mb-4 dark:text-neutral-400 min-h-[72px] text-left">{card.description}</p>
-            <div className="flex-grow" />
-            <a
-              href={card.waLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-fm-turquesa rounded-full text-black py-2 px-4 hover:bg-fm-turquesa_strong hover:font-semibold transition text-center mt-4 text-lg font-semibold w-full"
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {cards.map((card) => (
+            <article
+              key={card.title}
+              className="group relative flex flex-col overflow-hidden rounded-2xl border border-ui-border bg-ui-bg2 p-6 transition duration-300 hover:-translate-y-1 hover:border-btc/50"
             >
-              Pedir
-            </a>
-          </div>
-        ))}
-      </div>
-
-     </div>
+              <div className="mb-5 flex h-48 items-center justify-center rounded-xl bg-white p-4">
+                <img src={card.image} alt={card.title} loading="lazy" className="max-h-full object-contain transition duration-300 group-hover:scale-105" />
+              </div>
+              {card.subtitle && (
+                <span className="mb-2 w-fit rounded-full bg-btc/15 px-3 py-1 text-xs font-bold text-btc">{card.subtitle}</span>
+              )}
+              <h2 className="font-display text-xl font-bold leading-snug">{card.title.trim()}</h2>
+              {card.description && <p className="mt-3 text-sm text-ui-muted">{card.description}</p>}
+              <div className="mt-auto flex items-end justify-between gap-4 pt-6">
+                <p className="font-display text-3xl font-bold">
+                  {card.price ? (
+                    <>
+                      ${card.price} <span className="text-sm font-normal text-ui-muted">{card.simbol}</span>
+                    </>
+                  ) : (
+                    <span className="text-base font-normal text-ui-muted">Consultar precio</span>
+                  )}
+                </p>
+                <a
+                  href={card.waLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="rounded-lg bg-btc px-5 py-2.5 font-bold text-black transition hover:bg-btc-dark"
+                >
+                  Pedir
+                </a>
+              </div>
+            </article>
+          ))}
+        </div>
+      </main>
+      <Footer />
     </div>
   );
 }

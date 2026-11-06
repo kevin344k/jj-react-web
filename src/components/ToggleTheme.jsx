@@ -19,9 +19,8 @@ export default function ToggleDarkMode() {
       setTheme(stored);
       return;
     }
-    // Si no hay preferencia guardada, usa el esquema del sistema
-    const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    setTheme(prefersDark ? "dark" : "light");
+    // El rediseño es oscuro por defecto
+    setTheme("dark");
   }, []);
 
   // 2) Efecto para aplicar el tema al <html> y persistirlo
@@ -64,31 +63,16 @@ export default function ToggleDarkMode() {
     setTheme((prev) => (prev === "dark" ? "light" : "dark"));
   };
 
-  // Mientras inicializa, evita parpadeo opcionalmente
-  if (!theme) {
-    return (
-      <div className="w-20   rounded-full p-1 flex md:w-[50px] lg:w-[50px]  pointer-events-none">
-        <button type="button" className="bg-neutral-50 rounded-full p-1">
-          <img src={moon} className="size-5" alt="" />
-        </button>
-      </div>
-    );
-  }
+  if (!theme) return null;
 
   return (
-    <div
+    <button
+      type="button"
       onClick={switchTheme}
-      className={`w-15 rounded-full p-1 flex inset-shadow-md hover:cursor-pointer transition-all delay-200 md:w-[50px] lg:w-[80px] border border-neutral-700 
-        ${theme === "dark" ? "justify-end bg-gray-500" : "justify-start bg-gray-500"}
-      `}
+      aria-label={`Cambiar a tema ${theme === "dark" ? "claro" : "oscuro"}`}
+      className="fixed bottom-5 right-5 z-40 flex h-12 w-12 items-center justify-center rounded-full border border-ui-border bg-ui-bg2 shadow-xl shadow-black/30 transition hover:scale-110 hover:border-btc active:scale-95"
     >
-      <button
-        type="button"
-        className="bg-neutral-50 rounded-full p-1 shadow-md shadow-neutral-400 hover:cursor-pointer"
-        aria-label={`Cambiar a tema ${theme === "dark" ? "claro" : "oscuro"}`}
-      >
-        <img src={icon} className="size-5" alt="" />
-      </button>
-    </div>
+      <img src={icon} className="size-6" alt="" />
+    </button>
   );
 }
