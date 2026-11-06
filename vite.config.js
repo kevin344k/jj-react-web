@@ -10,4 +10,9 @@ export default defineConfig({
   optimizeDeps: {
     include: ['@leenguyen/react-flip-clock-countdown'],
   },
+    server: {
+    allowedHosts: [
+      'centers-graphical-friendship-leslie.trycloudflare.com'
+    ]
+  }
 })
