@@ -83,7 +83,7 @@ export default function Hero() {
              10k <span className="text-fm-turquesa">+</span> </span>
              <p className="text-neutral-300  text-xs md:text-[16px] ">Alumnos</p></div>
             <div className="px-4 md:px-8 text-left"><span className="font-bold text-2xl text-white">
-             12 <span className="text-fm-turquesa">+</span> </span>
+             10 <span className="text-fm-turquesa">+</span> </span>
              <p className="text-neutral-300  text-xs md:text-[16px] ">Años de experiencia</p></div>
                <div className=" px-4  md:px-8 text-left"><span className="font-bold text-2xl  text-[#ff8f00]">
             BTC </span>
