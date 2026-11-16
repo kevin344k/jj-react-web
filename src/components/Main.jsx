@@ -1,5 +1,6 @@
 import React from 'react'
 import Hero from './Hero'
+import SectionClubAmagi from './SectionClubAmagi'
 import Section_Libro_jj from './Section_Libro_jj'
 import Section_calcualdora from './Section_calcualdora'
 import SectionMentoria from './SectionMentoria'
@@ -13,6 +14,7 @@ export default function Main() {
   return (
     <div className="">
       <Hero></Hero>
+        <SectionClubAmagi />
         <Section_Libro_jj></Section_Libro_jj>
           <SectionCardsMentoria />
     
