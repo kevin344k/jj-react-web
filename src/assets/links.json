@@ -1,11 +1,6 @@
 {
   "socialLinks": [
     {
-      "href": "https://app.fedi.xyz/get-the-app",
-      "img": "imagenes/fedi.svg",
-      "label": "Fedi"
-    },
-    {
       "href": "https://tradingdifferent.com/?ref=YELgWNnX",
       "img": "imagenes/icon-color/download.png",
       "label": "Pools de Liquidez"
